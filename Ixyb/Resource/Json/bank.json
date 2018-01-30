@@ -1,0 +1,146 @@
+ [
+  {
+  "bankName":"中国工商银行",
+  "bankType":"1",
+  "bankImage":"bank1",
+  },
+  
+  {
+  "bankName":"中国农业银行",
+  "bankType":"2",
+  "bankImage":"bank2",
+  },
+  
+  {
+  "bankName":"中国建设银行",
+  "bankType":"3",
+  "bankImage":"bank3",
+  },
+  
+  {
+  "bankName":"招商银行",
+  "bankType":"4",
+  "bankImage":"bank4",
+  },
+  
+  {
+  "bankName":"民生银行",
+  "bankType":"5",
+  "bankImage":"bank5",
+  },
+  
+  {
+  "bankName":"交通银行",
+  "bankType":"6",
+  "bankImage":"bank6",
+  },
+  
+  {
+  "bankName":"中国银行",
+  "bankType":"7",
+  "bankImage":"bank7",
+  },
+  
+  {
+  "bankName":"中信银行",
+  "bankType":"8",
+  "bankImage":"bank8",
+  },
+  
+  {
+  "bankName":"广发银行",
+  "bankType":"9",
+  "bankImage":"bank9",
+  },
+  
+  {
+  "bankName":"兴业银行",
+  "bankType":"10",
+  "bankImage":"bank10",
+  },
+  
+  {
+  "bankName":"华夏银行",
+  "bankType":"11",
+  "bankImage":"bank11",
+  },
+  
+  {
+  "bankName":"上海银行",
+  "bankType":"12",
+  "bankImage":"bank12",
+  },
+  
+  {
+  "bankName":"北京银行",
+  "bankType":"13",
+  "bankImage":"bank13",
+  },
+  
+  {
+  "bankName":"光大银行",
+  "bankType":"14",
+  "bankImage":"bank14",
+  },
+  
+  {
+  "bankName":"平安银行",
+  "bankType":"15",
+  "bankImage":"bank15",
+  },
+  
+  {
+  "bankName":"中国邮政储蓄银行",
+  "bankType":"20",
+  "bankImage":"bank20",
+  },
+  
+  {
+  "bankName":"浦发银行",
+  "bankType":"21",
+  "bankImage":"bank21",
+  },
+  
+  {
+  "bankName":"杭州银行",
+  "bankType":"22",
+  "bankImage":"bank22",
+  },
+  
+  {
+  "bankName":"浙商银行",
+  "bankType":"23",
+  "bankImage":"bank23",
+  },
+  
+  {
+  "bankName":"东莞银行",
+  "bankType":"24",
+  "bankImage":"bank24",
+  },
+  
+  {
+  "bankName":"广东南粤银行",
+  "bankType":"25",
+  "bankImage":"bank25",
+  },
+  
+  {
+  "bankName":"宁波银行",
+  "bankType":"27",
+  "bankImage":"bank27",
+  },
+  
+  {
+  "bankName":"广州银行",
+  "bankType":"28",
+  "bankImage":"bank28",
+  },
+  
+  {
+  "bankName":"江苏银行",
+  "bankType":"30",
+  "bankImage":"bank30",
+  },
+
+  ]

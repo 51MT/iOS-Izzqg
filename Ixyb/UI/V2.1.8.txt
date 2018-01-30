@@ -1,0 +1,242 @@
+<<<<<<< HEAD
+
+
+V2.1.8 新版本模块目录结构（全）
+
+在理财(financing)下面四个模块，文件夹 main、npguide、nproduct、npinvest ，文件夹名字统一小写
+
+一、首页(main) 修改              FinancingAcvitity   FinancingViewController
+1.首页                           NPView              NPView
+
+二、新产品引导(npguide)
+2.新功能上线通知弹出框           NPGuideDialog       NPGuideDialog
+3.首页存管新产品入口(介绍提示1)  NPGuideFirstView    NPGuideFirstView
+4.存管新产品列表(介绍提示2)      NPGuideSecondView   NPGuideSecondView
+5.存管新产品详情(结束介绍3)      NPGuideThirdView    NPGuideThirdView
+
+三、新产品（nproduct)
+4.新产品一键出借列表           NPListFragment         NPListView
+5.新产品一键出借规则(h5)       NPWebViewActivity      NPWebViewController
+6.新产品项目详情详情           NPDetailActivity       NPDetailViewController
+7.新产品介绍                   NPIntroduceActivity    NPIntroduceViewController
+8.新产品出借记录               NPLoanRecordAcitvity   NPLoanRecordViewController
+9.风险提示(h5已有)             NPWebViewActivity      NPWebViewController
+10.新产品标的组成              NPMatchListAcitvity    NPMatchListViewController
+11.标的组成详情（已有，共用)   NPMatchDetailAcitvity  NPMatchDetailViewController
+
+四、新产品出借（npinvest)
+12.新产品出借（投资)页        NPInvestActivity         NPInvestViewController
+13.风险评测页(h5已有)          NPWebViewActivity        NPWebViewController
+14.新产品出借结果页            NPInvestResultAcitvity   NPInvestResultViewController
+
+在我的(my)下面四个模块，文件夹 main、account、cgaccount、set，文件夹名字统一小写
+
+五、我的账户(main)
+
+15.我的账户页            MyActivity          MyViewController
+16.普通账户弹出框        AccountTipDialog    AccountTipDialog
+17.存管账户弹出框        CGAccountTipDialog  CGAccountTipDialog
+
+六、普通账户（account/main）
+18.普通账户页            AccountAcitvity     AccountViewController
+
+七.模块名：存管账户（cgaccount/main）
+19.存管账户页            CGAccountAcitvity   CGAccountViewController
+
+7.1存管充值（cgrecharge）
+20.存管充值页                      CGRechargeAcitvity CGRechargeViewController
+21.额度规则（限额说明、充值说明h5）CGRechargeWebViewActivity CGRechargeWebViewController
+22.充值支付页（存管银行提供h5）    CGRechargeWebViewActivity CGRechargeWebViewController
+23.充值结果详情页                  CGRechargeResultAcitvity CGRechargeResultViewController
+24.充值结果（一笔订单充值中）      CGRechargingAcitvity CGRechargingViewController
+
+7.2存管提现（cgcash）
+25.存管提现页                  CGCashAcitvity CGCashViewController
+26.提现说明页(已有h5)          CGCashWebViewActivity CGCashWebViewController
+27.提现支付页（上海银行提供h5）CGCashWebViewActivity CGCashWebViewController
+28.提现结果详情页（成功、失败）CGCashResultAcitvity CGCashResultViewController
+
+7.3新产品存管账单（cgbill）
+29.收支明细页 CGIncomeListAcitvity CGIncomeListViewController
+30.充值记录页 CGRechargeListAcitvity CGRechargeListViewController
+31.提现记录页 CGCashListAcitvity CGCashListViewController
+32.冻结记录页 CGFreezeListAcitvity CGFreezeListViewController
+
+7.4新产品存管理财（cgfinancing）
+33.存管总资产页               CGAccountAssetsAcitvity CGAccountAssetsViewController
+34.存管账户统计页             CGAccountStatisticsActivity CGAccountStatisticsViewController
+35.存管新产品回款计划页（总） CGBackPlanActivity      CGBackPlanViewController
+
+36.新产品已投列表页（借款集合已投）NPInvestedListActivity  NPInvestedListViewController
+37.新产品已投已完成列表页          NPInvestedCompleteListActivity NPInvestedCompleteListViewController
+
+38.新产品出借详情页（部分计息页、全部计息可转让页、转让中页）
+                                 NPInvestedDetailActivity NPInvestedDetailViewController
+39.出借明细页                    NPLoanDetailActivity   NPLoanDetailViewController
+40.回款记录页（单笔新产品）      NPBackRecordActivity   NPBackRecordViewController
+41.出借合同                      NPLoanContractActivity  NPLoanContractViewController
+
+42.新产品转让页（一键转让）      NPAssignApplyActivity  NPAssignApplyViewController
+43.申请转让完成页                NPAssignApplyCompleteActivity  NPAssignApplyCompleteViewController
+44.转让规则页h5                  NPAssignWebViewActivity  NPAssignWebViewViewController
+45.债权转让服务协议h5            NPAssignWebViewActivity NPAssignWebViewViewController
+46.新产品转让记录页（转让中）    NPAssignRecordActivity NPAssignRecordViewController
+
+八、设置模块（set）
+8.1.设置页（main）
+47.设置页（修改）   SetActivity   SetViewController
+
+8.2.账户安全设置(asset)
+48.安全设置页(修改) AccountSafeSetActivity  AccountSafeSetViewController
+
+8.3.普通账户设置（实名认证/绑银行卡）（gaset）
+49.普通账户页       GeneralAccountSetActivity GeneralAccountSetViewController
+
+8.4.存管账户设置（cgaset）
+8.4.1存管开户模块（cgaopen）
+50.存管开户弹出框                 CGAccountOpenDialog       CGAccountOpenDialog
+51.新用户输入姓名和身份证页        CGAccountRNAuthActivity   CGAccountRNAuthViewController
+52.存管账户开户页（存管银行提供h5）CGAccounWebViewActivity   CGAccounWebViewController
+53.存管账户开户结果页    CGAccountOpenResultActivity CGAccountOpenResultViewController
+
+8.4.2存管账户（cgaccount）
+54.存管账户页   CGAccountSetActivity             CGAccountSetViewController
+55.存管账户更换绑定银行卡（存管银行提供h5）CGAccounWebViewActivity         CGAccounWebViewController
+56.存管账户修改交易密码（存管银行提供h5）  CGAccounWebViewActivity         CGAccounWebViewController
+
+8.5.借款账户设置（jkaset）
+8.5.1借款开户模块（jkaopen）
+57.借款开户弹出框                  JKAccountOpenDialog             JKAccountOpenDialog
+58.新用户输入姓名和身份证页        JKAccountRNAuthActivity          JKAccountRNAuthViewController
+59.借款账户开户页（存管银行提供h5）JKAccounWebViewActivity           JKAccounWebViewController
+60.借款账户开户结果页              JKAccountOpenResultActivity      JKAccountOpenResultViewController
+
+8.5.2 借款账户（jkaccount）
+61.借款账户页                      JKAccountSetActivity             JKAccountSetViewController
+62.借款账户更换绑定银行卡（存管银行提供h5）JKAccounWebViewActivity     JKAccounWebViewController
+63.借款账户修改交易密码（存管银行提供） JKAccounWebViewActivity        JKAccounWebViewController
+
+
+
+
+
+
+
+
+
+=======
+
+V2.1.8 新版本模块目录结构（全）
+
+在理财(financing)下面四个模块，文件夹 main、npguide、nproduct、npinvest ，文件夹名字统一小写
+
+一、新产品引导(npguide)
+1.新功能上线通知弹出框           NPGuideDialog       NPGuideDialog
+2.首页存管新产品入口(介绍提示1)  NPGuideFirstView    NPGuideFirstView
+3.存管新产品列表(介绍提示2)      NPGuideSecondView   NPGuideSecondView
+4.存管新产品详情(结束介绍3)      NPGuideThirdView    NPGuideThirdView
+
+二、首页(main) 修改              FinancingAcvitity   FinancingViewController
+5.首页                            NPView              NPView
+
+三、新产品（nproduct)
+6.新产品一键出借列表           NPListFragment         NPListView
+7.新产品一键出借规则(h5)       NPWebViewActivity      NPWebViewController
+8.新产品项目详情（个人消费贷合集）NPDetailActivity       NPDetailViewController
+9.新产品介绍                   NPIntroduceActivity    NPIntroduceViewController
+10.新产品出借记录               NPLoanRecordAcitvity   NPLoanRecordViewController
+11.风险提示(h5已有)             NPWebViewActivity      NPWebViewController
+12.新产品标的组成              NPMatchListAcitvity    NPMatchListViewController
+13.标的组成详情（已有，共用)   NPMatchDetailAcitvity  NPMatchDetailViewController
+
+四、新产品出借（npinvest)
+14.新产品出借（投资)页        NPInvestActivity         NPInvestViewController
+15.风险评测页(h5已有)          NPWebViewActivity        NPWebViewController
+16.新产品出借结果页（成功、失败）NPInvestResultAcitvity   NPInvestResultViewController
+
+在我的(my)下面四个模块，文件夹 main、account、cgaccount、set，文件夹名字统一小写
+五、我的账户(main)
+17.我的账户页            MyActivity          MyViewController
+(未登录、已登录未开通存管、已登录已开通存管、已登录非白名单用户)
+18.普通账户弹出框        AccountTipDialog    AccountTipDialog
+19.存管账户弹出框        CGAccountTipDialog  CGAccountTipDialog
+
+六、普通账户（account/main）
+20.普通账户页            AccountAcitvity     AccountViewController
+
+七.模块名：存管账户（cgaccount/main）
+21.存管账户页            CGAccountAcitvity   CGAccountViewController
+
+7.1存管充值（cgrecharge）
+22.存管充值页                      CGRechargeAcitvity CGRechargeViewController
+23.额度规则（限额说明、充值说明h5）CGRechargeWebViewActivity CGRechargeWebViewController
+24.充值支付页（存管银行提供h5）    CGRechargeWebViewActivity CGRechargeWebViewController
+25.充值结果详情页                  CGRechargeResultAcitvity CGRechargeResultViewController
+26.充值结果（一笔订单充值中）      CGRechargingAcitvity CGRechargingViewController
+
+7.2存管提现（cgcash）
+27.存管提现页                  CGCashAcitvity CGCashViewController
+28.提现说明页(已有h5)          CGCashWebViewActivity CGCashWebViewController
+29.提现支付页（上海银行提供h5）CGCashWebViewActivity CGCashWebViewController
+30.提现结果详情页（成功、失败）CGCashResultAcitvity CGCashResultViewController
+
+7.3新产品存管账单（cgbill）
+31.收支明细页 CGIncomeListAcitvity CGIncomeListViewController
+32.充值记录页 CGRechargeListAcitvity CGRechargeListViewController
+33.提现记录页 CGCashListAcitvity CGCashListViewController
+34.冻结记录页 CGFreezeListAcitvity CGFreezeListViewController
+
+7.4新产品存管理财（cgfinancing）
+35.存管总资产页               CGAccountAssetsAcitvity CGAccountAssetsViewController
+36.存管账户统计页             CGAccountStatisticsActivity CGAccountStatisticsViewController
+37.存管新产品回款计划页（总） CGBackPlanActivity      CGBackPlanViewController
+
+38.新产品已投列表页（借款集合已投）NPInvestedListActivity  NPInvestedListViewController
+39.新产品已投已完成列表页          NPInvestedCompleteListActivity NPInvestedCompleteListViewController
+
+40.新产品出借详情页（部分计息页、全部计息可转让页、转让中页）
+NPInvestedDetailActivity NPInvestedDetailViewController
+41.出借明细页                    NPLoanDetailActivity   NPLoanDetailViewController
+42.回款记录页（单笔新产品）      NPBackRecordActivity   NPBackRecordViewController
+43.出借合同                      NPLoanContractActivity  NPLoanContractViewController
+
+44.新产品转让页（一键转让）      NPAssignApplyActivity  NPAssignApplyViewController
+45.申请转让完成页                NPAssignApplyCompleteActivity  NPAssignApplyCompleteViewController
+46.转让规则页(h5已有)            NPAssignWebViewActivity  NPAssignWebViewViewController
+47.债权转让服务协议(h5已有)      NPAssignWebViewActivity NPAssignWebViewViewController
+48.新产品转让记录页（转让中）    NPAssignRecordActivity NPAssignRecordViewController
+
+八、设置模块（set）
+8.1.设置页（main）
+49.设置页（修改）   SetActivity   SetViewController
+
+8.2.账户安全设置(asset)
+50.安全设置页(修改) AccountSafeSetActivity  AccountSafeSetViewController
+
+8.3.普通账户设置（实名认证/绑银行卡）（gaset）
+51.普通账户页       GeneralAccountSetActivity GeneralAccountSetViewController
+
+8.4.存管账户设置（cgaset）
+8.4.1存管开户模块（cgaopen）
+52.存管开户弹出框                 CGAccountOpenDialog       CGAccountOpenDialog
+53.新用户输入姓名和身份证页        CGAccountRNAuthActivity   CGAccountRNAuthViewController
+54.存管账户开户页（存管银行提供h5）CGAccounWebViewActivity   CGAccounWebViewController
+55.存管账户开户结果页    CGAccountOpenResultActivity CGAccountOpenResultViewController
+
+8.4.2存管账户（cgaccount）
+56.存管账户设置页   CGAccountSetActivity             CGAccountSetViewController
+57.存管账户更换绑定银行卡（存管银行提供h5）CGAccounWebViewActivity         CGAccounWebViewController
+58.存管账户修改交易密码（存管银行提供h5）  CGAccounWebViewActivity         CGAccounWebViewController
+
+8.5.借款账户设置（jkaset）
+8.5.1借款开户模块（jkaopen）
+59.借款开户弹出框                  JKAccountOpenDialog             JKAccountOpenDialog
+60.新用户输入姓名和身份证页        JKAccountRNAuthActivity          JKAccountRNAuthViewController
+61.借款账户开户页（存管银行提供h5）JKAccounWebViewActivity           JKAccounWebViewController
+62.借款账户开户结果页              JKAccountOpenResultActivity      JKAccountOpenResultViewController
+
+8.5.2 借款账户（jkaccount）
+63.借款账户设置页                      JKAccountSetActivity             JKAccountSetViewController
+64.借款账户更换绑定银行卡（存管银行提供h5）JKAccounWebViewActivity     JKAccounWebViewController
+65.借款账户修改交易密码（存管银行提供） JKAccounWebViewActivity        JKAccounWebViewController
+>>>>>>> 42152a562c43d7e8f63313e3a5e58bca526c3def

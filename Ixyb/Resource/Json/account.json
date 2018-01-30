@@ -1,0 +1,48 @@
+ [
+  [
+   {"rowImageName":"head",
+   "rowSelectedImageName":"headed",
+   "rowName":"头像",
+   "rowDetail":""
+   },
+   
+   {"rowImageName":"loginaccount",
+   "rowSelectedImageName":"loginaccounted",
+   "rowName":"登录帐号",
+   "rowDetail":"13728761011"
+   },
+   
+   {"rowImageName":"securityemail",
+   "rowSelectedImageName":"securityemailed",
+   "rowName":"密保邮箱",
+   "rowDetail":"sz****@163.com"
+   }
+  ],
+  
+  [
+   {"rowImageName":"realname",
+   "rowSelectedImageName":"realnamed",
+   "rowName":"实名认证",
+   "rowDetail":"431022********0011"
+   },
+   
+   {"rowImageName":"mybankcard",
+   "rowSelectedImageName":"mybankcarded",
+   "rowName":"我的银行卡",
+   "rowDetail":"1张"
+   },
+   
+   {"rowImageName":"paypassword",
+   "rowSelectedImageName":"paypassworded",
+   "rowName":"交易密码",
+   "rowDetail":""
+   }
+ ]
+]
+
+//,
+//{"rowImageName":"handpassword",
+//    "rowSelectedImageName":"handpassworded",
+//    "rowName":"手势密码",
+//    "rowDetail":"敬请期待"
+//}

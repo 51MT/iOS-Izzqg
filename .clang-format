@@ -1,0 +1,36 @@
+# 基础样式  
+BasedOnStyle: LLVM  
+
+# 缩进统一使用4个空格代替制表符（Tab）
+UseTab: Never
+IndentWidth: 4
+  
+# 圆括号的换行方式  
+BreakBeforeBraces: Attach  
+  
+# 支持一行的if  
+AllowShortIfStatementsOnASingleLine: true  
+  
+# switch的case缩进  
+IndentCaseLabels: true  
+  
+# 针对OC的block的缩进宽度  
+ObjCBlockIndentWidth: 4  
+  
+# 针对OC，属性名后加空格  
+ObjCSpaceAfterProperty: true  
+  
+# 不限定每行代码的最大长度 
+ColumnLimit: 0  
+  
+# 注释对齐  
+AlignTrailingComments: true  
+  
+# 括号后加空格  
+SpaceAfterCStyleCast: true 
+
+# 不自动清除代码中的空行
+MaxEmptyLinesToKeep: 99
+
+# 对C++的可见性关键字（public、protected和private）不缩进
+AccessModifierOffset: -4

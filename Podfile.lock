@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (3.3.7)
+  - JSONModel (1.2.0)
+  - Masonry (1.0.1)
+  - ModelNetworkClient (0.9):
+    - AFNetworking
+    - JSONModel
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - UICountingLabel (1.4.0)
+  - UMengAnalytics (4.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - IQKeyboardManager (~> 3.3.7)
+  - JSONModel (~> 1.2.0)
+  - Masonry (~> 1.0.1)
+  - ModelNetworkClient (~> 0.9)
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage (~> 3.8.1)
+  - UICountingLabel
+  - UMengAnalytics
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  ModelNetworkClient: 3f3716a97794001b05aeebcfcc1126b95a8601c1
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
+  UMengAnalytics: 4ed421fb3bca63b26fc13c947743cabf3831d199
+
+PODFILE CHECKSUM: 32450f63ebedb91618b5b17e92637ba7e60b6054
+
+COCOAPODS: 1.2.0

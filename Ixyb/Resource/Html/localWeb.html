@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="author" content="leega0">
+          
+        <script type="text/javascript">
+          basePath="<%=basePath %>";
+          var browser={
+              versions:function(){
+                  var u = navigator.userAgent, app = navigator.appVersion;
+                  return {         //移动终端浏览器版本信息
+                      trident: u.indexOf('Trident') > -1, //IE内核
+                      presto: u.indexOf('Presto') > -1, //opera内核
+                      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                                     android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                                     iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                                     iPad: u.indexOf('iPad') > -1, //是否iPad
+                                     webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                                     };
+                                     }(),
+                                     language:(navigator.browserLanguage || navigator.language).toLowerCase()
+                                     }
+           
+            function skipView(viewName) {
+                if(browser.versions.ios){
+                    window.location = "/skipView/"+viewName;
+                }else{
+                    jsObject.getMessage(viewName);
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p style="font-size:16px" onclick="skipView('HomeView')">APP首页</p>
+        <p style="font-size:16px" onclick="skipView('HqbProductView')">活期宝产品页</p>
+        <p style="font-size:16px" onclick="skipView('HqbProductDetailView')">活期宝产品详情页</p>
+        <p style="font-size:16px" onclick="skipView('DqbProductView')">定期宝产品页</p>
+        <p style="font-size:16px" onclick="skipView('XtbProductView')">信投宝产品页</p>
+        <p style="font-size:16px" onclick="skipView('ZqzrProductView')">债权转让产品页</p>
+        <p style="font-size:16px" onclick="skipView('RegisterView')">注册页</p>
+        <p style="font-size:16px" onclick="skipView('RealNameView')">实名认证页</p>
+    </body>
+    
+    </html>

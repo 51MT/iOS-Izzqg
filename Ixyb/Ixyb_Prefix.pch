@@ -1,0 +1,18 @@
+//
+//  Ixyb_Prefix.pch
+//  Ixyb
+//
+//  Created by wangjianimac on 15/7/4.
+//  Copyright (c) 2015年 xyb. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "BaseViewController.h"
+#import "UMengAnalyticsUtil.h"
+
+
+
+#endif

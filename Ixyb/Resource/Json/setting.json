@@ -1,0 +1,27 @@
+ [
+  [
+   {"rowImageName":"weixin",
+   "rowSelectedImageName":"weixin",
+   "rowName":"官方微信公众号",
+   "rowDetail":"宝妹在线"
+   },
+   
+   {"rowImageName":"400Phone",
+   "rowSelectedImageName":"400Phoned",
+   "rowName":"客服电话",
+   "rowDetail":"400-070-7663|工作日 9:00-18:00"
+   },
+   
+   {"rowImageName":"QQ",
+   "rowSelectedImageName":"QQ",
+   "rowName":"客服QQ",
+   "rowDetail":"2750247271"
+   },
+   
+   {"rowImageName":"version",
+   "rowSelectedImageName":"version",
+   "rowName":"信用宝",
+   "rowDetail":"V1.4.1"
+   }
+  ]
+]

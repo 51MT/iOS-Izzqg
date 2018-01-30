@@ -1,0 +1,21 @@
+ [
+  [
+   {"rowImageName":"welcome",
+   "rowSelectedImageName":"welcomed",
+   "rowName":"欢迎页",
+   "rowDetail":""
+   },
+   
+   {"rowImageName":"save",
+   "rowSelectedImageName":"saved",
+   "rowName":"安全中心",
+   "rowDetail":""
+   },
+   
+   {"rowImageName":"aboutxyb",
+   "rowSelectedImageName":"aboutxybed",
+   "rowName":"关于信用宝",
+   "rowDetail":"1.4.1"
+   }
+  ]
+]
