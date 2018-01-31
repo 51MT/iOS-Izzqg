@@ -13,15 +13,15 @@ def pods
   pod 'SDWebImage', '~> 3.8.1'
 end
 
-target 'Ixyb’ do
+target 'Izzqg’ do
   pods
 end
 
-target 'Ixyb Test’ do
+target 'Izzqg Test’ do
 pods
 end
 
-target 'Ixyb Dev’ do
+target 'Izzqg Dev’ do
   pods
 end
 

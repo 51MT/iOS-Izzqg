@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024EFCCA32EF74AB0969C395 /* libPods-Ixyb Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5FE8B5AD1E824F690457 /* libPods-Ixyb Test.a */; };
-		05ECDCB06DC54BE6F9AD79DC /* libPods-Ixyb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512C9FAE1E510C0A38CBC04 /* libPods-Ixyb.a */; };
+		024EFCCA32EF74AB0969C395 /* libPods-Izzqg Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5FE8B5AD1E824F690457 /* libPods-Izzqg Test.a */; };
+		05ECDCB06DC54BE6F9AD79DC /* libPods-Izzqg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512C9FAE1E510C0A38CBC04 /* libPods-Izzqg.a */; };
 		21008AE11FBD90B1005DF60C /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21008ADF1FBD90B0005DF60C /* WRNavigationBar.m */; };
 		21008AE21FBD90B1005DF60C /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21008ADF1FBD90B0005DF60C /* WRNavigationBar.m */; };
 		21008AE31FBD90B1005DF60C /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21008ADF1FBD90B0005DF60C /* WRNavigationBar.m */; };
@@ -1253,7 +1253,7 @@
 		415DB4BA1E05187400FD275A /* setting.json in Resources */ = {isa = PBXBuildFile; fileRef = 41421B0D1B1C8A75006ADF2A /* setting.json */; };
 		415DB4BC1E05187400FD275A /* shake_match.wav in Resources */ = {isa = PBXBuildFile; fileRef = 215000141C1045E3006C6EA3 /* shake_match.wav */; };
 		415DB4BF1E05187400FD275A /* staticDeliveryStaff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF9FB9D1DF7FB05001C2DB9 /* staticDeliveryStaff@2x.png */; };
-		415DB4CB1E051D9800FD275A /* Ixyb-Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415DB4CA1E051D9800FD275A /* Ixyb-Dev-Info.plist */; };
+		415DB4CB1E051D9800FD275A /* Izzqg-Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415DB4CA1E051D9800FD275A /* Izzqg-Dev-Info.plist */; };
 		415DB4CF1E0528FD00FD275A /* XHPullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C02731DFE48CC006F1D6C /* XHPullRefreshTableViewController.m */; };
 		415DB4D01E0528FD00FD275A /* XHActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C028A1DFE48CC006F1D6C /* XHActivityIndicatorView.m */; };
 		415DB4D11E0528FD00FD275A /* HomePageResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C02B51DFE8C8F006F1D6C /* HomePageResponseModel.m */; };
@@ -1772,7 +1772,7 @@
 		415DB7651E0528FD00FD275A /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41DFE0361B93FC230034E906 /* MJRefresh.bundle */; };
 		415DB7691E0528FD00FD275A /* setting.json in Resources */ = {isa = PBXBuildFile; fileRef = 41421B0D1B1C8A75006ADF2A /* setting.json */; };
 		415DB76B1E0528FD00FD275A /* shake_match.wav in Resources */ = {isa = PBXBuildFile; fileRef = 215000141C1045E3006C6EA3 /* shake_match.wav */; };
-		415DB7781E05295E00FD275A /* Ixyb-Test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415DB7771E05295E00FD275A /* Ixyb-Test-Info.plist */; };
+		415DB7781E05295E00FD275A /* Izzqg-Test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415DB7771E05295E00FD275A /* Izzqg-Test-Info.plist */; };
 		416293FD1B90403F003D5821 /* ScoreDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 416293FC1B90403F003D5821 /* ScoreDetail.m */; };
 		416294001B905123003D5821 /* EarnBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = 416293FF1B905123003D5821 /* EarnBonus.m */; };
 		416CBC3B1D7927CB001F3FC1 /* XYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 416CBC331D7927CB001F3FC1 /* XYScrollView.m */; };
@@ -1822,7 +1822,7 @@
 		41919DC41EC079FC00F661FA /* UMessageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 41919DC21EC079FC00F661FA /* UMessageUtil.m */; };
 		41919DC51EC079FC00F661FA /* UMessageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 41919DC21EC079FC00F661FA /* UMessageUtil.m */; };
 		41932C6F1AD40A6300F26409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41932C6E1AD40A6300F26409 /* main.m */; };
-		41932C891AD40A6300F26409 /* IxybTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41932C881AD40A6300F26409 /* IxybTests.m */; };
+		41932C891AD40A6300F26409 /* IzzqgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41932C881AD40A6300F26409 /* IzzqgTests.m */; };
 		419CA6341FE3B53E009942C0 /* V2.1.8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 419CA6331FE3B53E009942C0 /* V2.1.8.txt */; };
 		419CA6351FE3B53E009942C0 /* V2.1.8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 419CA6331FE3B53E009942C0 /* V2.1.8.txt */; };
 		419CA6361FE3B53E009942C0 /* V2.1.8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 419CA6331FE3B53E009942C0 /* V2.1.8.txt */; };
@@ -2284,10 +2284,10 @@
 		86FBF1F81E1A944900398328 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FBF1F71E1A944900398328 /* UserNotifications.framework */; };
 		86FBF1F91E1A94AB00398328 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FBF1F71E1A944900398328 /* UserNotifications.framework */; };
 		86FBF1FA1E1A94B600398328 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FBF1F71E1A944900398328 /* UserNotifications.framework */; };
-		881CF1243979526013EA3903 /* libPods-Ixyb Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0355C873B51C5E19A1784 /* libPods-Ixyb Dev.a */; };
+		881CF1243979526013EA3903 /* libPods-Izzqg Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0355C873B51C5E19A1784 /* libPods-Izzqg Dev.a */; };
 		B46D0BE31DCD7B1D00C4F3B1 /* UnionpayStModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B46D0BE21DCD7B1D00C4F3B1 /* UnionpayStModel.m */; };
 		B6959C9D1C3D5C4100F529D7 /* TropismTradePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6959C9C1C3D5C4100F529D7 /* TropismTradePasswordView.m */; };
-		CBD2B58F75D1F32DB981BFD1 /* libPods-Ixyb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512C9FAE1E510C0A38CBC04 /* libPods-Ixyb.a */; };
+		CBD2B58F75D1F32DB981BFD1 /* libPods-Izzqg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512C9FAE1E510C0A38CBC04 /* libPods-Izzqg.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2296,7 +2296,7 @@
 			containerPortal = 41932C611AD40A6300F26409 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41932C681AD40A6300F26409;
-			remoteInfo = Ixyb;
+			remoteInfo = Izzqg;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2334,7 +2334,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1E67E10B0AC8006A79311071 /* Pods-Ixyb Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixyb Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ixyb Dev/Pods-Ixyb Dev.release.xcconfig"; sourceTree = "<group>"; };
+		1E67E10B0AC8006A79311071 /* Pods-Izzqg Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Izzqg Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Izzqg Dev/Pods-Izzqg Dev.release.xcconfig"; sourceTree = "<group>"; };
 		21008ADF1FBD90B0005DF60C /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		21008AE01FBD90B1005DF60C /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
 		21008AE41FBD931B005DF60C /* FinancingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancingViewController.m; sourceTree = "<group>"; };
@@ -2673,7 +2673,7 @@
 		21A04AED1FE4B5B000C18D56 /* NPLoanDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPLoanDetailTableViewCell.m; sourceTree = "<group>"; };
 		21A04AF11FE4B5F100C18D56 /* NPBackRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPBackRecordTableViewCell.h; sourceTree = "<group>"; };
 		21A04AF21FE4B5F100C18D56 /* NPBackRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPBackRecordTableViewCell.m; sourceTree = "<group>"; };
-		21A5C0A71E715DD500D55941 /* MGBankCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBankCard.framework; path = "../../../Library/Developer/Xcode/DerivedData/Ixyb-dpudijluzxszrpfpyhurpylhifya/Build/Products/Debug-iphoneos/MGBankCard.framework"; sourceTree = "<group>"; };
+		21A5C0A71E715DD500D55941 /* MGBankCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBankCard.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-dpudijluzxszrpfpyhurpylhifya/Build/Products/Debug-iphoneos/MGBankCard.framework"; sourceTree = "<group>"; };
 		21A5C0AB1E715F8400D55941 /* MGBankCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGBankCardResource.bundle; path = MGBankCard/Resouce/MGBankCardResource.bundle; sourceTree = "<group>"; };
 		21A5C0AD1E715FB300D55941 /* MGBankCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGBankCardResource.bundle; path = MGBankCard/Resouce/MGBankCardResource.bundle; sourceTree = "<group>"; };
 		21A5C0AF1E715FB900D55941 /* MGBankCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGBankCardResource.bundle; path = MGBankCard/Resouce/MGBankCardResource.bundle; sourceTree = "<group>"; };
@@ -2730,7 +2730,7 @@
 		21AE15741D82852E00AA34A5 /* RequestURLDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RequestURLDefine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		21B199131E6FDB8200D855ED /* ReturnRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnRecordViewController.h; sourceTree = "<group>"; };
 		21B199141E6FDB8200D855ED /* ReturnRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnRecordViewController.m; sourceTree = "<group>"; };
-		21B1998F1E6FF0F200D855ED /* libMegBankCard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMegBankCard.a; path = Ixyb/UI/XsdBorrow/MegBankCard/MGBankCard/BankCardSDK/libMegBankCard.a; sourceTree = "<group>"; };
+		21B1998F1E6FF0F200D855ED /* libMegBankCard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMegBankCard.a; path = Izzqg/UI/XsdBorrow/MegBankCard/MGBankCard/BankCardSDK/libMegBankCard.a; sourceTree = "<group>"; };
 		21B1999C1E6FFBAB00D855ED /* RecommendCommmissionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCommmissionModel.h; sourceTree = "<group>"; };
 		21B1999D1E6FFBAB00D855ED /* RecommendCommmissionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCommmissionModel.m; sourceTree = "<group>"; };
 		21B22E601DFFF03300BD28FB /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
@@ -2989,7 +2989,7 @@
 		21F4F2022008ABB300217E02 /* WaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterView.m; sourceTree = "<group>"; };
 		21F558ED1BF074C100B9B48C /* MposModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MposModel.h; sourceTree = "<group>"; };
 		21F558EE1BF074C100B9B48C /* MposModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MposModel.m; sourceTree = "<group>"; };
-		335D879BA2B06B4C0900EACA /* Pods-Ixyb Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixyb Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ixyb Test/Pods-Ixyb Test.release.xcconfig"; sourceTree = "<group>"; };
+		335D879BA2B06B4C0900EACA /* Pods-Izzqg Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Izzqg Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Izzqg Test/Pods-Izzqg Test.release.xcconfig"; sourceTree = "<group>"; };
 		3A163D521FF5DBD80068F15E /* NProductDetailResModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NProductDetailResModel.h; sourceTree = "<group>"; };
 		3A163D531FF5DBD80068F15E /* NProductDetailResModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NProductDetailResModel.m; sourceTree = "<group>"; };
 		3A163D611FF614070068F15E /* NPLoanListResModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPLoanListResModel.h; sourceTree = "<group>"; };
@@ -3012,9 +3012,9 @@
 		411132F61C1EA572005BA5BE /* NickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NickNameViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		411132FA1C1EEE60005BA5BE /* SexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexViewController.h; sourceTree = "<group>"; };
 		411132FB1C1EEE60005BA5BE /* SexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexViewController.m; sourceTree = "<group>"; };
-		41179B061E7127C700B6FF05 /* Ixyb Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ixyb Dev.entitlements"; sourceTree = "<group>"; };
-		41179B071E7127C700B6FF05 /* Ixyb Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ixyb Test.entitlements"; sourceTree = "<group>"; };
-		41179B081E7127C700B6FF05 /* Ixyb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ixyb.entitlements; sourceTree = "<group>"; };
+		41179B061E7127C700B6FF05 /* Izzqg Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Izzqg Dev.entitlements"; sourceTree = "<group>"; };
+		41179B071E7127C700B6FF05 /* Izzqg Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Izzqg Test.entitlements"; sourceTree = "<group>"; };
+		41179B081E7127C700B6FF05 /* Izzqg.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Izzqg.entitlements; sourceTree = "<group>"; };
 		412B45191EC16C1B007E04EC /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		4131B1381ADCAA1B00BC93D2 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		4131B13B1ADCAA1B00BC93D2 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
@@ -3202,10 +3202,10 @@
 		415D6CAE1D016254003D08BE /* VIPInterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPInterestsViewController.m; sourceTree = "<group>"; };
 		415D6CAF1D016254003D08BE /* VIPServiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPServiseViewController.h; sourceTree = "<group>"; };
 		415D6CB01D016254003D08BE /* VIPServiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPServiseViewController.m; sourceTree = "<group>"; };
-		415DB4C61E05187400FD275A /* Ixyb Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ixyb Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		415DB4CA1E051D9800FD275A /* Ixyb-Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ixyb-Dev-Info.plist"; sourceTree = "<group>"; };
-		415DB7751E0528FD00FD275A /* Ixyb Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ixyb Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		415DB7771E05295E00FD275A /* Ixyb-Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ixyb-Test-Info.plist"; sourceTree = "<group>"; };
+		415DB4C61E05187400FD275A /* Izzqg Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Izzqg Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415DB4CA1E051D9800FD275A /* Izzqg-Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Izzqg-Dev-Info.plist"; sourceTree = "<group>"; };
+		415DB7751E0528FD00FD275A /* Izzqg Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Izzqg Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415DB7771E05295E00FD275A /* Izzqg-Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Izzqg-Test-Info.plist"; sourceTree = "<group>"; };
 		416293FB1B90403F003D5821 /* ScoreDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreDetail.h; sourceTree = "<group>"; };
 		416293FC1B90403F003D5821 /* ScoreDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreDetail.m; sourceTree = "<group>"; };
 		416293FE1B905123003D5821 /* EarnBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = EarnBonus.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -3249,12 +3249,12 @@
 		41919DB81EC070F700F661FA /* IQKeyboardManagerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManagerUtil.m; sourceTree = "<group>"; };
 		41919DC11EC079FC00F661FA /* UMessageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessageUtil.h; sourceTree = "<group>"; };
 		41919DC21EC079FC00F661FA /* UMessageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMessageUtil.m; sourceTree = "<group>"; };
-		41932C691AD40A6300F26409 /* Ixyb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ixyb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41932C691AD40A6300F26409 /* Izzqg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Izzqg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41932C6D1AD40A6300F26409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41932C6E1AD40A6300F26409 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41932C821AD40A6300F26409 /* IxybTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IxybTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41932C821AD40A6300F26409 /* IzzqgTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IzzqgTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41932C871AD40A6300F26409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41932C881AD40A6300F26409 /* IxybTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IxybTests.m; sourceTree = "<group>"; };
+		41932C881AD40A6300F26409 /* IzzqgTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IzzqgTests.m; sourceTree = "<group>"; };
 		419CA6331FE3B53E009942C0 /* V2.1.8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = V2.1.8.txt; sourceTree = "<group>"; };
 		419CA6411FE3B77F009942C0 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		419CA6421FE3B77F009942C0 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
@@ -3324,7 +3324,7 @@
 		41D5B8C61B8C57AF005C8D36 /* MySection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySection.h; sourceTree = "<group>"; };
 		41D5B8C71B8C57AF005C8D36 /* MySection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySection.m; sourceTree = "<group>"; };
 		41D7B35B1DCDEBAF00AEFA96 /* UpstDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpstDefine.h; sourceTree = "<group>"; };
-		41D865A21B47CC5D00192747 /* Ixyb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ixyb_Prefix.pch; sourceTree = "<group>"; };
+		41D865A21B47CC5D00192747 /* Izzqg_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Izzqg_Prefix.pch; sourceTree = "<group>"; };
 		41D870B51DF0100600ECBF31 /* XYCustomViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYCustomViewKit.h; sourceTree = "<group>"; };
 		41D870B61DF0114900ECBF31 /* XYCategoriesViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYCategoriesViewKit.h; sourceTree = "<group>"; };
 		41D870B71DF0118800ECBF31 /* DottedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DottedLineView.h; sourceTree = "<group>"; };
@@ -3661,9 +3661,9 @@
 		41FD79C81DF92E3F00C8DDD9 /* XYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYButton.m; sourceTree = "<group>"; };
 		41FD79CA1DF931E800C8DDD9 /* XYCellLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCellLine.h; sourceTree = "<group>"; };
 		41FD79CB1DF931E800C8DDD9 /* XYCellLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCellLine.m; sourceTree = "<group>"; };
-		4512C9FAE1E510C0A38CBC04 /* libPods-Ixyb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ixyb.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		48C8CBC0288D8E1A18B0006F /* Pods-Ixyb Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixyb Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ixyb Dev/Pods-Ixyb Dev.debug.xcconfig"; sourceTree = "<group>"; };
-		564A5322FF0C9334562AA4B4 /* Pods-Ixyb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixyb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ixyb/Pods-Ixyb.release.xcconfig"; sourceTree = "<group>"; };
+		4512C9FAE1E510C0A38CBC04 /* libPods-Izzqg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Izzqg.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C8CBC0288D8E1A18B0006F /* Pods-Izzqg Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Izzqg Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Izzqg Dev/Pods-Izzqg Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		564A5322FF0C9334562AA4B4 /* Pods-Izzqg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Izzqg.release.xcconfig"; path = "Pods/Target Support Files/Pods-Izzqg/Pods-Izzqg.release.xcconfig"; sourceTree = "<group>"; };
 		5C001B591D6E8376003DB7F1 /* VIPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPViewController.h; sourceTree = "<group>"; };
 		5C001B5A1D6E8376003DB7F1 /* VIPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPViewController.m; sourceTree = "<group>"; };
 		5C004E1B1DFF8B5100FCBC1E /* SelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SelectionView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -3703,7 +3703,7 @@
 		5C03CE071D76699000E285C0 /* BbgInvestRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BbgInvestRecordViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5C03CE091D766D4000E285C0 /* BbgInvestRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbgInvestRecordTableViewCell.h; sourceTree = "<group>"; };
 		5C03CE0A1D766D4100E285C0 /* BbgInvestRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BbgInvestRecordTableViewCell.m; sourceTree = "<group>"; };
-		5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Ixyb-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
+		5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
 		5C03E39E1EB0A78300D99263 /* MGIDCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGIDCardResource.bundle; path = MGIDCard/Resource/MGIDCardResource.bundle; sourceTree = "<group>"; };
 		5C03E3A11EB0A79700D99263 /* MGIDCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGIDCardResource.bundle; path = MGIDCard/Resource/MGIDCardResource.bundle; sourceTree = "<group>"; };
 		5C03E3A41EB0A7AF00D99263 /* MGIDCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGIDCardResource.bundle; path = MGIDCard/Resource/MGIDCardResource.bundle; sourceTree = "<group>"; };
@@ -3847,8 +3847,8 @@
 		5C8C28761E7128AD00F38F4C /* AssetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetListViewController.m; sourceTree = "<group>"; };
 		5C8C28771E7128AD00F38F4C /* AssetListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetListTableViewCell.h; sourceTree = "<group>"; };
 		5C8C28781E7128AD00F38F4C /* AssetListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetListTableViewCell.m; sourceTree = "<group>"; };
-		5C8C287F1E7130E600F38F4C /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Ixyb-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Release-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
-		5C8C28831E7132C500F38F4C /* MGIDCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGIDCard.framework; path = "../../../Library/Developer/Xcode/DerivedData/Ixyb-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGIDCard.framework"; sourceTree = "<group>"; };
+		5C8C287F1E7130E600F38F4C /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Release-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
+		5C8C28831E7132C500F38F4C /* MGIDCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGIDCard.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGIDCard.framework"; sourceTree = "<group>"; };
 		5C9526851C19519000D45D3E /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
 		5C9526861C19519000D45D3E /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CellView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5CA7B5321D4847D5000DF99B /* XsdDetailResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XsdDetailResponseModel.h; sourceTree = "<group>"; };
@@ -3858,7 +3858,7 @@
 		5CAE912D1F663A1A00ABE23F /* BbgRedeemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbgRedeemViewController.h; sourceTree = "<group>"; };
 		5CAE912E1F663A1A00ABE23F /* BbgRedeemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BbgRedeemViewController.m; sourceTree = "<group>"; };
 		5CBA8C3A1CB4F42300DA9EC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5CBAAAE21E714DA400C6AD39 /* MGLivenessDetection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGLivenessDetection.framework; path = "../../../Library/Developer/Xcode/DerivedData/Ixyb-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGLivenessDetection.framework"; sourceTree = "<group>"; };
+		5CBAAAE21E714DA400C6AD39 /* MGLivenessDetection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGLivenessDetection.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGLivenessDetection.framework"; sourceTree = "<group>"; };
 		5CD000C01C1FC199003459A8 /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
 		5CD000C11C1FC199003459A8 /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
 		5CD0C3D01D76A95B00302409 /* TotalProfitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalProfitModel.h; sourceTree = "<group>"; };
@@ -3913,7 +3913,7 @@
 		5CFEA4321DB74470008019C0 /* NotificationResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationResponseModel.m; sourceTree = "<group>"; };
 		5CFEA4341DB74C68008019C0 /* MessageCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCategoryViewController.h; sourceTree = "<group>"; };
 		5CFEA4351DB74C68008019C0 /* MessageCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCategoryViewController.m; sourceTree = "<group>"; };
-		702F5FE8B5AD1E824F690457 /* libPods-Ixyb Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ixyb Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		702F5FE8B5AD1E824F690457 /* libPods-Izzqg Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Izzqg Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86129B1F1D3D243200E74917 /* CcProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CcProductModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		86129B201D3D243200E74917 /* CcProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CcProductModel.m; sourceTree = "<group>"; };
 		86129B221D3D265A00E74917 /* HqbProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = HqbProductModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -3955,13 +3955,13 @@
 		86F7BBFA1D40749E0059B8B0 /* IncomeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeList.h; sourceTree = "<group>"; };
 		86F7BBFB1D40749E0059B8B0 /* IncomeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeList.m; sourceTree = "<group>"; };
 		86FBF1F71E1A944900398328 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		9C2FD9321197E3E215BE4272 /* Pods-Ixyb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixyb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ixyb/Pods-Ixyb.debug.xcconfig"; sourceTree = "<group>"; };
-		9FA36A02A96A64EC6CB05B31 /* Pods-Ixyb Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixyb Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ixyb Test/Pods-Ixyb Test.debug.xcconfig"; sourceTree = "<group>"; };
+		9C2FD9321197E3E215BE4272 /* Pods-Izzqg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Izzqg.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Izzqg/Pods-Izzqg.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA36A02A96A64EC6CB05B31 /* Pods-Izzqg Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Izzqg Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Izzqg Test/Pods-Izzqg Test.debug.xcconfig"; sourceTree = "<group>"; };
 		B46D0BE11DCD7B1D00C4F3B1 /* UnionpayStModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionpayStModel.h; sourceTree = "<group>"; };
 		B46D0BE21DCD7B1D00C4F3B1 /* UnionpayStModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnionpayStModel.m; sourceTree = "<group>"; };
 		B6959C9B1C3D5C4100F529D7 /* TropismTradePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TropismTradePasswordView.h; sourceTree = "<group>"; };
 		B6959C9C1C3D5C4100F529D7 /* TropismTradePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TropismTradePasswordView.m; sourceTree = "<group>"; };
-		D7F0355C873B51C5E19A1784 /* libPods-Ixyb Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ixyb Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F0355C873B51C5E19A1784 /* libPods-Izzqg Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Izzqg Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4024,7 +4024,7 @@
 				415DB4941E05187400FD275A /* Foundation.framework in Frameworks */,
 				415DB4951E05187400FD275A /* UIKit.framework in Frameworks */,
 				2146BE481EC1A2CF00F12161 /* libSocialWeChat.a in Frameworks */,
-				881CF1243979526013EA3903 /* libPods-Ixyb Dev.a in Frameworks */,
+				881CF1243979526013EA3903 /* libPods-Izzqg Dev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4090,7 +4090,7 @@
 				415DB7421E0528FD00FD275A /* CoreGraphics.framework in Frameworks */,
 				415DB7431E0528FD00FD275A /* Foundation.framework in Frameworks */,
 				415DB7441E0528FD00FD275A /* UIKit.framework in Frameworks */,
-				024EFCCA32EF74AB0969C395 /* libPods-Ixyb Test.a in Frameworks */,
+				024EFCCA32EF74AB0969C395 /* libPods-Izzqg Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4153,8 +4153,8 @@
 				41CDF65A1ADBCD0F0087804D /* CoreGraphics.framework in Frameworks */,
 				41CDF6581ADBCCFA0087804D /* Foundation.framework in Frameworks */,
 				41CDF6561ADBCCE00087804D /* UIKit.framework in Frameworks */,
-				05ECDCB06DC54BE6F9AD79DC /* libPods-Ixyb.a in Frameworks */,
-				CBD2B58F75D1F32DB981BFD1 /* libPods-Ixyb.a in Frameworks */,
+				05ECDCB06DC54BE6F9AD79DC /* libPods-Izzqg.a in Frameworks */,
+				CBD2B58F75D1F32DB981BFD1 /* libPods-Izzqg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5794,8 +5794,8 @@
 				21A5C0AF1E715FB900D55941 /* MGBankCardResource.bundle */,
 				21A5C0AD1E715FB300D55941 /* MGBankCardResource.bundle */,
 				21A5C0AB1E715F8400D55941 /* MGBankCardResource.bundle */,
-				41932C6B1AD40A6300F26409 /* Ixyb */,
-				41932C851AD40A6300F26409 /* IxybTests */,
+				41932C6B1AD40A6300F26409 /* Izzqg */,
+				41932C851AD40A6300F26409 /* IzzqgTests */,
 				41CDF6541ADBCCC20087804D /* Frameworks */,
 				41932C6A1AD40A6300F26409 /* Products */,
 				9C81B6314EE83DC1E4456568 /* Pods */,
@@ -5805,15 +5805,15 @@
 		41932C6A1AD40A6300F26409 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41932C691AD40A6300F26409 /* Ixyb.app */,
-				41932C821AD40A6300F26409 /* IxybTests.xctest */,
-				415DB4C61E05187400FD275A /* Ixyb Dev.app */,
-				415DB7751E0528FD00FD275A /* Ixyb Test.app */,
+				41932C691AD40A6300F26409 /* Izzqg.app */,
+				41932C821AD40A6300F26409 /* IzzqgTests.xctest */,
+				415DB4C61E05187400FD275A /* Izzqg Dev.app */,
+				415DB7751E0528FD00FD275A /* Izzqg Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41932C6B1AD40A6300F26409 /* Ixyb */ = {
+		41932C6B1AD40A6300F26409 /* Izzqg */ = {
 			isa = PBXGroup;
 			children = (
 				41E5A5541B048EFF00F1D0AA /* UI */,
@@ -5824,32 +5824,32 @@
 				41932C6C1AD40A6300F26409 /* Supporting Files */,
 				5CBA8C3A1CB4F42300DA9EC5 /* Images.xcassets */,
 			);
-			path = Ixyb;
+			path = Izzqg;
 			sourceTree = "<group>";
 		};
 		41932C6C1AD40A6300F26409 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				4174B8301B1322E600AE2DDF /* Resource */,
-				41179B061E7127C700B6FF05 /* Ixyb Dev.entitlements */,
-				41179B071E7127C700B6FF05 /* Ixyb Test.entitlements */,
-				41179B081E7127C700B6FF05 /* Ixyb.entitlements */,
-				415DB4CA1E051D9800FD275A /* Ixyb-Dev-Info.plist */,
-				415DB7771E05295E00FD275A /* Ixyb-Test-Info.plist */,
+				41179B061E7127C700B6FF05 /* Izzqg Dev.entitlements */,
+				41179B071E7127C700B6FF05 /* Izzqg Test.entitlements */,
+				41179B081E7127C700B6FF05 /* Izzqg.entitlements */,
+				415DB4CA1E051D9800FD275A /* Izzqg-Dev-Info.plist */,
+				415DB7771E05295E00FD275A /* Izzqg-Test-Info.plist */,
 				41932C6D1AD40A6300F26409 /* Info.plist */,
-				41D865A21B47CC5D00192747 /* Ixyb_Prefix.pch */,
+				41D865A21B47CC5D00192747 /* Izzqg_Prefix.pch */,
 				41932C6E1AD40A6300F26409 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		41932C851AD40A6300F26409 /* IxybTests */ = {
+		41932C851AD40A6300F26409 /* IzzqgTests */ = {
 			isa = PBXGroup;
 			children = (
-				41932C881AD40A6300F26409 /* IxybTests.m */,
+				41932C881AD40A6300F26409 /* IzzqgTests.m */,
 				41932C861AD40A6300F26409 /* Supporting Files */,
 			);
-			path = IxybTests;
+			path = IzzqgTests;
 			sourceTree = "<group>";
 		};
 		41932C861AD40A6300F26409 /* Supporting Files */ = {
@@ -6023,9 +6023,9 @@
 				41CDF6591ADBCD0F0087804D /* CoreGraphics.framework */,
 				41CDF6571ADBCCFA0087804D /* Foundation.framework */,
 				41CDF6551ADBCCE00087804D /* UIKit.framework */,
-				4512C9FAE1E510C0A38CBC04 /* libPods-Ixyb.a */,
-				D7F0355C873B51C5E19A1784 /* libPods-Ixyb Dev.a */,
-				702F5FE8B5AD1E824F690457 /* libPods-Ixyb Test.a */,
+				4512C9FAE1E510C0A38CBC04 /* libPods-Izzqg.a */,
+				D7F0355C873B51C5E19A1784 /* libPods-Izzqg Dev.a */,
+				702F5FE8B5AD1E824F690457 /* libPods-Izzqg Test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -7439,12 +7439,12 @@
 		9C81B6314EE83DC1E4456568 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C2FD9321197E3E215BE4272 /* Pods-Ixyb.debug.xcconfig */,
-				564A5322FF0C9334562AA4B4 /* Pods-Ixyb.release.xcconfig */,
-				48C8CBC0288D8E1A18B0006F /* Pods-Ixyb Dev.debug.xcconfig */,
-				1E67E10B0AC8006A79311071 /* Pods-Ixyb Dev.release.xcconfig */,
-				9FA36A02A96A64EC6CB05B31 /* Pods-Ixyb Test.debug.xcconfig */,
-				335D879BA2B06B4C0900EACA /* Pods-Ixyb Test.release.xcconfig */,
+				9C2FD9321197E3E215BE4272 /* Pods-Izzqg.debug.xcconfig */,
+				564A5322FF0C9334562AA4B4 /* Pods-Izzqg.release.xcconfig */,
+				48C8CBC0288D8E1A18B0006F /* Pods-Izzqg Dev.debug.xcconfig */,
+				1E67E10B0AC8006A79311071 /* Pods-Izzqg Dev.release.xcconfig */,
+				9FA36A02A96A64EC6CB05B31 /* Pods-Izzqg Test.debug.xcconfig */,
+				335D879BA2B06B4C0900EACA /* Pods-Izzqg Test.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -7452,9 +7452,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		415DB21D1E05187400FD275A /* Ixyb Dev */ = {
+		415DB21D1E05187400FD275A /* Izzqg Dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 415DB4C31E05187400FD275A /* Build configuration list for PBXNativeTarget "Ixyb Dev" */;
+			buildConfigurationList = 415DB4C31E05187400FD275A /* Build configuration list for PBXNativeTarget "Izzqg Dev" */;
 			buildPhases = (
 				6ABDB83E3A47C0DF6F6AAC8A /* [CP] Check Pods Manifest.lock */,
 				415DB21F1E05187400FD275A /* Sources */,
@@ -7468,14 +7468,14 @@
 			);
 			dependencies = (
 			);
-			name = "Ixyb Dev";
-			productName = Ixyb;
-			productReference = 415DB4C61E05187400FD275A /* Ixyb Dev.app */;
+			name = "Izzqg Dev";
+			productName = Izzqg;
+			productReference = 415DB4C61E05187400FD275A /* Izzqg Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
-		415DB4CC1E0528FD00FD275A /* Ixyb Test */ = {
+		415DB4CC1E0528FD00FD275A /* Izzqg Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 415DB7721E0528FD00FD275A /* Build configuration list for PBXNativeTarget "Ixyb Test" */;
+			buildConfigurationList = 415DB7721E0528FD00FD275A /* Build configuration list for PBXNativeTarget "Izzqg Test" */;
 			buildPhases = (
 				31C40AF7800647C0B04677BD /* [CP] Check Pods Manifest.lock */,
 				415DB4CE1E0528FD00FD275A /* Sources */,
@@ -7489,14 +7489,14 @@
 			);
 			dependencies = (
 			);
-			name = "Ixyb Test";
-			productName = Ixyb;
-			productReference = 415DB7751E0528FD00FD275A /* Ixyb Test.app */;
+			name = "Izzqg Test";
+			productName = Izzqg;
+			productReference = 415DB7751E0528FD00FD275A /* Izzqg Test.app */;
 			productType = "com.apple.product-type.application";
 		};
-		41932C681AD40A6300F26409 /* Ixyb */ = {
+		41932C681AD40A6300F26409 /* Izzqg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41932C8C1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "Ixyb" */;
+			buildConfigurationList = 41932C8C1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "Izzqg" */;
 			buildPhases = (
 				AD8D9634B1E990612E90BF50 /* [CP] Check Pods Manifest.lock */,
 				41932C651AD40A6300F26409 /* Sources */,
@@ -7510,14 +7510,14 @@
 			);
 			dependencies = (
 			);
-			name = Ixyb;
-			productName = Ixyb;
-			productReference = 41932C691AD40A6300F26409 /* Ixyb.app */;
+			name = Izzqg;
+			productName = Izzqg;
+			productReference = 41932C691AD40A6300F26409 /* Izzqg.app */;
 			productType = "com.apple.product-type.application";
 		};
-		41932C811AD40A6300F26409 /* IxybTests */ = {
+		41932C811AD40A6300F26409 /* IzzqgTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41932C8F1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "IxybTests" */;
+			buildConfigurationList = 41932C8F1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "IzzqgTests" */;
 			buildPhases = (
 				41932C7E1AD40A6300F26409 /* Sources */,
 				41932C7F1AD40A6300F26409 /* Frameworks */,
@@ -7528,9 +7528,9 @@
 			dependencies = (
 				41932C841AD40A6300F26409 /* PBXTargetDependency */,
 			);
-			name = IxybTests;
-			productName = IxybTests;
-			productReference = 41932C821AD40A6300F26409 /* IxybTests.xctest */;
+			name = IzzqgTests;
+			productName = IzzqgTests;
+			productReference = 41932C821AD40A6300F26409 /* IzzqgTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -7577,7 +7577,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41932C641AD40A6300F26409 /* Build configuration list for PBXProject "Ixyb" */;
+			buildConfigurationList = 41932C641AD40A6300F26409 /* Build configuration list for PBXProject "Izzqg" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -7591,10 +7591,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41932C681AD40A6300F26409 /* Ixyb */,
-				415DB4CC1E0528FD00FD275A /* Ixyb Test */,
-				415DB21D1E05187400FD275A /* Ixyb Dev */,
-				41932C811AD40A6300F26409 /* IxybTests */,
+				41932C681AD40A6300F26409 /* Izzqg */,
+				415DB4CC1E0528FD00FD275A /* Izzqg Test */,
+				415DB21D1E05187400FD275A /* Izzqg Dev */,
+				41932C811AD40A6300F26409 /* IzzqgTests */,
 			);
 		};
 /* End PBXProject section */
@@ -7702,12 +7702,12 @@
 				4146307F1DACCB7000522AAC /* province.json in Resources */,
 				419CA6341FE3B53E009942C0 /* V2.1.8.txt in Resources */,
 				5CF9FBA31DF7FB05001C2DB9 /* deliveryStaff0@2x.png in Resources */,
-				415DB7781E05295E00FD275A /* Ixyb-Test-Info.plist in Resources */,
+				415DB7781E05295E00FD275A /* Izzqg-Test-Info.plist in Resources */,
 				414D1848201585A70086115F /* CashRecordViewController.xib in Resources */,
 				41421B151B1C90B2006ADF2A /* xybstory.json in Resources */,
 				41EE0CFF1BDA515B001C3C85 /* localWeb.html in Resources */,
 				41DFE0371B93FC230034E906 /* MJRefresh.bundle in Resources */,
-				415DB4CB1E051D9800FD275A /* Ixyb-Dev-Info.plist in Resources */,
+				415DB4CB1E051D9800FD275A /* Izzqg-Dev-Info.plist in Resources */,
 				5CF9FBA41DF7FB05001C2DB9 /* deliveryStaff1@2x.png in Resources */,
 				41421B0E1B1C8A75006ADF2A /* setting.json in Resources */,
 				21A5C0B01E715FB900D55941 /* MGBankCardResource.bundle in Resources */,
@@ -7738,7 +7738,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixyb Test/Pods-Ixyb Test-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Izzqg Test/Pods-Izzqg Test-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		31C40AF7800647C0B04677BD /* [CP] Check Pods Manifest.lock */ = {
@@ -7768,7 +7768,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixyb Dev/Pods-Ixyb Dev-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Izzqg Dev/Pods-Izzqg Dev-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6ABDB83E3A47C0DF6F6AAC8A /* [CP] Check Pods Manifest.lock */ = {
@@ -7798,7 +7798,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixyb Test/Pods-Ixyb Test-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Izzqg Test/Pods-Izzqg Test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A94400EF6ED08229D4EAEF0C /* [CP] Copy Pods Resources */ = {
@@ -7813,7 +7813,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixyb/Pods-Ixyb-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Izzqg/Pods-Izzqg-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD8D9634B1E990612E90BF50 /* [CP] Check Pods Manifest.lock */ = {
@@ -7843,7 +7843,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixyb Dev/Pods-Ixyb Dev-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Izzqg Dev/Pods-Izzqg Dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8B3ED4EBEAFBA8E8F608634 /* [CP] Embed Pods Frameworks */ = {
@@ -7858,7 +7858,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixyb/Pods-Ixyb-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Izzqg/Pods-Izzqg-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -9896,7 +9896,7 @@
 				21670CB61F71043B00A68D88 /* XtbInvestListTableViewCell.m in Sources */,
 				21670C881F7103F800A68D88 /* InvestedDetailBbgViewController.m in Sources */,
 				21670CA61F71041A00A68D88 /* InvestedDetailDqbViewController.m in Sources */,
-				41932C891AD40A6300F26409 /* IxybTests.m in Sources */,
+				41932C891AD40A6300F26409 /* IzzqgTests.m in Sources */,
 				21670C371F70B4A800A68D88 /* XtbInvestListModel.m in Sources */,
 				21670CBA1F71043B00A68D88 /* XtbInvestListViewController.m in Sources */,
 				21670C9E1F71041A00A68D88 /* DqbRebackSuccessViewController.m in Sources */,
@@ -9911,7 +9911,7 @@
 /* Begin PBXTargetDependency section */
 		41932C841AD40A6300F26409 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41932C681AD40A6300F26409 /* Ixyb */;
+			target = 41932C681AD40A6300F26409 /* Izzqg */;
 			targetProxy = 41932C831AD40A6300F26409 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -9940,11 +9940,11 @@
 /* Begin XCBuildConfiguration section */
 		415DB4C41E05187400FD275A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C8CBC0288D8E1A18B0006F /* Pods-Ixyb Dev.debug.xcconfig */;
+			baseConfigurationReference = 48C8CBC0288D8E1A18B0006F /* Pods-Izzqg Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Ixyb/Ixyb Dev.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Izzqg/Izzqg Dev.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: jian wang (58TFM8R268)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9952,11 +9952,11 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialUI",
 				);
-				GCC_PREFIX_HEADER = ./Ixyb/Ixyb_Prefix.pch;
+				GCC_PREFIX_HEADER = ./Izzqg/Izzqg_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -9966,33 +9966,33 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "Ixyb/Ixyb-Dev-Info.plist";
+				INFOPLIST_FILE = "Izzqg/Izzqg-Dev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
-					"$(PROJECT_DIR)/Ixyb/Library/LLPaySDK_V2.6.6",
-					"$(PROJECT_DIR)/Ixyb/Library/UMessage_Sdk_1.4.0",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Douban",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Renren",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker/XNThirdPart/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/Library/LLPaySDK_V2.6.6",
+					"$(PROJECT_DIR)/Izzqg/Library/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker/XNThirdPart/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/Ixyb/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
+					"$(SRCROOT)/Izzqg/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSONModel\"",
@@ -10012,11 +10012,11 @@
 		};
 		415DB4C51E05187400FD275A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E67E10B0AC8006A79311071 /* Pods-Ixyb Dev.release.xcconfig */;
+			baseConfigurationReference = 1E67E10B0AC8006A79311071 /* Pods-Izzqg Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Ixyb/Ixyb Dev.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Izzqg/Izzqg Dev.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: jian wang (58TFM8R268)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10024,11 +10024,11 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialUI",
 				);
-				GCC_PREFIX_HEADER = ./Ixyb/Ixyb_Prefix.pch;
+				GCC_PREFIX_HEADER = ./Izzqg/Izzqg_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -10038,33 +10038,33 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "Ixyb/Ixyb-Dev-Info.plist";
+				INFOPLIST_FILE = "Izzqg/Izzqg-Dev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
-					"$(PROJECT_DIR)/Ixyb/Library/LLPaySDK_V2.6.6",
-					"$(PROJECT_DIR)/Ixyb/Library/UMessage_Sdk_1.4.0",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Douban",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Renren",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker/XNThirdPart/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/Library/LLPaySDK_V2.6.6",
+					"$(PROJECT_DIR)/Izzqg/Library/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker/XNThirdPart/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/Ixyb/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
+					"$(SRCROOT)/Izzqg/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSONModel\"",
@@ -10084,11 +10084,11 @@
 		};
 		415DB7731E0528FD00FD275A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FA36A02A96A64EC6CB05B31 /* Pods-Ixyb Test.debug.xcconfig */;
+			baseConfigurationReference = 9FA36A02A96A64EC6CB05B31 /* Pods-Izzqg Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Test";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Ixyb/Ixyb Test.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Izzqg/Izzqg Test.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: jian wang (58TFM8R268)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jian wang (58TFM8R268)";
 				CODE_SIGN_STYLE = Manual;
@@ -10097,12 +10097,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialUI",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_PREFIX_HEADER = ./Ixyb/Ixyb_Prefix.pch;
+				GCC_PREFIX_HEADER = ./Izzqg/Izzqg_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -10112,33 +10112,33 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "Ixyb/Ixyb-Test-Info.plist";
+				INFOPLIST_FILE = "Izzqg/Izzqg-Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
-					"$(PROJECT_DIR)/Ixyb/Library/LLPaySDK_V2.6.6",
-					"$(PROJECT_DIR)/Ixyb/Library/UMessage_Sdk_1.4.0",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Douban",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Renren",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker/XNThirdPart/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/Library/LLPaySDK_V2.6.6",
+					"$(PROJECT_DIR)/Izzqg/Library/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker/XNThirdPart/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/Ixyb/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
+					"$(SRCROOT)/Izzqg/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSONModel\"",
@@ -10147,7 +10147,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "97d99875-b164-4877-a83e-779a1e72a071";
+				PROVISIONING_PROFILE = "2be38e12-e47b-4e6b-be4b-3102788afd20";
 				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -10159,11 +10159,11 @@
 		};
 		415DB7741E0528FD00FD275A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 335D879BA2B06B4C0900EACA /* Pods-Ixyb Test.release.xcconfig */;
+			baseConfigurationReference = 335D879BA2B06B4C0900EACA /* Pods-Izzqg Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Test";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Ixyb/Ixyb Test.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Izzqg/Izzqg Test.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: jian wang (58TFM8R268)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jian wang (58TFM8R268)";
 				CODE_SIGN_STYLE = Manual;
@@ -10172,12 +10172,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialUI",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_PREFIX_HEADER = ./Ixyb/Ixyb_Prefix.pch;
+				GCC_PREFIX_HEADER = ./Izzqg/Izzqg_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -10187,33 +10187,33 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "Ixyb/Ixyb-Test-Info.plist";
+				INFOPLIST_FILE = "Izzqg/Izzqg-Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
-					"$(PROJECT_DIR)/Ixyb/Library/LLPaySDK_V2.6.6",
-					"$(PROJECT_DIR)/Ixyb/Library/UMessage_Sdk_1.4.0",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Douban",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Renren",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker/XNThirdPart/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/Library/LLPaySDK_V2.6.6",
+					"$(PROJECT_DIR)/Izzqg/Library/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker/XNThirdPart/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/Ixyb/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
+					"$(SRCROOT)/Izzqg/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSONModel\"",
@@ -10222,7 +10222,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "97d99875-b164-4877-a83e-779a1e72a071";
+				PROVISIONING_PROFILE = "2be38e12-e47b-4e6b-be4b-3102788afd20";
 				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -10249,8 +10249,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: wangjian-shenzhen@xyb100.com (U94CY5BH4Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wangjian-shenzhen@xyb100.com (U94CY5BH4Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8GZY98WQ89;
@@ -10273,8 +10273,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "2740adae-99b1-4d60-b109-1d204fa3f7f6";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_distribution_appstore;
+				PROVISIONING_PROFILE = "dde8f6ea-d703-45b6-83df-aabfb74151a6";
+				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -10298,8 +10298,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: wangjian-shenzhen@xyb100.com (U94CY5BH4Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wangjian-shenzhen@xyb100.com (U94CY5BH4Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8GZY98WQ89;
@@ -10314,8 +10314,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "2740adae-99b1-4d60-b109-1d204fa3f7f6";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_distribution_appstore;
+				PROVISIONING_PROFILE = "dde8f6ea-d703-45b6-83df-aabfb74151a6";
+				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -10325,11 +10325,11 @@
 		};
 		41932C8D1AD40A6300F26409 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C2FD9321197E3E215BE4272 /* Pods-Ixyb.debug.xcconfig */;
+			baseConfigurationReference = 9C2FD9321197E3E215BE4272 /* Pods-Izzqg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = Ixyb/Ixyb.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Izzqg/Izzqg.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
 				COMPRESS_PNG_FILES = YES;
@@ -10339,11 +10339,11 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialUI",
 				);
-				GCC_PREFIX_HEADER = ./Ixyb/Ixyb_Prefix.pch;
+				GCC_PREFIX_HEADER = ./Izzqg/Izzqg_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -10353,33 +10353,33 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = Ixyb/Info.plist;
+				INFOPLIST_FILE = Izzqg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
-					"$(PROJECT_DIR)/Ixyb/Library/LLPaySDK_V2.6.6",
-					"$(PROJECT_DIR)/Ixyb/Library/UMessage_Sdk_1.4.0",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Douban",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Renren",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker/XNThirdPart/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/Library/LLPaySDK_V2.6.6",
+					"$(PROJECT_DIR)/Izzqg/Library/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker/XNThirdPart/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/Ixyb/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
+					"$(SRCROOT)/Izzqg/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSONModel\"",
@@ -10399,11 +10399,11 @@
 		};
 		41932C8E1AD40A6300F26409 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 564A5322FF0C9334562AA4B4 /* Pods-Ixyb.release.xcconfig */;
+			baseConfigurationReference = 564A5322FF0C9334562AA4B4 /* Pods-Izzqg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = Ixyb/Ixyb.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Izzqg/Izzqg.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
 				COMPRESS_PNG_FILES = YES;
@@ -10413,11 +10413,11 @@
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/UMSocialUI",
 				);
-				GCC_PREFIX_HEADER = ./Ixyb/Ixyb_Prefix.pch;
+				GCC_PREFIX_HEADER = ./Izzqg/Izzqg_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -10427,33 +10427,33 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = Ixyb/Info.plist;
+				INFOPLIST_FILE = Izzqg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
-					"$(PROJECT_DIR)/Ixyb/SysTool/HBRSAHandler/openssl/include",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
-					"$(PROJECT_DIR)/Ixyb/Library/LLPaySDK_V2.6.6",
-					"$(PROJECT_DIR)/Ixyb/Library/UMessage_Sdk_1.4.0",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Douban",
-					"$(PROJECT_DIR)/Ixyb/Library/UMSocial/SocialLibraries/Renren",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker",
-					"$(PROJECT_DIR)/Ixyb/Library/NTalker/XNThirdPart/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/SysTool/HBRSAHandler/openssl/include",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalkerSDK/ThirdParty/VoiceConvert/lib",
+					"$(PROJECT_DIR)/Izzqg/Library/LLPaySDK_V2.6.6",
+					"$(PROJECT_DIR)/Izzqg/Library/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/Izzqg/Library/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker",
+					"$(PROJECT_DIR)/Izzqg/Library/NTalker/XNThirdPart/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/Ixyb/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
+					"$(SRCROOT)/Izzqg/Library/LLPaySDK_V2.6.6/libLLPaySDK.a",
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSONModel\"",
@@ -10485,18 +10485,18 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IxybTests/Info.plist;
+				INFOPLIST_FILE = IzzqgTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/UI/XsdBorrow/MGBankCard/BankCardSDK",
+					"$(PROJECT_DIR)/Izzqg/UI/XsdBorrow/MGBankCard/BankCardSDK",
 					"$(PROJECT_DIR)/MGBankCard/BankCardSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a1c92c10-b591-4902-a0bc-af75b0b7407d";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ixyb.app/Ixyb";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Izzqg.app/Izzqg";
 			};
 			name = Debug;
 		};
@@ -10510,25 +10510,25 @@
 					"$(inherited)",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = IxybTests/Info.plist;
+				INFOPLIST_FILE = IzzqgTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Ixyb/UI/XsdBorrow/MGBankCard/BankCardSDK",
+					"$(PROJECT_DIR)/Izzqg/UI/XsdBorrow/MGBankCard/BankCardSDK",
 					"$(PROJECT_DIR)/MGBankCard/BankCardSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a1c92c10-b591-4902-a0bc-af75b0b7407d";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ixyb.app/Ixyb";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Izzqg.app/Izzqg";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		415DB4C31E05187400FD275A /* Build configuration list for PBXNativeTarget "Ixyb Dev" */ = {
+		415DB4C31E05187400FD275A /* Build configuration list for PBXNativeTarget "Izzqg Dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415DB4C41E05187400FD275A /* Debug */,
@@ -10537,7 +10537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		415DB7721E0528FD00FD275A /* Build configuration list for PBXNativeTarget "Ixyb Test" */ = {
+		415DB7721E0528FD00FD275A /* Build configuration list for PBXNativeTarget "Izzqg Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415DB7731E0528FD00FD275A /* Debug */,
@@ -10546,7 +10546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		41932C641AD40A6300F26409 /* Build configuration list for PBXProject "Ixyb" */ = {
+		41932C641AD40A6300F26409 /* Build configuration list for PBXProject "Izzqg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41932C8A1AD40A6300F26409 /* Debug */,
@@ -10555,7 +10555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		41932C8C1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "Ixyb" */ = {
+		41932C8C1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "Izzqg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41932C8D1AD40A6300F26409 /* Debug */,
@@ -10564,7 +10564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		41932C8F1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "IxybTests" */ = {
+		41932C8F1AD40A6300F26409 /* Build configuration list for PBXNativeTarget "IzzqgTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41932C901AD40A6300F26409 /* Debug */,
