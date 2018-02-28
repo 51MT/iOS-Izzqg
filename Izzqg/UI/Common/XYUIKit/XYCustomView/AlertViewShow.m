@@ -7,7 +7,6 @@
 //
 
 #import "AlertViewShow.h"
-#import "ChargeViewController.h"
 #import "Utility.h"
 #import "XYButton.h"
 
@@ -135,8 +134,8 @@
 }
 
 - (void)clickChargeBtn:(UIButton *)button {
-    ChargeViewController *chargeViewController = [[ChargeViewController alloc] initWithIdetifer:NO];
-    self.chargeBlock(chargeViewController);
+//    ChargeViewController *chargeViewController = [[ChargeViewController alloc] initWithIdetifer:NO];
+//    self.chargeBlock(chargeViewController);
 }
 
 @end

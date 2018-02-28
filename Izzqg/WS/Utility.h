@@ -26,9 +26,6 @@
 
 #import "AFAppDotNetAPIClient.h"
 
-#import "ChargeResultStatusViewController.h"
-#import "OrderHaveSubmitViewController.h"
-
 #import "User.h"
 #import "UserAddress.h"
 

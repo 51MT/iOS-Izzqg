@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MGBaseKit/MGBaseKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MGIDCard/MGIDCard.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MGBankCard/MGBankCard.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef

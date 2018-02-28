@@ -9,8 +9,7 @@
 #import "UMessageUtil.h"
 #import "UMNSAlertView.h"
 #import "Utility.h"
-#import "LoginFlowViewController.h"
-#import "MessageCategoryViewController.h"
+//#import "LoginFlowViewController.h"
 
 static UMessageUtil *shareUMessageUtil = nil;
 
@@ -117,26 +116,26 @@ static UMessageUtil *shareUMessageUtil = nil;
                                 @"content" : [[userInfo objectForKey:@"aps"] objectForKey:@"alert"] };
         alertView.dataSource = dict;
         
-        alertView.block = ^() {
-            if (![Utility shareInstance].isLogin) {
-                LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-                [loginFlowViewController presentWith:delegate.window.rootViewController animated:NO completion:^(LoginFlowState state) {
-                    if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
-                        delegate.tabBarVC.selectedIndex = 0;
-                        MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
-                        MessageCategoryVC.hidesBottomBarWhenPushed = YES;
-                        [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
-                                                                        animated:YES];
-                    }
-                }];
-            } else {
-                delegate.tabBarVC.selectedIndex = 0;
-                MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
-                MessageCategoryVC.hidesBottomBarWhenPushed = YES;
-                [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
-                                                                animated:YES];
-            }
-        };
+//        alertView.block = ^() {
+//            if (![Utility shareInstance].isLogin) {
+//                LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
+//                [loginFlowViewController presentWith:delegate.window.rootViewController animated:NO completion:^(LoginFlowState state) {
+//                    if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
+//                        delegate.tabBarVC.selectedIndex = 0;
+//                        MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
+//                        MessageCategoryVC.hidesBottomBarWhenPushed = YES;
+//                        [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
+//                                                                        animated:YES];
+//                    }
+//                }];
+//            } else {
+//                delegate.tabBarVC.selectedIndex = 0;
+//                MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
+//                MessageCategoryVC.hidesBottomBarWhenPushed = YES;
+//                [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
+//                                                                animated:YES];
+//            }
+//        };
         [alertView show];
     }
 }
@@ -160,26 +159,26 @@ static UMessageUtil *shareUMessageUtil = nil;
                                 @"content" : [[userInfo objectForKey:@"aps"] objectForKey:@"alert"] };
         alertView.dataSource = dict;
         
-        alertView.block = ^() {
-            if (![Utility shareInstance].isLogin) {
-                LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-                [loginFlowViewController presentWith:delegate.window.rootViewController animated:NO completion:^(LoginFlowState state) {
-                    if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
-                        delegate.tabBarVC.selectedIndex = 0;
-                        MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
-                        MessageCategoryVC.hidesBottomBarWhenPushed = YES;
-                        [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
-                                                                        animated:YES];
-                    }
-                }];
-            } else {
-                delegate.tabBarVC.selectedIndex = 0;
-                MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
-                MessageCategoryVC.hidesBottomBarWhenPushed = YES;
-                [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
-                                                                animated:YES];
-            }
-        };
+//        alertView.block = ^() {
+//            if (![Utility shareInstance].isLogin) {
+//                LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
+//                [loginFlowViewController presentWith:delegate.window.rootViewController animated:NO completion:^(LoginFlowState state) {
+//                    if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
+//                        delegate.tabBarVC.selectedIndex = 0;
+//                        MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
+//                        MessageCategoryVC.hidesBottomBarWhenPushed = YES;
+//                        [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
+//                                                                        animated:YES];
+//                    }
+//                }];
+//            } else {
+//                delegate.tabBarVC.selectedIndex = 0;
+//                MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
+//                MessageCategoryVC.hidesBottomBarWhenPushed = YES;
+//                [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
+//                                                                animated:YES];
+//            }
+//        };
         [alertView show];
         
         //必须加这句代码
@@ -201,32 +200,32 @@ static UMessageUtil *shareUMessageUtil = nil;
  */
 + (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler appDelegate:(AppDelegate *)delegate {
     NSDictionary * userInfo = response.notification.request.content.userInfo;
-    if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
-        //应用处于后台时的远程推送接受
-        if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:delegate.window.rootViewController animated:NO completion:^(LoginFlowState state) {
-                if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
-                    delegate.tabBarVC.selectedIndex = 0;
-                    MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
-                    MessageCategoryVC.hidesBottomBarWhenPushed = YES;
-                    [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
-                                                                    animated:YES];
-                }
-            }];
-        } else {
-            delegate.tabBarVC.selectedIndex = 0;
-            MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
-            MessageCategoryVC.hidesBottomBarWhenPushed = YES;
-            [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
-                                                            animated:YES];
-        }
-        //必须加这句代码
-        [UMessage didReceiveRemoteNotification:userInfo];
-        
-    }else{
+//    if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+//        //应用处于后台时的远程推送接受
+//        if (![Utility shareInstance].isLogin) {
+//            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
+//            [loginFlowViewController presentWith:delegate.window.rootViewController animated:NO completion:^(LoginFlowState state) {
+//                if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
+//                    delegate.tabBarVC.selectedIndex = 0;
+//                    MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
+//                    MessageCategoryVC.hidesBottomBarWhenPushed = YES;
+//                    [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
+//                                                                    animated:YES];
+//                }
+//            }];
+//        } else {
+//            delegate.tabBarVC.selectedIndex = 0;
+//            MessageCategoryViewController *MessageCategoryVC = [[MessageCategoryViewController alloc] init];
+//            MessageCategoryVC.hidesBottomBarWhenPushed = YES;
+//            [delegate.tabBarVC.selectedViewController pushViewController:MessageCategoryVC
+//                                                            animated:YES];
+//        }
+//        //必须加这句代码
+//        [UMessage didReceiveRemoteNotification:userInfo];
+//
+//    }else{
         //应用处于后台时的本地推送接受
-    }
+//    }
     
 }
 

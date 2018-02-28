@@ -11,11 +11,8 @@
 #import "RequestURL.h"
 #import "Utility.h"
 
-#import "GestureLoginViewController.h"
-#import "MessageCategoryViewController.h"
 #import "VersionUpdateHttpRequest.h"
 #import "XYNavigationController.h"
-#import "XsdWebViewController.h"
 
 #import <UserNotifications/UserNotifications.h>
 #import <notify.h>
@@ -98,14 +95,14 @@
 }
 
 - (void)checkTheGesure {
-    GestureLoginViewController *gestureLoginVC = [[GestureLoginViewController alloc] init];
-    XYNavigationController *navigationC = [[XYNavigationController alloc] initWithRootViewController:gestureLoginVC];
-    [navigationC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [navigationC.navigationItem setHidesBackButton:YES];
-    [self.window.rootViewController presentViewController:navigationC
-                                                 animated:YES
-                                               completion:^{
-                                               }];
+//    GestureLoginViewController *gestureLoginVC = [[GestureLoginViewController alloc] init];
+//    XYNavigationController *navigationC = [[XYNavigationController alloc] initWithRootViewController:gestureLoginVC];
+//    [navigationC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//    [navigationC.navigationItem setHidesBackButton:YES];
+//    [self.window.rootViewController presentViewController:navigationC
+//                                                 animated:YES
+//                                               completion:^{
+//                                               }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -224,16 +221,6 @@
 
     if ([url.scheme isEqualToString:@"xyb"]) {
         NSString *urlStr = [url absoluteString]; //获取参数
-        NSArray *strArr = [urlStr componentsSeparatedByString:@"url="];
-        for (XYNavigationController *nav in self.tabBarVC.viewControllers) {
-            for (UIViewController *vc in nav.viewControllers) {
-                if ([vc isKindOfClass:[XsdWebViewController class]]) {
-                    if ([strArr objectAtIndex:1]) {
-                        [(XsdWebViewController *) vc webViewReloadDataWithUrlStr:[strArr objectAtIndex:1]];
-                    }
-                }
-            }
-        }
     }
     return YES;
 }

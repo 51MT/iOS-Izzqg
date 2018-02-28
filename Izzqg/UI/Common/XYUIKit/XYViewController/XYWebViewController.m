@@ -6,26 +6,14 @@
 //  Copyright © 2016年 xyb. All rights reserved.
 //
 
-#import "AllianceApplyViewController.h"
-#import "AllianceViewController.h"
-#import "ChargeViewController.h"
-#import "CGAccountViewController.h"
-#import "EarnBonusCodeViewController.h"
-#import "LoginFlowViewController.h"
-#import "MoreProductViewController.h"
 #import "NJKWebViewProgress.h"
 #import "NJKWebViewProgressView.h"
 #import "RequestURL.h"
-#import "SafeWebViewController.h"
 #import "Utility.h"
-#import "AddressViewController.h"
 #import "XYWebViewController.h"
-#import "ScoreStoreWebViewController.h"
-#import "DrawWebViewController.h"
-#import "ShakeGameViewController.h"
-#import "AboutUsViewController.h"
 
-@interface XYWebViewController () <UIWebViewDelegate, NJKWebViewProgressDelegate,AddressViewControllerDelegate>
+
+@interface XYWebViewController () <UIWebViewDelegate, NJKWebViewProgressDelegate>
 
 @property (nonatomic, strong) NJKWebViewProgress *progress;
 @property (nonatomic, strong) NJKWebViewProgressView *progressView;
@@ -52,6 +40,7 @@
     [_backBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [_backBtn setBackgroundImage:[UIImage imageNamed:@"back_ed"] forState:UIControlStateHighlighted];
     [_backBtn addTarget:self action:@selector(clickBackBtn:) forControlEvents:UIControlEventTouchUpInside];
+    _backBtn.hidden = YES;
     _backBtn.userInteractionEnabled = YES;
     [self.navBar addSubview:_backBtn];
     
@@ -61,15 +50,15 @@
         make.centerY.equalTo(self.navBar.mas_centerY);
     }];
     
-    self.closeBtn = [[UIButton alloc] init];
-    [self.closeBtn setBackgroundImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
-    [self.closeBtn setBackgroundImage:[UIImage imageNamed:@"close_ed"] forState:UIControlStateHighlighted];
-    [self.closeBtn addTarget:self action:@selector(clickCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
-    self.closeBtn.hidden = YES;
-    self.closeBtn.userInteractionEnabled = YES;
-    [self.navBar addSubview:self.closeBtn];
+    _closeBtn = [[UIButton alloc] init];
+    [_closeBtn setBackgroundImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+    [_closeBtn setBackgroundImage:[UIImage imageNamed:@"close_ed"] forState:UIControlStateHighlighted];
+    [_closeBtn addTarget:self action:@selector(clickCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
+    _closeBtn.hidden = YES;
+    _closeBtn.userInteractionEnabled = YES;
+    [self.navBar addSubview:_closeBtn];
     
-    [self.closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.equalTo(@22);
         make.left.equalTo(_backBtn.mas_right).offset(Margin_Left);
         make.centerY.equalTo(self.navBar.mas_centerY);
@@ -77,17 +66,14 @@
 }
 
 - (void)clickBackBtn:(id)sender {
-    if ([self.titleStr isEqualToString:XYBString(@"str_home_sign", @"签到")]) {
-        [self.navigationController popToRootViewControllerAnimated:YES];
-    }else
-    {
-        if ([self.webView canGoBack]) {
-            self.closeBtn.hidden = NO;
-            [self.webView goBack];
-            return;
-        } else {
-            [self.navigationController popViewControllerAnimated:YES];
-        }
+    
+    if ([self.webView canGoBack]) {
+        self.closeBtn.hidden = NO;
+        [self.webView goBack];
+        return;
+        
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -103,12 +89,11 @@
     self.view.backgroundColor = COLOR_BG;
     self.view.userInteractionEnabled = YES;
     [self createTheWebView];
-    //    [self createNoDataView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chargeSuccess) name:@"chargeSuccessNotification" object:nil];
 }
 
-
 - (void)createTheWebView {
+    
     self.webView = [[UIWebView alloc] init];
     self.webView.backgroundColor = COLOR_COMMON_WHITE;
     self.webView.opaque = NO;
@@ -160,10 +145,9 @@
     NSString *documentTitle = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     self.titleStr = documentTitle;
     
-    if ([self.titleStr isEqualToString:@"处理结果"]) {
+    if (![self.webView canGoBack]) {
         _backBtn.hidden = YES;
-    }else
-    {
+    }else{
         _backBtn.hidden = NO;
     }
     
@@ -183,85 +167,37 @@
     //跳转到定期宝列表页
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/DqbProductView"])
     {
-        MoreProductViewController *moreProductVC = [[MoreProductViewController alloc] init];
-        moreProductVC.hidesBottomBarWhenPushed = YES;
-        moreProductVC.type = ClickTheDQB;
-        [self.navigationController pushViewController:moreProductVC animated:YES];
+//        MoreProductViewController *moreProductVC = [[MoreProductViewController alloc] init];
+//        moreProductVC.hidesBottomBarWhenPushed = YES;
+//        moreProductVC.type = ClickTheDQB;
+//        [self.navigationController pushViewController:moreProductVC animated:YES];
         return NO;
     }
     
     //跳转到信投宝列表页
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/XtbProductView"])
     {
-        MoreProductViewController *moreProductVC = [[MoreProductViewController alloc] init];
-        moreProductVC.hidesBottomBarWhenPushed = YES;
-        moreProductVC.type = ClickTheXTB;
-        [self.navigationController pushViewController:moreProductVC animated:YES];
+//        MoreProductViewController *moreProductVC = [[MoreProductViewController alloc] init];
+//        moreProductVC.hidesBottomBarWhenPushed = YES;
+//        moreProductVC.type = ClickTheXTB;
+//        [self.navigationController pushViewController:moreProductVC animated:YES];
         return NO;
     }
     
     //跳转到债权转让列表页
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/ZqzrProductView"])
     {
-        MoreProductViewController *moreProductVC = [[MoreProductViewController alloc] init];
-        moreProductVC.hidesBottomBarWhenPushed = YES;
-        moreProductVC.type = ClickTheZQZR;
-        [self.navigationController pushViewController:moreProductVC animated:YES];
+//        MoreProductViewController *moreProductVC = [[MoreProductViewController alloc] init];
+//        moreProductVC.hidesBottomBarWhenPushed = YES;
+//        moreProductVC.type = ClickTheZQZR;
+//        [self.navigationController pushViewController:moreProductVC animated:YES];
         return NO;
     }
     
-    //信用宝联盟申请页
-    else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/UnionApplyView"])
-    {
-        
-        if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
-            return NO;
-        }
-        
-        if ([UserDefaultsUtil getUser].bonusState) {
-            if ([[UserDefaultsUtil getUser].bonusState intValue] != 2) {
-                AllianceApplyViewController *allianceApplyVC = [[AllianceApplyViewController alloc] init];
-                allianceApplyVC.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:allianceApplyVC animated:YES];
-            } else {
-                AllianceViewController *allianceVC = [[AllianceViewController alloc] init];
-                allianceVC.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:allianceVC animated:YES];
-            }
-        }
-        
-        return NO;
-    }
     
     //针对联盟用户的邀请好友活动:0.未加入，跳入联盟申请页； 1.审核中，跳转到邀请好友页面；2.已加入，跳转到我的联盟
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/UnionInviteFriendView"])
     {
-        
-        if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
-            return NO;
-        }
-        
-        if ([UserDefaultsUtil getUser].bonusState) {
-            if ([[UserDefaultsUtil getUser].bonusState intValue] == 0) {       //未加入
-                AllianceApplyViewController *allianceApplyVC = [[AllianceApplyViewController alloc] init];
-                allianceApplyVC.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:allianceApplyVC animated:YES];
-                
-            }else if ([[UserDefaultsUtil getUser].bonusState intValue] == 1) { //审核中
-                EarnBonusCodeViewController *earnBonusCodeViewController = [[EarnBonusCodeViewController alloc] init];
-                earnBonusCodeViewController.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:earnBonusCodeViewController animated:YES];
-                
-            } else if([[UserDefaultsUtil getUser].bonusState intValue] == 2) { //已加入
-                AllianceViewController *allianceVC = [[AllianceViewController alloc] init];
-                allianceVC.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:allianceVC animated:YES];
-            }
-        }
         
         return NO;
     }
@@ -269,24 +205,6 @@
     //邀请好友
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/InviteFriendView"])
     {
-        
-        if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:^(LoginFlowState state) {
-                if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
-                    if (state == LoginFlowStateDoneAndRechare) {
-                        
-                    } else {
-                        [self loadReauestPage];
-                    }
-                }
-            }];
-            return NO;
-        }
-        EarnBonusCodeViewController *earnBonusCodeViewController = [[EarnBonusCodeViewController alloc] init];
-        earnBonusCodeViewController.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:earnBonusCodeViewController animated:YES];
-        
         return NO;
     }
     
@@ -305,16 +223,6 @@
     //积分商城
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/MallView"])
     {
-        if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
-            return NO;
-        }
-        
-        NSString *urlStr = [RequestURL getNodeJsH5URL:App_Score_Mall_URL withIsSign:YES];
-        ScoreStoreWebViewController *scoreStoreWebVC = [[ScoreStoreWebViewController alloc] initWithTitle:XYBString(@"str_jfsc",@"积分商城") webUrlString:urlStr];
-        scoreStoreWebVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:scoreStoreWebVC animated:YES];
         return NO;
     }
     
@@ -322,16 +230,11 @@
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/LotteryView"])
     {
         if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
             return NO;
         }
         
         NSString *urlStr = [RequestURL getNodeJsH5URL:App_Score_Lottery_URL withIsSign:YES];
         urlStr = [urlStr stringByAppendingString:[NSString stringWithFormat:@"&v=%@", [ToolUtil getAppVersion]]]; //增加版本号
-        DrawWebViewController *drawWebVC = [[DrawWebViewController alloc] initWithTitle:XYBString(@"str_jfcj",@"积分抽奖") webUrlString:urlStr];
-        drawWebVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:drawWebVC animated:YES];
         return NO;
     }
     
@@ -339,15 +242,11 @@
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/ShakeView"])
     {
         if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
+
             return NO;
         }
         
         [UMengAnalyticsUtil event:EVENT_MY_YYL];
-        ShakeGameViewController *shakeGameViewController = [[ShakeGameViewController alloc] init];
-        shakeGameViewController.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:shakeGameViewController animated:YES];
         
         return NO;
     }
@@ -357,18 +256,6 @@
     {
         NSArray *vcArr = self.navigationController.viewControllers;
         
-        //照华需要传值说明是存管账户还是借款账户进来的，拿到响应字段后发通知到setviewcontroller页面刷新UI
-        
-        //通知设置页面，刷新UI
-        if (_openType == 1) {
-            NSDictionary *dic = @{@"FinanceAccount":@YES};
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshUI" object:dic userInfo:nil];
-        }
-        
-        if (_openType == 2) {
-            NSDictionary *dic = @{@"BorrowAccount":@YES};
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshUI" object:dic userInfo:nil];
-        }
         
         BaseViewController *vc = [vcArr objectAtIndex:vcArr.count - 3];
         [self.navigationController popToViewController:vc animated:YES];
@@ -389,8 +276,6 @@
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/HqbProductDetailView"])
     {
         if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
             return NO;
         }
 
@@ -401,9 +286,6 @@
     //跳转到注册页
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/RegisterView"])
     {
-        LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-        [loginFlowViewController presentRegisterWith:self.navigationController animated:NO completion:nil];
-        
         return NO;
     }
     
@@ -411,17 +293,6 @@
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/LoginView"])
     {
         if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:^(LoginFlowState state) {
-                
-                if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
-                    if (state == LoginFlowStateDoneAndRechare) {
-                        
-                    } else {
-                        [self.navigationController popViewControllerAnimated:YES];
-                    }
-                }
-            }];
         }
         
         return NO;
@@ -431,26 +302,8 @@
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/ChargeView"])
     {
         if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:^(LoginFlowState state) {
-                if (state != LoginFlowStateCancel) { //不是取消登录（注册并充值、登录完成、注册完成、重置密码完成）
-                    if (state == LoginFlowStateDoneAndRechare) {
-                        
-                    } else {
-                        [self loadReauestPage];
-                    }
-                }
-            }];
             return NO;
         }
-        
-        ChargeViewController *chargeViewController = [[ChargeViewController alloc] initWithIdetifer:NO];
-        if ([self.titleStr isEqualToString:XYBString(@"str_home_sign", @"签到")]) {
-            chargeViewController.fromType =  FromTypeTheHome;
-        }
-        chargeViewController.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:chargeViewController animated:YES];
-        
         return NO;
     }
     
@@ -458,13 +311,9 @@
     else if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/AboutUs"])
     {
         if (![Utility shareInstance].isLogin) {
-            LoginFlowViewController *loginFlowViewController = [[LoginFlowViewController alloc] init];
-            [loginFlowViewController presentWith:self animated:NO completion:nil];
+
             return NO;
         }
-        AboutUsViewController *about = [[AboutUsViewController alloc] init];
-        about.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:about animated:YES];
         
         return NO;
     }
@@ -503,10 +352,7 @@
     // 编辑收货地址
     if ([request.mainDocumentURL.relativePath isEqualToString:@"/skipView/receptionAddress"])
     {
-        AddressViewController *address = [[AddressViewController alloc] init];
-        address.hidesBottomBarWhenPushed = YES;
-        address.delegate = self;
-        [self.navigationController pushViewController:address animated:YES];
+
         return NO;
     }
     
@@ -529,10 +375,6 @@
     return YES;
 }
 
-- (void)didFinishedUpdateAddressSuccess:(AddressViewController *)addressViewController {
-    [self.webView reload];
-}
-
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     if (error.code == -1009) {
         [self showPromptTip:XYBString(@"string_network_error", @"网络连接不可用，请检查")];
@@ -544,16 +386,6 @@
         [self.webView reload];
     });
     [self showPromptTip:@"充值成功"];
-}
-
-//如果是新手任务页面 从新加载URL
--(void)loadReauestPage
-{
-    if ([self.titleStr isEqualToString:XYBString(@"str_home_sign", @"签到")]) {
-        NSString *requestURL = [RequestURL getNodeJsH5URL:HomePageTaskRequestURL withIsSign:YES];
-        NSURLRequest * quest =[NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]] ;
-        [self.webView loadRequest:quest];
-    }
 }
 
 /**
