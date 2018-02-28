@@ -945,7 +945,7 @@
 		415DB32E1E05187400FD275A /* XHFoundationCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C026D1DFE48CC006F1D6C /* XHFoundationCommon.m */; };
 		415DB32F1E05187400FD275A /* DMFreezeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 41598C581DE6F53E006B7E37 /* DMFreezeRecord.m */; };
 		415DB3311E05187400FD275A /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4131B1861ADCB34E00BC93D2 /* NSData+AESCrypt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		415DB3321E05187400FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		415DB3321E05187400FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		415DB3331E05187400FD275A /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F1041B4D27A000CF4528 /* QREncoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		415DB3341E05187400FD275A /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0B51A1DB074DF0007AAB7 /* ColorUtil.m */; };
 		415DB3351E05187400FD275A /* BbgHomeProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414C1E951D88F9AE00B7E434 /* BbgHomeProductView.m */; };
@@ -1104,8 +1104,8 @@
 		415DB3E91E05187400FD275A /* DMLuckdrawRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 41598C5A1DE6F53E006B7E37 /* DMLuckdrawRecord.m */; };
 		415DB3EA1E05187400FD275A /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 21865F521B04B455005B549F /* UIScrollView+MJExtension.m */; };
 		415DB3EB1E05187400FD275A /* DMMyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C68C2081C3B6F4D00A475CC /* DMMyTool.m */; };
-		415DB3EC1E05187400FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		415DB3ED1E05187400FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		415DB3EC1E05187400FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		415DB3ED1E05187400FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		415DB3EE1E05187400FD275A /* SafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E9CE541DF506B90018C61A /* SafeViewController.m */; };
 		415DB3EF1E05187400FD275A /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5F1C81DF69377002707BA /* GestureViewController.m */; };
 		415DB3F01E05187400FD275A /* ZqzrMoreProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCFE961D1B86EE00097517 /* ZqzrMoreProductView.m */; };
@@ -1150,8 +1150,8 @@
 		415DB4241E05187400FD275A /* XYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 416CBC331D7927CB001F3FC1 /* XYScrollView.m */; };
 		415DB4251E05187400FD275A /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5F18F1DF69377002707BA /* WelcomeViewController.m */; };
 		415DB4261E05187400FD275A /* MatchLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D870BB1DF011F700ECBF31 /* MatchLoadingView.m */; };
-		415DB4271E05187400FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		415DB4281E05187400FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		415DB4271E05187400FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		415DB4281E05187400FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		415DB42B1E05187400FD275A /* TransferInRecordsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0957F21D3E08D5009D4B9C /* TransferInRecordsModel.m */; };
 		415DB42C1E05187400FD275A /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F455A61DB7B82D003A3C66 /* MessageTableViewCell.m */; };
 		415DB42D1E05187400FD275A /* VideoSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E9CE581DF506B90018C61A /* VideoSafeViewController.m */; };
@@ -1470,7 +1470,7 @@
 		415DB5DD1E0528FD00FD275A /* XHFoundationCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C026D1DFE48CC006F1D6C /* XHFoundationCommon.m */; };
 		415DB5DE1E0528FD00FD275A /* DMFreezeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 41598C581DE6F53E006B7E37 /* DMFreezeRecord.m */; };
 		415DB5E01E0528FD00FD275A /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4131B1861ADCB34E00BC93D2 /* NSData+AESCrypt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		415DB5E11E0528FD00FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		415DB5E11E0528FD00FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		415DB5E21E0528FD00FD275A /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F1041B4D27A000CF4528 /* QREncoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		415DB5E31E0528FD00FD275A /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0B51A1DB074DF0007AAB7 /* ColorUtil.m */; };
 		415DB5E41E0528FD00FD275A /* BbgHomeProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414C1E951D88F9AE00B7E434 /* BbgHomeProductView.m */; };
@@ -1629,8 +1629,8 @@
 		415DB6981E0528FD00FD275A /* DMLuckdrawRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 41598C5A1DE6F53E006B7E37 /* DMLuckdrawRecord.m */; };
 		415DB6991E0528FD00FD275A /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 21865F521B04B455005B549F /* UIScrollView+MJExtension.m */; };
 		415DB69A1E0528FD00FD275A /* DMMyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C68C2081C3B6F4D00A475CC /* DMMyTool.m */; };
-		415DB69B1E0528FD00FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		415DB69C1E0528FD00FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		415DB69B1E0528FD00FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		415DB69C1E0528FD00FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		415DB69D1E0528FD00FD275A /* SafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E9CE541DF506B90018C61A /* SafeViewController.m */; };
 		415DB69E1E0528FD00FD275A /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5F1C81DF69377002707BA /* GestureViewController.m */; };
 		415DB69F1E0528FD00FD275A /* ZqzrMoreProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCFE961D1B86EE00097517 /* ZqzrMoreProductView.m */; };
@@ -1675,8 +1675,8 @@
 		415DB6D31E0528FD00FD275A /* XYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 416CBC331D7927CB001F3FC1 /* XYScrollView.m */; };
 		415DB6D41E0528FD00FD275A /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5F18F1DF69377002707BA /* WelcomeViewController.m */; };
 		415DB6D51E0528FD00FD275A /* MatchLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D870BB1DF011F700ECBF31 /* MatchLoadingView.m */; };
-		415DB6D61E0528FD00FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		415DB6D71E0528FD00FD275A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		415DB6D61E0528FD00FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		415DB6D71E0528FD00FD275A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		415DB6DA1E0528FD00FD275A /* TransferInRecordsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0957F21D3E08D5009D4B9C /* TransferInRecordsModel.m */; };
 		415DB6DB1E0528FD00FD275A /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F455A61DB7B82D003A3C66 /* MessageTableViewCell.m */; };
 		415DB6DC1E0528FD00FD275A /* VideoSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E9CE581DF506B90018C61A /* VideoSafeViewController.m */; };
@@ -2994,6 +2994,8 @@
 		3A163D531FF5DBD80068F15E /* NProductDetailResModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NProductDetailResModel.m; sourceTree = "<group>"; };
 		3A163D611FF614070068F15E /* NPLoanListResModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPLoanListResModel.h; sourceTree = "<group>"; };
 		3A163D621FF614070068F15E /* NPLoanListResModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPLoanListResModel.m; sourceTree = "<group>"; };
+		3A4A14B4204640FD0035787B /* Izzqg Test.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Izzqg Test.entitlements"; sourceTree = "<group>"; };
+		3A4A14B5204640FE0035787B /* Izzqg Dev.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Izzqg Dev.entitlements"; sourceTree = "<group>"; };
 		3A57F3F12005D69C00BE5AAC /* NPBidDetailResModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPBidDetailResModel.h; sourceTree = "<group>"; };
 		3A57F3F22005D69C00BE5AAC /* NPBidDetailResModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPBidDetailResModel.m; sourceTree = "<group>"; };
 		3A6E0C051FFB6527006FF938 /* NPInvestResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPInvestResultViewController.h; sourceTree = "<group>"; };
@@ -3006,15 +3008,12 @@
 		3A8391E61FFA2F7E000E60CA /* NPreInvestResModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPreInvestResModel.m; sourceTree = "<group>"; };
 		3A8391EA1FFA4A3D000E60CA /* NPinvestResModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPinvestResModel.h; sourceTree = "<group>"; };
 		3A8391EB1FFA4A3D000E60CA /* NPinvestResModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPinvestResModel.m; sourceTree = "<group>"; };
-		3A9B2CEA20240CDB00FA8147 /* Izzqg Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Izzqg Test.entitlements"; sourceTree = "<group>"; };
 		410C010D1F711F050059DDA9 /* WRImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRImageHelper.h; sourceTree = "<group>"; };
 		410C010E1F711F050059DDA9 /* WRImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRImageHelper.m; sourceTree = "<group>"; };
 		411132F51C1EA572005BA5BE /* NickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickNameViewController.h; sourceTree = "<group>"; };
 		411132F61C1EA572005BA5BE /* NickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NickNameViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		411132FA1C1EEE60005BA5BE /* SexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexViewController.h; sourceTree = "<group>"; };
 		411132FB1C1EEE60005BA5BE /* SexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexViewController.m; sourceTree = "<group>"; };
-		41179B061E7127C700B6FF05 /* Izzqg Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Izzqg Dev.entitlements"; sourceTree = "<group>"; };
-		41179B071E7127C700B6FF05 /* Izzqg Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Izzqg Test.entitlements"; sourceTree = "<group>"; };
 		41179B081E7127C700B6FF05 /* Izzqg.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Izzqg.entitlements; sourceTree = "<group>"; };
 		412B45191EC16C1B007E04EC /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		4131B1381ADCAA1B00BC93D2 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
@@ -5789,7 +5788,6 @@
 		41932C601AD40A6300F26409 = {
 			isa = PBXGroup;
 			children = (
-				3A9B2CEA20240CDB00FA8147 /* Izzqg Test.entitlements */,
 				5C03E3A41EB0A7AF00D99263 /* MGIDCardResource.bundle */,
 				5C03E3A11EB0A79700D99263 /* MGIDCardResource.bundle */,
 				5C03E39E1EB0A78300D99263 /* MGIDCardResource.bundle */,
@@ -5833,9 +5831,9 @@
 			isa = PBXGroup;
 			children = (
 				4174B8301B1322E600AE2DDF /* Resource */,
-				41179B061E7127C700B6FF05 /* Izzqg Dev.entitlements */,
-				41179B071E7127C700B6FF05 /* Izzqg Test.entitlements */,
 				41179B081E7127C700B6FF05 /* Izzqg.entitlements */,
+				3A4A14B5204640FE0035787B /* Izzqg Dev.entitlements */,
+				3A4A14B4204640FD0035787B /* Izzqg Test.entitlements */,
 				415DB4CA1E051D9800FD275A /* Izzqg-Dev-Info.plist */,
 				415DB7771E05295E00FD275A /* Izzqg-Test-Info.plist */,
 				41932C6D1AD40A6300F26409 /* Info.plist */,
@@ -8223,7 +8221,7 @@
 				5C00C7891E0BDF4100FA39E2 /* XsdResponseModel.m in Sources */,
 				415DB3311E05187400FD275A /* NSData+AESCrypt.m in Sources */,
 				21B2E0A21FF21CF900997CF5 /* CgAccountRechargeModel.m in Sources */,
-				415DB3321E05187400FD275A /* BuildFile in Sources */,
+				415DB3321E05187400FD275A /* (null) in Sources */,
 				214EC3F61FB30A2C00FD9BED /* XYNavigationBar.m in Sources */,
 				415DB3331E05187400FD275A /* QREncoder.mm in Sources */,
 				415DB3341E05187400FD275A /* ColorUtil.m in Sources */,
@@ -8437,8 +8435,8 @@
 				415DB3E91E05187400FD275A /* DMLuckdrawRecord.m in Sources */,
 				415DB3EA1E05187400FD275A /* UIScrollView+MJExtension.m in Sources */,
 				415DB3EB1E05187400FD275A /* DMMyTool.m in Sources */,
-				415DB3ED1E05187400FD275A /* BuildFile in Sources */,
-				415DB3EC1E05187400FD275A /* BuildFile in Sources */,
+				415DB3ED1E05187400FD275A /* (null) in Sources */,
+				415DB3EC1E05187400FD275A /* (null) in Sources */,
 				415DB3EE1E05187400FD275A /* SafeViewController.m in Sources */,
 				219B0C4F1FEA0CDB00B326B4 /* CGIncomeTableViewCell.m in Sources */,
 				415DB3EF1E05187400FD275A /* GestureViewController.m in Sources */,
@@ -8495,8 +8493,8 @@
 				415DB4241E05187400FD275A /* XYScrollView.m in Sources */,
 				415DB4251E05187400FD275A /* WelcomeViewController.m in Sources */,
 				415DB4261E05187400FD275A /* MatchLoadingView.m in Sources */,
-				415DB4271E05187400FD275A /* BuildFile in Sources */,
-				415DB4281E05187400FD275A /* BuildFile in Sources */,
+				415DB4271E05187400FD275A /* (null) in Sources */,
+				415DB4281E05187400FD275A /* (null) in Sources */,
 				21B78C5B1FBAECAD0045D7DE /* wav.mm in Sources */,
 				2107AED71FCD145300AD955B /* AdvertiseView.m in Sources */,
 				415DB42B1E05187400FD275A /* TransferInRecordsModel.m in Sources */,
@@ -8894,7 +8892,7 @@
 				5C00C78A1E0BDF4100FA39E2 /* XsdResponseModel.m in Sources */,
 				415DB5E01E0528FD00FD275A /* NSData+AESCrypt.m in Sources */,
 				21B2E0A11FF21CF900997CF5 /* CgAccountRechargeModel.m in Sources */,
-				415DB5E11E0528FD00FD275A /* BuildFile in Sources */,
+				415DB5E11E0528FD00FD275A /* (null) in Sources */,
 				214EC3F51FB30A2C00FD9BED /* XYNavigationBar.m in Sources */,
 				415DB5E21E0528FD00FD275A /* QREncoder.mm in Sources */,
 				415DB5E31E0528FD00FD275A /* ColorUtil.m in Sources */,
@@ -9108,8 +9106,8 @@
 				415DB6981E0528FD00FD275A /* DMLuckdrawRecord.m in Sources */,
 				415DB6991E0528FD00FD275A /* UIScrollView+MJExtension.m in Sources */,
 				415DB69A1E0528FD00FD275A /* DMMyTool.m in Sources */,
-				415DB69C1E0528FD00FD275A /* BuildFile in Sources */,
-				415DB69B1E0528FD00FD275A /* BuildFile in Sources */,
+				415DB69C1E0528FD00FD275A /* (null) in Sources */,
+				415DB69B1E0528FD00FD275A /* (null) in Sources */,
 				415DB69D1E0528FD00FD275A /* SafeViewController.m in Sources */,
 				219B0C4E1FEA0CDB00B326B4 /* CGIncomeTableViewCell.m in Sources */,
 				415DB69E1E0528FD00FD275A /* GestureViewController.m in Sources */,
@@ -9166,8 +9164,8 @@
 				415DB6D31E0528FD00FD275A /* XYScrollView.m in Sources */,
 				415DB6D41E0528FD00FD275A /* WelcomeViewController.m in Sources */,
 				415DB6D51E0528FD00FD275A /* MatchLoadingView.m in Sources */,
-				415DB6D61E0528FD00FD275A /* BuildFile in Sources */,
-				415DB6D71E0528FD00FD275A /* BuildFile in Sources */,
+				415DB6D61E0528FD00FD275A /* (null) in Sources */,
+				415DB6D71E0528FD00FD275A /* (null) in Sources */,
 				21B78C5A1FBAECAD0045D7DE /* wav.mm in Sources */,
 				2107AED61FCD145300AD955B /* AdvertiseView.m in Sources */,
 				415DB6DA1E0528FD00FD275A /* TransferInRecordsModel.m in Sources */,
@@ -10019,10 +10017,10 @@
 					"-lxml2",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyb100.zzqg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dde8f6ea-d703-45b6-83df-aabfb74151a6";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
+				PROVISIONING_PROFILE_SPECIFIER = zzqg_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -10091,10 +10089,10 @@
 					"-lxml2",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyb100.zzqg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dde8f6ea-d703-45b6-83df-aabfb74151a6";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
+				PROVISIONING_PROFILE_SPECIFIER = zzqg_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -10108,7 +10106,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Test";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Izzqg Test.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Izzqg/Izzqg Test.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: jian wang (58TFM8R268)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jian wang (58TFM8R268)";
 				CODE_SIGN_STYLE = Manual;
@@ -10165,10 +10163,10 @@
 					"-lxml2",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyb100.zzqg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2be38e12-e47b-4e6b-be4b-3102788afd20";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
+				PROVISIONING_PROFILE_SPECIFIER = zzqg_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -10183,7 +10181,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Test";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Izzqg Test.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Izzqg/Izzqg Test.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: jian wang (58TFM8R268)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jian wang (58TFM8R268)";
 				CODE_SIGN_STYLE = Manual;
@@ -10240,10 +10238,10 @@
 					"-lxml2",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyb100.zzqg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2be38e12-e47b-4e6b-be4b-3102788afd20";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
+				PROVISIONING_PROFILE_SPECIFIER = zzqg_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -10293,7 +10291,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "dde8f6ea-d703-45b6-83df-aabfb74151a6";
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
 				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -10334,7 +10332,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "dde8f6ea-d703-45b6-83df-aabfb74151a6";
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
 				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -10351,7 +10349,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Izzqg/Izzqg.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8GZY98WQ89;
@@ -10406,10 +10405,10 @@
 					"-lxml2",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyb100.zzqg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2740adae-99b1-4d60-b109-1d204fa3f7f6";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_distribution_appstore;
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
+				PROVISIONING_PROFILE_SPECIFIER = zzqg_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -10425,7 +10424,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Izzqg/Izzqg.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Consumer Credit Technology Co., LTD (8GZY98WQ89)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8GZY98WQ89;
@@ -10480,10 +10480,10 @@
 					"-lxml2",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woaika.xinyongbao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyb100.zzqg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2740adae-99b1-4d60-b109-1d204fa3f7f6";
-				PROVISIONING_PROFILE_SPECIFIER = xinyongbao_distribution_appstore;
+				PROVISIONING_PROFILE = "915a183e-2e64-48da-bd45-dcdec2815e65";
+				PROVISIONING_PROFILE_SPECIFIER = zzqg_development;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
