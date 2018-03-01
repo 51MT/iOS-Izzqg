@@ -94,8 +94,8 @@
 
 - (void)createTheWebView {
     
-    self.webView = [[UIWebView alloc] init];
-    self.webView.backgroundColor = COLOR_COMMON_WHITE;
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    self.webView.backgroundColor = COLOR_LINE_BLUE;
     self.webView.opaque = NO;
     self.webView.scrollView.showsVerticalScrollIndicator = NO;
     self.webView.scalesPageToFit = NO;

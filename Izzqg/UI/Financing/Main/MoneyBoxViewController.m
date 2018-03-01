@@ -11,6 +11,13 @@
 #import "Masonry.h"
 #import "XYUtil.h"
 
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height);
+
+#define ViewSafeAreaInsets(view) ({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = view.safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;})
+
+#define SafeAreaTopHeight (ScreenHeight == 812.0 ? 88 : 64)
+#define SafeAreaBottomHeight (ScreenHeight == 812.0 ? 34 : 0)
+
 @interface MoneyBoxViewController ()<UIScrollViewDelegate, UIWebViewDelegate>
 {
     UIView *backview;

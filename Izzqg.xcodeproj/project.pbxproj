@@ -52,12 +52,6 @@
 		21865F5E1B04B455005B549F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 21865F521B04B455005B549F /* UIScrollView+MJExtension.m */; };
 		21865F5F1B04B455005B549F /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 21865F541B04B455005B549F /* UIScrollView+MJRefresh.m */; };
 		21865F601B04B455005B549F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 21865F561B04B455005B549F /* UIView+MJExtension.m */; };
-		21A5C0A81E715DD500D55941 /* MGBankCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A5C0A71E715DD500D55941 /* MGBankCard.framework */; };
-		21A5C0A91E715E7E00D55941 /* MGBankCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A5C0A71E715DD500D55941 /* MGBankCard.framework */; };
-		21A5C0AA1E715E8400D55941 /* MGBankCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A5C0A71E715DD500D55941 /* MGBankCard.framework */; };
-		21A5C0AC1E715F8400D55941 /* MGBankCardResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A5C0AB1E715F8400D55941 /* MGBankCardResource.bundle */; };
-		21A5C0AE1E715FB300D55941 /* MGBankCardResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A5C0AD1E715FB300D55941 /* MGBankCardResource.bundle */; };
-		21A5C0B01E715FB900D55941 /* MGBankCardResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A5C0AF1E715FB900D55941 /* MGBankCardResource.bundle */; };
 		21B1E4091E5D7B0B0066B86B /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B9F2FE1D213B9400933A48 /* Contacts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21B4C2711E0E797600DE6FE8 /* libLLPaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B4C26A1E0E797600DE6FE8 /* libLLPaySDK.a */; };
 		21B4C2721E0E797600DE6FE8 /* libLLPaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B4C26A1E0E797600DE6FE8 /* libLLPaySDK.a */; };
@@ -807,9 +801,6 @@
 		3A4A2015204668750035787B /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F6D204668750035787B /* AnimationUtil.m */; };
 		3A4A2016204668750035787B /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F6D204668750035787B /* AnimationUtil.m */; };
 		3A4A2017204668750035787B /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F6D204668750035787B /* AnimationUtil.m */; };
-		3A4A2018204668750035787B /* BankCardSdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F6F204668750035787B /* BankCardSdkUtil.m */; };
-		3A4A2019204668750035787B /* BankCardSdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F6F204668750035787B /* BankCardSdkUtil.m */; };
-		3A4A201A204668750035787B /* BankCardSdkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F6F204668750035787B /* BankCardSdkUtil.m */; };
 		3A4A201B204668750035787B /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F71204668750035787B /* ColorUtil.m */; };
 		3A4A201C204668750035787B /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F71204668750035787B /* ColorUtil.m */; };
 		3A4A201D204668750035787B /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A1F71204668750035787B /* ColorUtil.m */; };
@@ -1282,15 +1273,6 @@
 		41F0F1071B4D27A000CF4528 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F1041B4D27A000CF4528 /* QREncoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5C029DD21C032E2E004EF435 /* JYRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C029DD01C032E2E004EF435 /* JYRadarChart.m */; };
 		5C029DD91C033202004EF435 /* JYLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C029DD81C033202004EF435 /* JYLegendView.m */; };
-		5C03E39A1EB0A6ED00D99263 /* MGBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */; };
-		5C03E39B1EB0A71D00D99263 /* MGBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */; };
-		5C03E39C1EB0A72D00D99263 /* MGBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */; };
-		5C03E39D1EB0A77100D99263 /* MGIDCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C28831E7132C500F38F4C /* MGIDCard.framework */; };
-		5C03E39F1EB0A78300D99263 /* MGIDCardResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C03E39E1EB0A78300D99263 /* MGIDCardResource.bundle */; };
-		5C03E3A01EB0A79100D99263 /* MGIDCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C28831E7132C500F38F4C /* MGIDCard.framework */; };
-		5C03E3A21EB0A79700D99263 /* MGIDCardResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C03E3A11EB0A79700D99263 /* MGIDCardResource.bundle */; };
-		5C03E3A31EB0A7A300D99263 /* MGIDCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C28831E7132C500F38F4C /* MGIDCard.framework */; };
-		5C03E3A51EB0A7AF00D99263 /* MGIDCardResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C03E3A41EB0A7AF00D99263 /* MGIDCardResource.bundle */; };
 		5C04DA971E0CBF630018BA69 /* MJRefreshCustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04DA951E0CBF630018BA69 /* MJRefreshCustomGifHeader.m */; };
 		5C04DA981E0CBF630018BA69 /* MJRefreshCustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04DA951E0CBF630018BA69 /* MJRefreshCustomGifHeader.m */; };
 		5C07EAE71E12473E00C13041 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C07EAE61E12473E00C13041 /* libc++.tbd */; };
@@ -1491,12 +1473,7 @@
 		21865F541B04B455005B549F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		21865F551B04B455005B549F /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		21865F561B04B455005B549F /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		21A5C0A71E715DD500D55941 /* MGBankCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBankCard.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-dpudijluzxszrpfpyhurpylhifya/Build/Products/Debug-iphoneos/MGBankCard.framework"; sourceTree = "<group>"; };
-		21A5C0AB1E715F8400D55941 /* MGBankCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGBankCardResource.bundle; path = MGBankCard/Resouce/MGBankCardResource.bundle; sourceTree = "<group>"; };
-		21A5C0AD1E715FB300D55941 /* MGBankCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGBankCardResource.bundle; path = MGBankCard/Resouce/MGBankCardResource.bundle; sourceTree = "<group>"; };
-		21A5C0AF1E715FB900D55941 /* MGBankCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGBankCardResource.bundle; path = MGBankCard/Resouce/MGBankCardResource.bundle; sourceTree = "<group>"; };
 		21AE15741D82852E00AA34A5 /* RequestURLDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RequestURLDefine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		21B1998F1E6FF0F200D855ED /* libMegBankCard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMegBankCard.a; path = Izzqg/UI/XsdBorrow/MegBankCard/MGBankCard/BankCardSDK/libMegBankCard.a; sourceTree = "<group>"; };
 		21B4C2691E0E797600DE6FE8 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		21B4C26A1E0E797600DE6FE8 /* libLLPaySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLLPaySDK.a; sourceTree = "<group>"; };
 		21B4C26B1E0E797600DE6FE8 /* LLPaySdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPaySdk.h; sourceTree = "<group>"; };
@@ -2133,8 +2110,6 @@
 		3A4A1F6A204668750035787B /* XYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWebViewController.m; sourceTree = "<group>"; };
 		3A4A1F6C204668750035787B /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		3A4A1F6D204668750035787B /* AnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationUtil.m; sourceTree = "<group>"; };
-		3A4A1F6E204668750035787B /* BankCardSdkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardSdkUtil.h; sourceTree = "<group>"; };
-		3A4A1F6F204668750035787B /* BankCardSdkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardSdkUtil.m; sourceTree = "<group>"; };
 		3A4A1F70204668750035787B /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
 		3A4A1F71204668750035787B /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
 		3A4A1F72204668750035787B /* DateTimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeUtil.h; sourceTree = "<group>"; };
@@ -2313,10 +2288,6 @@
 		5C029DD11C032E2E004EF435 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5C029DD71C033202004EF435 /* JYLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLegendView.h; sourceTree = "<group>"; };
 		5C029DD81C033202004EF435 /* JYLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLegendView.m; sourceTree = "<group>"; };
-		5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
-		5C03E39E1EB0A78300D99263 /* MGIDCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGIDCardResource.bundle; path = MGIDCard/Resource/MGIDCardResource.bundle; sourceTree = "<group>"; };
-		5C03E3A11EB0A79700D99263 /* MGIDCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGIDCardResource.bundle; path = MGIDCard/Resource/MGIDCardResource.bundle; sourceTree = "<group>"; };
-		5C03E3A41EB0A7AF00D99263 /* MGIDCardResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MGIDCardResource.bundle; path = MGIDCard/Resource/MGIDCardResource.bundle; sourceTree = "<group>"; };
 		5C04DA941E0CBF630018BA69 /* MJRefreshCustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshCustomGifHeader.h; sourceTree = "<group>"; };
 		5C04DA951E0CBF630018BA69 /* MJRefreshCustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshCustomGifHeader.m; sourceTree = "<group>"; };
 		5C07EAE61E12473E00C13041 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -2364,10 +2335,7 @@
 		5C75A32C1BFD7E3700155474 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5C75A32D1BFD7E3700155474 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		5C75A32E1BFD7E3700155474 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
-		5C8C287F1E7130E600F38F4C /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Release-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
-		5C8C28831E7132C500F38F4C /* MGIDCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGIDCard.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGIDCard.framework"; sourceTree = "<group>"; };
 		5CBA8C3A1CB4F42300DA9EC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5CBAAAE21E714DA400C6AD39 /* MGLivenessDetection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGLivenessDetection.framework; path = "../../../Library/Developer/Xcode/DerivedData/Izzqg-bztzalokyrrriwdjpvgsjcxylqav/Build/Products/Debug-iphoneos/MGLivenessDetection.framework"; sourceTree = "<group>"; };
 		5CF9FB8E1DF7F9D3001C2DB9 /* XHJDRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHJDRefreshView.h; sourceTree = "<group>"; };
 		5CF9FB8F1DF7F9D3001C2DB9 /* XHJDRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHJDRefreshView.m; sourceTree = "<group>"; };
 		5CF9FB941DF7FB05001C2DB9 /* box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box@2x.png"; sourceTree = "<group>"; };
@@ -2392,9 +2360,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C03E3A31EB0A7A300D99263 /* MGIDCard.framework in Frameworks */,
-				5C03E39C1EB0A72D00D99263 /* MGBaseKit.framework in Frameworks */,
-				21A5C0A91E715E7E00D55941 /* MGBankCard.framework in Frameworks */,
 				21B1E4091E5D7B0B0066B86B /* Contacts.framework in Frameworks */,
 				86FBF1F91E1A94AB00398328 /* UserNotifications.framework in Frameworks */,
 				5C07EAE81E12475000C13041 /* libc++.tbd in Frameworks */,
@@ -2455,10 +2420,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C03E3A01EB0A79100D99263 /* MGIDCard.framework in Frameworks */,
 				21B78C5D1FBAECAD0045D7DE /* libopencore-amrnb.a in Frameworks */,
-				5C03E39B1EB0A71D00D99263 /* MGBaseKit.framework in Frameworks */,
-				21A5C0A81E715DD500D55941 /* MGBankCard.framework in Frameworks */,
 				2126CAB61E5690D9006417B7 /* Contacts.framework in Frameworks */,
 				86FBF1F81E1A944900398328 /* UserNotifications.framework in Frameworks */,
 				5C07EAE71E12473E00C13041 /* libc++.tbd in Frameworks */,
@@ -2522,9 +2484,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2146BE491EC1A2CF00F12161 /* UMSocialCore.framework in Frameworks */,
-				5C03E39D1EB0A77100D99263 /* MGIDCard.framework in Frameworks */,
-				5C03E39A1EB0A6ED00D99263 /* MGBaseKit.framework in Frameworks */,
-				21A5C0AA1E715E8400D55941 /* MGBankCard.framework in Frameworks */,
 				414B44261D26529D0091CB8B /* libz.tbd in Frameworks */,
 				5C0D06FE1E698BB100A58BB2 /* Contacts.framework in Frameworks */,
 				86FBF1FA1E1A94B600398328 /* UserNotifications.framework in Frameworks */,
@@ -3918,8 +3877,6 @@
 			children = (
 				3A4A1F6C204668750035787B /* AnimationUtil.h */,
 				3A4A1F6D204668750035787B /* AnimationUtil.m */,
-				3A4A1F6E204668750035787B /* BankCardSdkUtil.h */,
-				3A4A1F6F204668750035787B /* BankCardSdkUtil.m */,
 				3A4A1F70204668750035787B /* ColorUtil.h */,
 				3A4A1F71204668750035787B /* ColorUtil.m */,
 				3A4A1F72204668750035787B /* DateTimeUtil.h */,
@@ -4156,12 +4113,6 @@
 		41932C601AD40A6300F26409 = {
 			isa = PBXGroup;
 			children = (
-				5C03E3A41EB0A7AF00D99263 /* MGIDCardResource.bundle */,
-				5C03E3A11EB0A79700D99263 /* MGIDCardResource.bundle */,
-				5C03E39E1EB0A78300D99263 /* MGIDCardResource.bundle */,
-				21A5C0AF1E715FB900D55941 /* MGBankCardResource.bundle */,
-				21A5C0AD1E715FB300D55941 /* MGBankCardResource.bundle */,
-				21A5C0AB1E715F8400D55941 /* MGBankCardResource.bundle */,
 				41932C6B1AD40A6300F26409 /* Izzqg */,
 				41932C851AD40A6300F26409 /* IzzqgTests */,
 				41CDF6541ADBCCC20087804D /* Frameworks */,
@@ -4246,12 +4197,6 @@
 		41CDF6541ADBCCC20087804D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C03E3991EB0A6ED00D99263 /* MGBaseKit.framework */,
-				21A5C0A71E715DD500D55941 /* MGBankCard.framework */,
-				5CBAAAE21E714DA400C6AD39 /* MGLivenessDetection.framework */,
-				5C8C28831E7132C500F38F4C /* MGIDCard.framework */,
-				5C8C287F1E7130E600F38F4C /* MGBaseKit.framework */,
-				21B1998F1E6FF0F200D855ED /* libMegBankCard.a */,
 				86FBF1F71E1A944900398328 /* UserNotifications.framework */,
 				5C07EAE61E12473E00C13041 /* libc++.tbd */,
 				21ECB1921E0CB8C4008733CF /* libz.1.tbd */,
@@ -4694,7 +4639,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C03E3A51EB0A7AF00D99263 /* MGIDCardResource.bundle in Resources */,
 				415DB4991E05187400FD275A /* deliveryStaff3@2x.png in Resources */,
 				21B78C4F1FBAECAD0045D7DE /* NTalkerUIKitResource.bundle in Resources */,
 				415DB49B1E05187400FD275A /* account.json in Resources */,
@@ -4720,7 +4664,6 @@
 				415DB4B61E05187400FD275A /* MJRefresh.bundle in Resources */,
 				213D2D811E52B29500DEBC91 /* sound.caf in Resources */,
 				415DB4B81E05187400FD275A /* deliveryStaff1@2x.png in Resources */,
-				21A5C0AE1E715FB300D55941 /* MGBankCardResource.bundle in Resources */,
 				415DB4BA1E05187400FD275A /* setting.json in Resources */,
 				2146BE541EC1A2CF00F12161 /* UMSocialSDKResources.bundle in Resources */,
 				415DB4BC1E05187400FD275A /* shake_match.wav in Resources */,
@@ -4732,8 +4675,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C03E3A21EB0A79700D99263 /* MGIDCardResource.bundle in Resources */,
-				21A5C0AC1E715F8400D55941 /* MGBankCardResource.bundle in Resources */,
 				415DB74A1E0528FD00FD275A /* account.json in Resources */,
 				415DB74C1E0528FD00FD275A /* VersionDescription.txt in Resources */,
 				415DB74D1E0528FD00FD275A /* bank.json in Resources */,
@@ -4764,7 +4705,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C03E39F1EB0A78300D99263 /* MGIDCardResource.bundle in Resources */,
 				413A29D81B1D4CA2003BDE30 /* account.json in Resources */,
 				41A597751D77D1710041DEDD /* VersionDescription.txt in Resources */,
 				2146BE4F1EC1A2CF00F12161 /* UMSocialSDKPromptResources.bundle in Resources */,
@@ -4791,7 +4731,6 @@
 				415DB4CB1E051D9800FD275A /* Izzqg-Dev-Info.plist in Resources */,
 				5CF9FBA41DF7FB05001C2DB9 /* deliveryStaff1@2x.png in Resources */,
 				41421B0E1B1C8A75006ADF2A /* setting.json in Resources */,
-				21A5C0B01E715FB900D55941 /* MGBankCardResource.bundle in Resources */,
 				215000161C1045E3006C6EA3 /* shake_match.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5184,7 +5123,6 @@
 				3A4A18EC20464A4D0035787B /* CgDepOrderModel.m in Sources */,
 				3A4A18D720464A4D0035787B /* CgAccountFlowModel.m in Sources */,
 				3A4A17E420464A4C0035787B /* SaveAuthInfoModel.m in Sources */,
-				3A4A201A204668750035787B /* BankCardSdkUtil.m in Sources */,
 				3A4A2041204668750035787B /* UMessageUtil.m in Sources */,
 				3A4A190A20464A4D0035787B /* DMMyTool.m in Sources */,
 				21B78C671FBAECAE0045D7DE /* VoiceRecorderBaseVC.m in Sources */,
@@ -5548,7 +5486,6 @@
 				3A4A18EB20464A4D0035787B /* CgDepOrderModel.m in Sources */,
 				3A4A18D620464A4D0035787B /* CgAccountFlowModel.m in Sources */,
 				3A4A17E320464A4C0035787B /* SaveAuthInfoModel.m in Sources */,
-				3A4A2019204668750035787B /* BankCardSdkUtil.m in Sources */,
 				3A4A2040204668750035787B /* UMessageUtil.m in Sources */,
 				3A4A190920464A4D0035787B /* DMMyTool.m in Sources */,
 				21B78C661FBAECAE0045D7DE /* VoiceRecorderBaseVC.m in Sources */,
@@ -5986,7 +5923,6 @@
 				3A4A182D20464A4D0035787B /* BbgProduct.m in Sources */,
 				3A4A189920464A4D0035787B /* NProductListResModel.m in Sources */,
 				217B549E1D0E971600EB3257 /* Base64.m in Sources */,
-				3A4A2018204668750035787B /* BankCardSdkUtil.m in Sources */,
 				3A4A179D20464A4C0035787B /* DMInvestedProjectBbg.m in Sources */,
 				3A4A2012204668750035787B /* XYWebViewController.m in Sources */,
 				21B8E3621BA2B89800928005 /* MJRefreshBackGifFooter.m in Sources */,
