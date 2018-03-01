@@ -164,8 +164,10 @@
 // Window到TabBarViewContorller
 - (void)windowAddTabBarViewController {
     _tabBarVC = [[XYTabBarViewController alloc] init];
+    _tabBarVC.view.frame = CGRectMake(0, CurrentScreenHeight - TabbarHeight, CurrentScreenWidth, TabbarHeight);
     _tabBarVC.delegate = self;
-    [self windowAddRootViewController:_tabBarVC];
+//    [self windowAddRootViewController:_tabBarVC];
+    _window.rootViewController =  _tabBarVC;
     [self creatTheUpdateHttpRequest];
 }
 

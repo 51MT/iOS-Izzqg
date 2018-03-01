@@ -15,7 +15,7 @@
     XYNavigationBar *nav = nil;
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     BOOL ret = IS_IPHONE_X;
-    nav = [[XYNavigationBar alloc] initWithFrame:(CGRect){0, ret?44:20, screenWidth ,44}];
+    nav = [[XYNavigationBar alloc] initWithFrame:(CGRect){0, 0, screenWidth ,ret ? 88 :44}];
     return nav;
 }
 

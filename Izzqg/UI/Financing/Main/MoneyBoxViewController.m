@@ -51,10 +51,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    NSLog(@"-----SafeArea:%@",self.view.safeAreaInsets);
+
     //自定义导航栏：必须将导航栏的创建放在mainscroll生成之后，否则自定义导航栏会在mainscroll的底部
-    [self createCustomNavigationBar];
+    //[self createCustomNavigationBar];
 }
 
 #pragma mark - 创建UI
