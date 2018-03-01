@@ -21,14 +21,14 @@
 #define SHA1SECRET @"c90156984c4cce4138ae2c5e5480058d"
 
 //信用宝Ixyb 友盟统计、友盟分享、友盟推送 APPKEY
-#define UMENG_APPKEY @"557f825e67e58e9b14002418"
+#define UMENG_APPKEY @"5a951816f29d986fd000034a"
 
 //友盟分享
 #define WXAppId     @"wx2cf6f99760ca1e77"
 #define WXAppSecret @"c255f118526819a5ee91ecbf4bce73cd"
-#define QQAppId     @"1104561851"
-#define QQAppSecret @"1FSDUq81QRxzS9WO"
-#define UmShareUrl  @"https://www.xyb100.com"
+#define QQAppId     @"1106674249"
+#define QQAppSecret @"LGptq1k3uQEaBSN1"
+#define UmShareUrl  @"http://www.zhuzhuqianguan.com"
 
 //小能客服 APPKEY
 #define XNAppKEY    @"PPSqQUStVqVk586Csc6fP2"

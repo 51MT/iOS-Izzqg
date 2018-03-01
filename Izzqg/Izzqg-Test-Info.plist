@@ -30,22 +30,10 @@
 			<key>CFBundleURLIconFile</key>
 			<string>AppIcon</string>
 			<key>CFBundleURLName</key>
-			<string>qq</string>
+			<string>tencent</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>QQ41D646BB</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLIconFile</key>
-			<string>AppIcon</string>
-			<key>CFBundleURLName</key>
-			<string>sinawb</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wb1400964158</string>
+				<string>tencent1106674249</string>
 			</array>
 		</dict>
 		<dict>
@@ -58,28 +46,6 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>wx2cf6f99760ca1e77</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLIconFile</key>
-			<string>AppIcon</string>
-			<key>CFBundleURLName</key>
-			<string>sinaweibo</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>sina.8a9037e986b70470a6b063af79bc07d2</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>tencentwb</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>tencent801568566</string>
 			</array>
 		</dict>
 		<dict>
@@ -103,11 +69,13 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>AppIcon</string>
 			<key>CFBundleURLName</key>
-			<string>xsd</string>
+			<string>QQ</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>xyb</string>
+				<string>QQ5fc5b14</string>
 			</array>
 		</dict>
 	</array>
