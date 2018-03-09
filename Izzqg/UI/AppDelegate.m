@@ -46,7 +46,7 @@
     self.welcomeVC = [[WelcomeViewController alloc] init];
     self.welcomeVC.delegate = self;
     [self windowAddRootViewController:self.welcomeVC];
-
+    
     [self.window.rootViewController.view setNeedsDisplay];
     [self.window makeKeyAndVisible];
 
@@ -164,10 +164,8 @@
 // Window到TabBarViewContorller
 - (void)windowAddTabBarViewController {
     _tabBarVC = [[XYTabBarViewController alloc] init];
-    _tabBarVC.view.frame = CGRectMake(0, CurrentScreenHeight - TabbarHeight, CurrentScreenWidth, TabbarHeight);
     _tabBarVC.delegate = self;
-//    [self windowAddRootViewController:_tabBarVC];
-    _window.rootViewController =  _tabBarVC;
+    [self windowAddRootViewController:_tabBarVC];
     [self creatTheUpdateHttpRequest];
 }
 

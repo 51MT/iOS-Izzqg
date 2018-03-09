@@ -32,24 +32,24 @@
 
     MoneyBoxViewController *moneyBoxVC = [[MoneyBoxViewController alloc] init];
     moneyBoxVC.tabBarItem.title = XYBString(@"str_moneyBox", @"钱罐"); //本地化，注释
-    moneyBoxVC.tabBarItem.image = [[UIImage imageNamed:@"financing"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    moneyBoxVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"financing_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    moneyBoxVC.tabBarItem.image = [[UIImage imageNamed:@"moneyBox_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    moneyBoxVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"moneyBox_icon_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     moneyBoxVC.tabBarItem.tag = 600;
     XYNavigationController *moneyBoxNC = [[XYNavigationController alloc] initWithRootViewController:moneyBoxVC];
 
 
     BenefitsViewController *benefitsVC = [[BenefitsViewController alloc] init];
     benefitsVC.tabBarItem.title = XYBString(@"str_benefits", @"福利");
-    benefitsVC.tabBarItem.image = [[UIImage imageNamed:@"safe"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    benefitsVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"safe_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    benefitsVC.tabBarItem.image = [[UIImage imageNamed:@"benefit_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    benefitsVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"benefit_icon_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     benefitsVC.tabBarItem.tag = 602;
     XYNavigationController *benefitsNC = [[XYNavigationController alloc] initWithRootViewController:benefitsVC];
     
 
     MyViewController *myVC = [[MyViewController alloc] init];
     myVC.tabBarItem.title = XYBString(@"str_my", @"我的");
-    myVC.tabBarItem.image = [[UIImage imageNamed:@"account"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    myVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"account_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    myVC.tabBarItem.image = [[UIImage imageNamed:@"my_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    myVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"my_icon_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     myVC.tabBarItem.tag = 603;
     XYNavigationController *myNC = [[XYNavigationController alloc] initWithRootViewController:myVC];
 

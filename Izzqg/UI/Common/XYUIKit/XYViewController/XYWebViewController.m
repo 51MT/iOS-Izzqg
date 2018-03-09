@@ -37,10 +37,10 @@
 -(void)setNav {
     
      _backBtn = [[UIButton alloc] init];
-    [_backBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-    [_backBtn setBackgroundImage:[UIImage imageNamed:@"back_ed"] forState:UIControlStateHighlighted];
+    [_backBtn setBackgroundImage:[UIImage imageNamed:@"backItem"] forState:UIControlStateNormal];
+    //[_backBtn setBackgroundImage:[UIImage imageNamed:@"back_ed"] forState:UIControlStateHighlighted];
     [_backBtn addTarget:self action:@selector(clickBackBtn:) forControlEvents:UIControlEventTouchUpInside];
-    _backBtn.hidden = YES;
+//    _backBtn.hidden = YES;
     _backBtn.userInteractionEnabled = YES;
     [self.navBar addSubview:_backBtn];
     
@@ -52,9 +52,9 @@
     
     _closeBtn = [[UIButton alloc] init];
     [_closeBtn setBackgroundImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
-    [_closeBtn setBackgroundImage:[UIImage imageNamed:@"close_ed"] forState:UIControlStateHighlighted];
+    //[_closeBtn setBackgroundImage:[UIImage imageNamed:@"close_ed"] forState:UIControlStateHighlighted];
     [_closeBtn addTarget:self action:@selector(clickCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
-    _closeBtn.hidden = YES;
+//    _closeBtn.hidden = YES;
     _closeBtn.userInteractionEnabled = YES;
     [self.navBar addSubview:_closeBtn];
     
@@ -85,11 +85,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNav];
-    self.view.backgroundColor = COLOR_BG;
-    self.view.userInteractionEnabled = YES;
-    [self createTheWebView];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chargeSuccess) name:@"chargeSuccessNotification" object:nil];
+//    [self setNav];
+//    self.view.backgroundColor = COLOR_BG;
+//    self.view.userInteractionEnabled = YES;
+//    [self createTheWebView];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chargeSuccess) name:@"chargeSuccessNotification" object:nil];
 }
 
 - (void)createTheWebView {

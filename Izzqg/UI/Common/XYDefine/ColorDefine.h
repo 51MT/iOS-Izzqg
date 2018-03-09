@@ -15,20 +15,50 @@
 #ifndef ColorDefine_h
 #define ColorDefine_h
 
-//－－－－－－－－－－1.全局颜色、2.文字颜色、3.分隔线用色－－－－－－－－－－//
 
-//主色 #0ab0ef 按钮、不可点击文字
-#define COLOR_MAIN [ColorUtil colorWithHexString:@"2772ff"]
+#pragma mark - 1.全局颜色
 
-//辅色 #57ca8b  替换 #7ac406（浅绿）
-#define COLOR_LIGHT_GREEN [ColorUtil colorWithHexString:@"7ac406"]
+//1.主色(红色，品牌色) 突出品牌色，用于主导元素、超链接、按钮
+#define COLOR_MAIN [ColorUtil colorWithHexString:@"ff4a5c"]
+
+//2.辅色 辅助色，表示成功或积极的行文（浅绿）
+#define COLOR_GREEN [ColorUtil colorWithHexString:@"43c996"]
+
+//3.辅色 #46b8f4 (浅蓝) 表示信息重要性，比如协议
+#define COLOR_BLUE [ColorUtil colorWithHexString:@"46b8f4"]
+
+//4.辅色 #fdbb43 (橘黄) 信息传递、比如通知
+#define COLOR_ORANGE [ColorUtil colorWithHexString:@"fdbb43"]
+
+//5.辅色 #fd5a5f (红色) 负面行为、警告等
+#define COLOR_RED [ColorUtil colorWithHexString:@"fd5a5f"]
+
+//6.辅色 #dcba75 (棕黄) 辅助色
+#define COLOR_BROWN [ColorUtil colorWithHexString:@"dcba75"]
 
 
-//辅色 #669cff (浅蓝) 品牌色(次)
-#define COLOR_LIGHT_BLUE [ColorUtil colorWithHexString:@"669cff"]
 
-//装点色 #ff8c1a 醒目、重要金额 （橘黄）、账户页面三个颜色 【#fbab1e被替换】#ff801a fffae8
-#define COLOR_ORANGE [ColorUtil colorWithHexString:@"ff8c1a"]
+
+#pragma mark - 2.文字颜色
+
+//1.主色 #303030 (黑灰色) 主体文字颜色
+#define COLOR_GRAY_MAIN [ColorUtil colorWithHexString:@"303030"]
+
+//2.辅色 #777777 (灰色) 提示文字、注释等
+#define COLOR_GRAY_SECONDARY [ColorUtil colorWithHexString:@"777777"]
+
+//3.辅色 #ababab (淡灰色) 示范文字（弱化文字）
+#define COLOR_GRAY_LIGHT [ColorUtil colorWithHexString:@"ababab"]
+
+//4.辅色 #c2c7cc (浅灰色) 输入框，单色icon
+#define COLOR_GRAY_LIGHT_02 [ColorUtil colorWithHexString:@"c2c7cc"]
+
+//5.辅色 #c2c7cc (灰白色) 分割线，背景
+#define COLOR_GRAY_LIGHT_03 [ColorUtil colorWithHexString:@"eff1f4"]
+
+
+
+#pragma mark - 下面颜色为过去老颜色，暂时不删除
 
 #define COLOR_CHU_ORANGE [ColorUtil colorWithHexString:@"ff801a"]
 

@@ -129,7 +129,7 @@
     gradient.frame = headView.bounds;
     gradient.colors = [NSArray arrayWithObjects:
                        (id) COLOR_MAIN.CGColor,
-                       (id) COLOR_LIGHT_BLUE.CGColor, nil];
+                       (id) COLOR_BLUE.CGColor, nil];
     [headView.layer addSublayer:gradient];
     
     [headView mas_makeConstraints:^(MASConstraintMaker *make) {

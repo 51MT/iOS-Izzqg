@@ -24,7 +24,7 @@
     UINavigationBar *navBar = [UINavigationBar appearance];
 
     // 2.设置导航栏的背景图片和颜色
-    navBar.barTintColor = COLOR_MAIN;
+    navBar.barTintColor = COLOR_GRAY_MAIN;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     navBar.barStyle = UIBarStyleBlack;
     navBar.translucent = NO; //这是由于半透明模糊引起的

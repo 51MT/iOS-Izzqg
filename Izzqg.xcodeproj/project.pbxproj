@@ -2747,21 +2747,13 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		21A8074C1B8D51FB00F195F1 /* Financing */ = {
-			isa = PBXGroup;
-			children = (
-				21A8078F1B8D51FB00F195F1 /* Main */,
-			);
-			path = Financing;
-			sourceTree = "<group>";
-		};
-		21A8078F1B8D51FB00F195F1 /* Main */ = {
+		21A8074C1B8D51FB00F195F1 /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
 				3A4A2050204681330035787B /* MoneyBoxViewController.h */,
 				3A4A2051204681330035787B /* MoneyBoxViewController.m */,
 			);
-			path = Main;
+			path = MoneyBox;
 			sourceTree = "<group>";
 		};
 		21B4C2681E0E797600DE6FE8 /* LLPaySDK_V2.6.6 */ = {
@@ -4263,8 +4255,8 @@
 				41E5A5551B048EFF00F1D0AA /* AppDelegate.h */,
 				41E5A5561B048EFF00F1D0AA /* AppDelegate.m */,
 				3A4A1EF9204668750035787B /* Common */,
-				21A8074C1B8D51FB00F195F1 /* Financing */,
-				41E9CE521DF506B90018C61A /* Safe */,
+				21A8074C1B8D51FB00F195F1 /* MoneyBox */,
+				41E9CE521DF506B90018C61A /* Benefits */,
 				3A4A1EDF2046679A0035787B /* My */,
 				418B0FBF1C2D2A6D0022B599 /* ProductDescription.txt */,
 				419CA6331FE3B53E009942C0 /* V2.1.8.txt */,
@@ -4273,13 +4265,13 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		41E9CE521DF506B90018C61A /* Safe */ = {
+		41E9CE521DF506B90018C61A /* Benefits */ = {
 			isa = PBXGroup;
 			children = (
 				3A4A2055204682620035787B /* BenefitsViewController.h */,
 				3A4A2056204682620035787B /* BenefitsViewController.m */,
 			);
-			path = Safe;
+			path = Benefits;
 			sourceTree = "<group>";
 		};
 		41EE0CF41BDA0D8E001C3C85 /* PageControl */ = {

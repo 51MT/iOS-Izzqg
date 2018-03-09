@@ -73,7 +73,7 @@ static int const showtime = 3;
     }];
     
     _skipLab = [[UILabel alloc] init];
-    _skipLab.textColor = COLOR_LIGHT_GREEN;
+    _skipLab.textColor = COLOR_GREEN;
     _skipLab.font = TEXT_FONT_14;
     _skipLab.attributedText = [self getAttributedstring:XYBString(@"string_Skip", @"跳过") tailStr:@" 3"];
     [self addSubview:_skipLab];
@@ -141,7 +141,7 @@ static int const showtime = 3;
     
     // 倒计时方法2：定时器
 //    [self startTimer];
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UIWindow *window = [UIApplication sharedApplication].delegate.window;
     [window addSubview:self];
 }
 // 定时器倒计时
@@ -165,7 +165,7 @@ static int const showtime = 3;
             });
         }else{
             dispatch_async(dispatch_get_main_queue(), ^{
-                _skipLab.textColor = COLOR_LIGHT_GREEN;
+                _skipLab.textColor = COLOR_GREEN;
                 NSString *skipTime = [NSString stringWithFormat:@" %d", timeout];
                 _skipLab.attributedText = [self getAttributedstring:XYBString(@"string_Skip", @"跳过") tailStr:skipTime];
             });

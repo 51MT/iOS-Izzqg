@@ -48,10 +48,10 @@ static VersionUpdateHttpRequest *_http = nil;
     [WebService postRequest:requestURL param:[NSDictionary dictionary] JSONModelClass:[DMUpdateInfo class] Success:^(AFHTTPRequestOperation *operation, id responseObject) {
         DMUpdateInfo *responseModel = responseObject;
         if (responseModel.resultCode == 1) {
-//            UpdateView *updateView = [[UpdateView alloc] init];
-//            updateView.updateInfo = responseModel.version;
-//
-//            [updateView show:nil];
+            UpdateView *updateView = [[UpdateView alloc] init];
+            updateView.updateInfo = responseModel.version;
+
+            [updateView show:nil];
         }
     }
         fail:^(AFHTTPRequestOperation *operation, NSString *errorMessage) {

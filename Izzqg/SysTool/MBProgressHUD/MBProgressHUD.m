@@ -127,7 +127,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 }
 
 + (MB_INSTANCETYPE)HUDForView:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
     NSEnumerator *subviewsEnum = [view.subviews reverseObjectEnumerator];
     for (UIView *subview in subviewsEnum) {
         if ([subview isKindOfClass:self]) {
@@ -138,7 +138,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 }
 
 + (NSArray *)allHUDsForView:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
     NSMutableArray *huds = [NSMutableArray array];
     NSArray *subviews = view.subviews;
     for (UIView *aView in subviews) {

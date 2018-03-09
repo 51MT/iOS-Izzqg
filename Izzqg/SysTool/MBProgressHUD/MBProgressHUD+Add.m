@@ -12,7 +12,7 @@
 
 #pragma mark 显示信息
 + (void)show:(NSString *)text icon:(NSString *)icon view:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.labelText = text;
@@ -29,7 +29,7 @@
 }
 
 + (void)show:(NSString *)text icon:(NSString *)icon toYOffset:(float)yOffset view:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.labelText = text;
@@ -45,7 +45,7 @@
 }
 
 + (void)showMessag:(NSString *)message detailsMessage:(NSString *)detailsMessage View:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
 
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -66,7 +66,7 @@
 }
 
 + (void)showTextMessag:(NSString *)message detailsMessage:(NSString *)detailsMessage View:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
 
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -88,7 +88,7 @@
 
 #pragma mark 显示一些信息
 + (MBProgressHUD *)showMessag:(NSString *)message toView:(UIView *)view {
-    if (view == nil) view = [UIApplication sharedApplication].keyWindow;
+    if (view == nil) view = [UIApplication sharedApplication].delegate.window;
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
 

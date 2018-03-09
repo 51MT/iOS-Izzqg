@@ -26,7 +26,7 @@
 
 - (void)setNav
 {
-    self.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(clickBackBtn:)];
+    self.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"backItem"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(clickBackBtn:)];
 }
 
 - (void)setUpTalbeView
@@ -37,6 +37,7 @@
     self.baseTableView.delegate =self;
     self.baseTableView.dataSource =self;
     [self.view addSubview:self.baseTableView];
+    
     [self.baseTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.navBar.mas_bottom);
         make.left.bottom.right.equalTo(self.view);
@@ -44,7 +45,6 @@
     
     self.baseTableView.header = self.gifHeader3;
     self.baseTableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
-    
 }
 
 

@@ -24,7 +24,7 @@
         [self addSubview:progressView];
         progressView.progress = 0.9f;
         progressView.trackTintColor = COLOR_LINE;
-        progressView.progressTintColor = COLOR_LIGHT_GREEN;
+        progressView.progressTintColor = COLOR_GREEN;
         progressView.tag = VIEW_TAG_PROGRESS_VIEW;
         progressView.layer.cornerRadius = Corner_Radius;
         progressView.clipsToBounds = YES;
