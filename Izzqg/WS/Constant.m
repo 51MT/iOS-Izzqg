@@ -32,8 +32,8 @@ static Constant *sharedConstant = nil;
         if (self.urlType == developUrlType) {
 
             self.baseUrl = @"http://192.168.1.91:3000/app";
-            self.nodeJs_Url = @"http://192.168.1.189:3000";         //zhaohua pc本地ip地址和端口
-            self.d_Url = @"http://192.168.1.190:8080/xyb-xsd-web"; //http://192.168.1.76:8080/xyb-xsd-web/app-loan
+//            self.nodeJs_Url = @"http://192.168.1.189:3000";         //zhaohua pc本地ip地址和端口
+//            self.d_Url = @"http://192.168.1.190:8080/xyb-xsd-web"; //http://192.168.1.76:8080/xyb-xsd-web/app-loan
             self.isEnvDevMode = YES;
 
         } else if (self.urlType == testUrlType) {

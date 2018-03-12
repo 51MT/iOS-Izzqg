@@ -17,8 +17,8 @@
 
 @property (nonatomic, strong) NJKWebViewProgress *progress;
 @property (nonatomic, strong) NJKWebViewProgressView *progressView;
-@property (nonatomic, strong) UIButton * backBtn;
-@property (nonatomic, strong) NSString * titleStr;
+@property (nonatomic, strong) UIButton *backBtn;
+@property (nonatomic, strong) NSString *titleStr;
 
 @end
 
@@ -85,11 +85,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setNav];
-//    self.view.backgroundColor = COLOR_BG;
-//    self.view.userInteractionEnabled = YES;
-//    [self createTheWebView];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chargeSuccess) name:@"chargeSuccessNotification" object:nil];
+    self.view.backgroundColor = COLOR_BG;
+    [self setNav];
+    [self createTheWebView];
 }
 
 - (void)createTheWebView {
@@ -119,10 +117,27 @@
     _progressView.backgroundColor = COLOR_COMMON_CLEAR;
     _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
+    //访问请求
+    NSString *reqestUrl = [RequestURL getZzqg_BaseUrl:baseRequest_Url];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:reqestUrl]];
+    request.HTTPMethod = @"POST";
+    [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:[RequestURL getUserAgent] forHTTPHeaderField:@"User-Agent"];
+    
+    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
+    [param setValue:[UserDefaultsUtil getUser].userId ? [UserDefaultsUtil getUser].userId:@"" forKey:@"userId"];
+    [param setValue:[UserDefaultsUtil getUser].loginToken ? [UserDefaultsUtil getUser].loginToken:@"" forKey:@"token"];
+    [param setValue:@"account" forKey:@"status"];
+    
+    //转成json
+    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:param options:0 error:nil];
+    
+    request.HTTPBody = jsonData;
+    [self.webView loadRequest:request];
 }
 
 #pragma mark - NJKWebViewProgressDelegate
+
 - (void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress {
     [_progressView setProgress:progress animated:YES];
 }

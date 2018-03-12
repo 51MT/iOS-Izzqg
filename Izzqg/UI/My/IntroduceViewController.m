@@ -29,10 +29,16 @@
 
     if (MainScreenHeight == 480.0f) {
         self.imageArray = [@[ @"GuideFourFirst", @"GuideFourSecond", @"GuideFourThird" ] mutableCopy];
+        
     } else if (MainScreenHeight == 568.0f) {
         self.imageArray = [@[ @"GuideFiveFirst", @"GuideFiveSecond", @"GuideFiveThird" ] mutableCopy];
+        
     } else if (MainScreenHeight == 667.0f) {
         self.imageArray = [@[ @"GuideSixFirst", @"GuideSixSecond", @"GuideSixThird" ] mutableCopy];
+        
+    } else if (MainScreenHeight == 812.0f) {
+        self.imageArray = [@[ @"GuideXFirst", @"GuideXSecond", @"GuideXThird" ] mutableCopy];
+        
     } else {
         self.imageArray = [@[ @"GuidePlusFirst", @"GuidePlusSecond", @"GuidePlusThird" ] mutableCopy];
     }

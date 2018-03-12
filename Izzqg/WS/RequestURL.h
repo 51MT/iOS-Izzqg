@@ -38,7 +38,7 @@
 /**
  *  @author wangjian, 16-12-12 14:12:59
  *
- *  @brief 获取NodeJs服务器的H5 URL
+ *  @brief  获取NodeJs服务器的H5 URL
  *
  *  @param h5URL  NodeJs服务器的H5 URL
  *  @param isSign 是否带签名：未登录只带签名和已登录带签名和userId
@@ -70,15 +70,7 @@
  */
 + (NSString *)getServerH5Url:(NSString *)serverH5URL withIsSign:(BOOL)isSign;
 
-/**
- *  @author Dzg
- *
- *  @brief 获取信闪贷的URL
- *
- *  @param xsdURL 信闪贷服务器地址 + URL
- *
- *  @return 返回链接URL
- */
-+ (NSString *)getXsdUrl:(NSString *)xsdURL;
+
++ (NSString *)getZzqg_BaseUrl:(NSString *)Url;
 
 @end

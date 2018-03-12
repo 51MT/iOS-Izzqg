@@ -44,7 +44,7 @@ static VersionUpdateHttpRequest *_http = nil;
 }
 
 - (void)setRequest {
-    NSString *requestURL = [RequestURL getRequestURL:VersionUpdateURL param:[NSDictionary dictionary]];
+    NSString *requestURL = [RequestURL getRequestURL:VersionUpdate_URL param:[NSDictionary dictionary]];
     [WebService postRequest:requestURL param:[NSDictionary dictionary] JSONModelClass:[DMUpdateInfo class] Success:^(AFHTTPRequestOperation *operation, id responseObject) {
         DMUpdateInfo *responseModel = responseObject;
         if (responseModel.resultCode == 1) {

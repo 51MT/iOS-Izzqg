@@ -195,7 +195,7 @@
 - (void)updateFee {
     NSDictionary *param = @{ @"userId" : [UserDefaultsUtil getUser].userId,
                              @"amount" : self.amount };
-    NSString *urlPath = [RequestURL getRequestURL:AccountDrawMoneyFeeURL param:param];
+    NSString *urlPath = [RequestURL getRequestURL:@"" param:param];
     [WebService postRequest:urlPath param:param JSONModelClass:[WithdrawalsCounterFeeModel class]
 
         Success:^(AFHTTPRequestOperation *operation, id responseObject) {

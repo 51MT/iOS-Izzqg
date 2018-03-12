@@ -65,7 +65,7 @@
 //初始化广告页
 -(void)getAdvertisingImage
 {
-    NSString *urlPath = [RequestURL getRequestURL:LaunchICONURL param:[NSMutableDictionary dictionary]];
+    NSString *urlPath = [RequestURL getRequestURL:LaunchIcon_URL param:[NSMutableDictionary dictionary]];
     
     [WebService postRequest:urlPath param:[NSDictionary dictionary] JSONModelClass:[Welcome class]
      

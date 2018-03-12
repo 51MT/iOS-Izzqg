@@ -121,9 +121,11 @@
     }
 }
 
-+ (NSString *)getXsdUrl:(NSString *)xsdURL {
-    NSString *xsdUrl = [NSString stringWithFormat:@"%@%@", [Constant sharedConstant].d_Url, xsdURL];
-    return xsdUrl;
++ (NSString *)getZzqg_BaseUrl:(NSString *)Url {
+    
+    NSString *baseUrl = [NSString stringWithFormat:@"%@%@", [Constant sharedConstant].baseUrl, Url];
+
+    return baseUrl;
 }
 
 @end
