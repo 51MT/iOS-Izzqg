@@ -9,6 +9,7 @@
 #import "DMUpdateInfo.h"
 
 @implementation VersionModel
+
 + (JSONKeyMapper *)keyMapper {
     return [[JSONKeyMapper alloc] initWithDictionary:@{ @"id" : @"infoId",
                                                         @"need" : @"isForceUpdate",

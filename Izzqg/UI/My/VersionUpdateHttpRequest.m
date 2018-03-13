@@ -45,19 +45,22 @@ static VersionUpdateHttpRequest *_http = nil;
 
 - (void)setRequest {
     NSString *requestURL = [RequestURL getRequestURL:VersionUpdate_URL param:[NSDictionary dictionary]];
-    [WebService postRequest:requestURL param:[NSDictionary dictionary] JSONModelClass:[DMUpdateInfo class] Success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        DMUpdateInfo *responseModel = responseObject;
-        if (responseModel.resultCode == 1) {
-            UpdateView *updateView = [[UpdateView alloc] init];
-            updateView.updateInfo = responseModel.version;
-
-            [updateView show:nil];
-        }
-    }
-        fail:^(AFHTTPRequestOperation *operation, NSString *errorMessage) {
-            if ([self canShowNewHandView]) {
-            }
-        }];
+    [WebService postRequest:requestURL param:[NSDictionary dictionary] JSONModelClass:[DMUpdateInfo class]
+     
+                    Success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                        
+                        DMUpdateInfo *responseModel = responseObject;
+                        if (responseModel.resultCode == 1) {
+                            UpdateView *updateView = [[UpdateView alloc] init];
+                            updateView.updateInfo = responseModel.version;
+                            
+                            [updateView show:nil];
+                        }
+                    }
+                       fail:^(AFHTTPRequestOperation *operation, NSString *errorMessage) {
+                           if ([self canShowNewHandView]) {
+                           }
+                       }];
 }
 
 - (void)clearInstance {

@@ -33,7 +33,7 @@
     //self.tabBar.selectedImageTintColor = RGBACOLOR(251.0f,110.0f,83.0f,1.0f);
     
     
-    MoneyBoxViewController *moneyBoxVC = [[MoneyBoxViewController alloc] initWithTitle:XYBString(@"str_moneyBox", @"钱罐") webUrlString:@""];
+    MoneyBoxViewController *moneyBoxVC = [[MoneyBoxViewController alloc] initWithStatus:1];
     moneyBoxVC.tabBarItem.title = XYBString(@"str_moneyBox", @"钱罐"); //本地化，注释
     moneyBoxVC.tabBarItem.image = [[UIImage imageNamed:@"moneyBox_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     moneyBoxVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"moneyBox_icon_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -41,7 +41,7 @@
     XYNavigationController *moneyBoxNC = [[XYNavigationController alloc] initWithRootViewController:moneyBoxVC];
     
     
-    BenefitsViewController *benefitsVC = [[BenefitsViewController alloc] initWithTitle:XYBString(@"str_benefits", @"福利") webUrlString:@""];
+    BenefitsViewController *benefitsVC = [[BenefitsViewController alloc] initWithStatus:2];
     benefitsVC.tabBarItem.title = XYBString(@"str_benefits", @"福利");
     benefitsVC.tabBarItem.image = [[UIImage imageNamed:@"benefit_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     benefitsVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"benefit_icon_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -49,7 +49,7 @@
     XYNavigationController *benefitsNC = [[XYNavigationController alloc] initWithRootViewController:benefitsVC];
     
     
-    MyViewController *myVC = [[MyViewController alloc] initWithTitle:XYBString(@"str_my", @"我的") webUrlString:@""];
+    MyViewController *myVC = [[MyViewController alloc] initWithStatus:3];
     myVC.tabBarItem.title = XYBString(@"str_my", @"我的");
     myVC.tabBarItem.image = [[UIImage imageNamed:@"my_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     myVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"my_icon_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

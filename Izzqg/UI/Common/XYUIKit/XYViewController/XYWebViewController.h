@@ -10,11 +10,13 @@
 
 @interface XYWebViewController : HiddenNavBarBaseViewController
 
-@property (nonatomic, copy) NSString *urlStr;
-@property (nonatomic, strong) UIButton *closeBtn;//风险测评页面需要用到，so暴露此入口
-@property (nonatomic, strong) UIWebView *webView;
+/**
+ 自定义初始化方法
 
-- (id)initWithTitle:(NSString *)title webUrlString:(NSString *)webUrlString;
+ @param status 状态,1:表示从钱罐页面进入；2：从福利页面进入；3：从我的页面进入
+ @return self
+ */
+- (id)initWithStatus:(int)status;
 
 - (void)clickBackBtn:(id)sender;
 - (void)clickCloseBtn:(id)sender;

@@ -24,8 +24,8 @@
 #define UMENG_APPKEY @"5a951816f29d986fd000034a"
 
 //友盟分享
-#define WXAppId     @"wx2cf6f99760ca1e77"
-#define WXAppSecret @"c255f118526819a5ee91ecbf4bce73cd"
+#define WXAppId     @"wxb70a81ab4d871694"
+#define WXAppSecret @"6de2721562021e8da3b4a002558ec11d"
 #define QQAppId     @"1106674249"
 #define QQAppSecret @"LGptq1k3uQEaBSN1"
 #define UmShareUrl  @"http://www.zhuzhuqianguan.com"
