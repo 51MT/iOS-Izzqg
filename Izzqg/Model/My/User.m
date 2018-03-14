@@ -15,6 +15,7 @@
     if (self = [super init]) {
 
         self.userId = [coder decodeObjectForKey:@"userId"];
+        self.from = [coder decodeObjectForKey:@"from"];
         self.userName = [coder decodeObjectForKey:@"username"];
         self.email = [coder decodeObjectForKey:@"email"];
         self.tel = [coder decodeObjectForKey:@"tel"];
@@ -98,7 +99,9 @@
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
+    
     [coder encodeObject:_userId forKey:@"userId"];
+    [coder encodeObject:_from forKey:@"from"];
     [coder encodeObject:_userName forKey:@"username"];
     [coder encodeObject:_email forKey:@"email"];
     [coder encodeObject:_tel forKey:@"tel"];

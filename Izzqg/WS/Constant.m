@@ -31,23 +31,23 @@ static Constant *sharedConstant = nil;
         
         if (self.urlType == developUrlType) {
 
-            self.baseUrl = @"http://192.168.1.91:3000/app";
+            self.baseUrl = @"http://192.168.1.91:3000";
 //            self.nodeJs_Url = @"http://192.168.1.189:3000";         //zhaohua pc本地ip地址和端口
 //            self.d_Url = @"http://192.168.1.190:8080/xyb-xsd-web"; //http://192.168.1.76:8080/xyb-xsd-web/app-loan
             self.isEnvDevMode = YES;
 
         } else if (self.urlType == testUrlType) {
 
-            self.baseUrl = @"https://apptest.xyb100.com";
-            self.nodeJs_Url = @"https://apptest2.xyb100.com";
-            self.d_Url = @"https://xsdtest.xyb100.com";
+            self.baseUrl = @"http://wx.test.zhuzhuqianguan.com";
+//            self.nodeJs_Url = @"https://apptest2.xyb100.com";
+//            self.d_Url = @"https://xsdtest.xyb100.com";
             self.isEnvDevMode = YES;
 
         } else if (self.urlType == productUrlType) {
 
             self.baseUrl = @"https://app.xyb100.com";
-            self.nodeJs_Url = @"https://appno.xyb100.com";
-            self.d_Url = @"https://d.xyb100.com";
+//            self.nodeJs_Url = @"https://appno.xyb100.com";
+//            self.d_Url = @"https://d.xyb100.com";
             self.isEnvDevMode = NO;
         }
     }

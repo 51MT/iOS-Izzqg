@@ -51,15 +51,31 @@
     [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
         
         // 根据获取的platformType确定所选平台进行下一步操作
-        UMShareWebpageObject *shareObject  = [[UMShareWebpageObject alloc]init];
-        if (platformType == UMSocialPlatformType_WechatTimeLine ) {
+        UMShareWebpageObject *shareObject  = [[UMShareWebpageObject alloc] init];
+        
+        if (platformType == UMSocialPlatformType_WechatTimeLine) {
             shareObject = [UMShareWebpageObject shareObjectWithTitle:[NSString stringWithFormat:@"%@ %@",title,content] descr:content thumImage:image];
         } else {
             shareObject = [UMShareWebpageObject shareObjectWithTitle:title descr:content thumImage:image];
         }
         
-        //设置网页地址
-        shareObject.webpageUrl = url;
+        //设置网页地址 增加from和platform字段
+        if (platformType == UMSocialPlatformType_WechatSession || platformType == UMSocialPlatformType_WechatTimeLine) {
+            
+            if ([shareObject.webpageUrl rangeOfString:@"?"].location != NSNotFound) {
+                shareObject.webpageUrl = [url stringByAppendingString:@"?from=1&platform=ios"];
+            }else{
+                shareObject.webpageUrl = [url stringByAppendingString:@"&from=1&platform=ios"];
+            }
+            
+        }else{
+            
+            if ([shareObject.webpageUrl rangeOfString:@"?"].location != NSNotFound) {
+                shareObject.webpageUrl = [url stringByAppendingString:@"?from=0&platform=ios"];
+            }else{
+                shareObject.webpageUrl = [url stringByAppendingString:@"&from=0&platform=ios"];
+            }
+        }
         
         //创建分享消息对象
         UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];

@@ -11,9 +11,12 @@
 @implementation VersionModel
 
 + (JSONKeyMapper *)keyMapper {
-    return [[JSONKeyMapper alloc] initWithDictionary:@{ @"id" : @"infoId",
-                                                        @"need" : @"isForceUpdate",
-                                                        @"remark" : @"updateTips" }];
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"id" : @"infoId",
+                                                       @"need" : @"isForceUpdate",
+                                                       @"remark" : @"updateTips",
+                                                       @"imgUrls":@"images",
+                                                       }];
 }
 @end
 

@@ -65,7 +65,7 @@
     [UMengAnalyticsUtil startWithAppkey:UMENG_APPKEY];
 
     //小能sdk 即时通讯工具（客服聊天）
-    [XiaoNengSdkUtil initXN];
+    //[XiaoNengSdkUtil initXN];
 
     return YES;
 }

@@ -12,7 +12,7 @@
 #pragma mark - 钱罐页面链接汇总
 
 //1.钱罐页面链接
-#define baseRequest_Url @"/base"
+#define baseRequest_Url @"/app/base"
 
 //2.欢迎页面图片
 #define LaunchIcon_URL @"/app/launch/icon?sign="

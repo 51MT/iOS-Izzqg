@@ -53,7 +53,6 @@ static VersionUpdateHttpRequest *_http = nil;
                         if (responseModel.resultCode == 1) {
                             UpdateView *updateView = [[UpdateView alloc] init];
                             updateView.updateInfo = responseModel.version;
-                            
                             [updateView show:nil];
                         }
                     }

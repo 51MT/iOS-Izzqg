@@ -23,6 +23,7 @@
 @property (nonatomic, copy) NSString<Optional> *appUrl;
 @property (nonatomic, copy) NSString<Optional> *updateTips;
 @property (nonatomic, copy) NSString<Optional> *size;
+@property (nonatomic, copy) NSString<Optional> *sizeStr;
 @property (nonatomic, copy) NSArray<Optional> *images;
 
 @end

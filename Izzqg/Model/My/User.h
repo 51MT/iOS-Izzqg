@@ -13,6 +13,7 @@
 @interface User : JSONModel
 
 @property (nonatomic, copy) NSString<Optional> *userId;
+@property (nonatomic, copy) NSString<Optional> *from;
 @property (nonatomic, copy) NSString<Optional> *id;
 @property (nonatomic, copy) NSString<Optional> *userName;
 @property (nonatomic, copy) NSString<Optional> *realName; //真实

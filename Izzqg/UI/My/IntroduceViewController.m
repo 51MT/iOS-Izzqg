@@ -80,7 +80,6 @@
         make.top.equalTo(@40);
         make.height.equalTo(@30);
         make.width.equalTo(@61);
-
     }];
 
     for (int i = 0; i < self.imageArray.count; i++) {
@@ -100,24 +99,27 @@
         imageView.clipsToBounds = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self.pageScroll addSubview:imageView];
+        
         if (i == self.imageArray.count - 1) {
+            
             self.gotoBtn = [[XYButton alloc] initWithTitle:XYBString(@"string_practice_immediately", @"立即体验") btnType:ExperienceButton];
             [self.gotoBtn addTarget:self action:@selector(gotoMainView:) forControlEvents:UIControlEventTouchUpInside];
             self.gotoBtn.hidden = YES;
             [self.view addSubview:self.gotoBtn];
 
             [self.gotoBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                
                 make.left.equalTo(@(MainScreenWidth / 4));
                 make.right.equalTo(@(-MainScreenWidth / 4));
+                make.height.equalTo(@45);
+                
                 if (IS_IPHONE_4_OR_LESS) {
                     make.centerY.equalTo(self.view.mas_bottom).offset(-59);
-                }else if(IS_IPHONE_5)
-                {
+                }else if(IS_IPHONE_5){
                     make.centerY.equalTo(self.view.mas_bottom).offset(-50);
                 }else {
                     make.centerY.equalTo(self.view.mas_bottom).offset(-(MainScreenWidth / 6 + 49));
                 }
-                make.height.equalTo(@45);
             }];
         } else {
         }

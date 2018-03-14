@@ -33,74 +33,9 @@
 
 @implementation MoneyBoxViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBar.hidden = YES;
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    
-    [UMengAnalyticsUtil event:EVENT_FINANCE_IN];
-    [UMengAnalyticsUtil beginLogPageView:NSStringFromClass([self class])];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [UMengAnalyticsUtil event:EVENT_FINANCE_OUT];
-    [UMengAnalyticsUtil endLogPageView:NSStringFromClass([self class])];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"-----SafeArea:%@",self.view.safeAreaInsets);
-    [self setNav1];
-}
 
-#pragma mark - 创建UI
-
-- (void)setNav1 {
-    
-    self.navigationItem.title = @"skjdflsjfal";
-    
-    //导航栏左侧消息按钮
-    UIButton *messageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [messageBtn setImage:[UIImage imageNamed:@"message"] forState:UIControlStateNormal];
-    messageBtn.frame = CGRectMake(0, 0, 22.0f, 22.0f);
-    [messageBtn addTarget:self action:@selector(clickTheMessageBtn:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:messageBtn];
-    
-    UIBarButtonItem *leftSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    leftSpace.width = 0;
-    self.navigationItem.leftBarButtonItems = @[leftSpace,leftItem];
-    
-    UIImageView *redPoint = [[UIImageView alloc] initWithFrame:CGRectMake(18, 0, 8, 8)];
-    redPoint.image = [UIImage imageNamed:@"redPoint"];
-    redPoint.hidden = YES;
-    [messageBtn addSubview:redPoint];
-    
-    [redPoint mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(@(8));
-        make.centerY.equalTo(messageBtn.mas_top).offset(4);
-        make.centerX.equalTo(messageBtn.mas_right);
-    }];
-    
-    //导航栏右侧借款须知入口
-    UIButton *noticeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [noticeBtn setFrame:CGRectMake(0, 0, 80, 40)];
-    noticeBtn.titleLabel.font = TEXT_FONT_16;
-    [noticeBtn setTitleColor:COLOR_COMMON_WHITE forState:UIControlStateNormal];
-    [noticeBtn setTitleColor:COLOR_COMMON_RED forState:UIControlStateSelected];
-    [noticeBtn setTitle:XYBString(@"str_borrow_notice", @"借款须知") forState:UIControlStateNormal];
-    [noticeBtn addTarget:self action:@selector(clickTheRightItem:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:noticeBtn];
-    
-    UIBarButtonItem *rightSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    rightSpace.width = -5;
-    self.navigationItem.rightBarButtonItems = @[rightSpace,rightItem];
-}
-
-- (void)clickTheLeftBtn:(id)sender {
-    //调用分享方法
-    [UMShareUtil shareUrl:@"www.baidu.com" title:@"ss" content:@"shdshjfhsfs" image:[UIImage imageWithContentsOfFile:@"www.baidu.com" ] controller:self];
 }
 
 - (void)didReceiveMemoryWarning {

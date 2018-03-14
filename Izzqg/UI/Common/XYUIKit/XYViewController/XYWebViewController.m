@@ -49,11 +49,17 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.hidden = YES;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+}
+
 -(void)setNav {
     
-     _backBtn = [[UIButton alloc] init];
+    _backBtn = [[UIButton alloc] init];
     [_backBtn setBackgroundImage:[UIImage imageNamed:@"backItem"] forState:UIControlStateNormal];
-    //[_backBtn setBackgroundImage:[UIImage imageNamed:@"back_ed"] forState:UIControlStateHighlighted];
     [_backBtn addTarget:self action:@selector(clickBackBtn:) forControlEvents:UIControlEventTouchUpInside];
     _backBtn.hidden = YES;
     [self.navBar addSubview:_backBtn];
@@ -66,7 +72,6 @@
     
     _closeBtn = [[UIButton alloc] init];
     [_closeBtn setBackgroundImage:[UIImage imageNamed:@"closeItem"] forState:UIControlStateNormal];
-    //[_closeBtn setBackgroundImage:[UIImage imageNamed:@"close_ed"] forState:UIControlStateHighlighted];
     [_closeBtn addTarget:self action:@selector(clickCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
     _closeBtn.hidden = YES;
     [self.navBar addSubview:_closeBtn];
@@ -78,11 +83,99 @@
     }];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = COLOR_BG;
+    [self setNav];
+    [self createTheWebView];
+}
+
+
+- (void)createTheWebView {
+    
+    //进度条初始化
+    self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, IS_IPHONE_X ? 88:64, [[UIScreen mainScreen] bounds].size.width, 2)];
+    self.progressView.backgroundColor = COLOR_COMMON_WHITE;
+    self.progressView.tintColor = COLOR_BLUE;
+    self.progressView.trackTintColor = COLOR_COMMON_WHITE;
+    
+    //设置进度条的高度，下面这句代码表示进度条的宽度变为原来的1倍，高度变为原来的1.5倍.
+    self.progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
+    [self.view addSubview:self.progressView];
+    [self.view bringSubviewToFront:self.progressView];
+    
+    
+    //创建一个WKWebView的配置对象
+    WKWebViewConfiguration *configur = [[WKWebViewConfiguration alloc] init];
+    
+    //设置configur对象的preferences属性的信息
+    WKPreferences *preferences = [[WKPreferences alloc] init];
+    configur.preferences = preferences;
+    
+    //是否允许与js进行交互，默认是YES的，如果设置为NO，js的代码就不起作用了
+    preferences.javaScriptEnabled = YES;
+    
+    //注册供js调用的方法
+    WKUserContentController *userContentController =[[WKUserContentController alloc]init];
+    configur.userContentController = userContentController;
+    configur.preferences.javaScriptEnabled = YES;
+    configur.allowsInlineMediaPlayback = YES;
+    
+    [userContentController addScriptMessageHandler:self name:@"getMessage"];
+    configur.userContentController = userContentController;
+    
+    if (!_webView) {
+        
+        _webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:configur];
+        
+        if (@available(iOS 11.0, *)) {
+            _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
+    
+    _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _webView.backgroundColor = COLOR_BG;
+    _webView.UIDelegate = self;
+    //如果只是调用 loadRequest 这个代理不能写
+    _webView.navigationDelegate = self;
+    _webView.allowsBackForwardNavigationGestures = YES;//打开网页间的 滑动返回
+    _webView.scrollView.bounces = NO;
+    _webView.scrollView.scrollEnabled = YES;
+    [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+    [self.view addSubview:_webView];
+    
+    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.navBar.mas_bottom).offset(2);
+        make.left.right.bottom.equalTo(self.view);
+    }];
+    
+    //访问请求
+    NSString *reqestUrl = [RequestURL getZzqg_BaseUrl:baseRequest_Url];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:reqestUrl]];
+    request.HTTPMethod = @"POST";
+    [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:[RequestURL getUserAgent] forHTTPHeaderField:@"User-Agent"];
+    
+    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
+    [param setValue:[UserDefaultsUtil getUser].userId ? [UserDefaultsUtil getUser].userId:@"" forKey:@"userId"];
+    [param setValue:[UserDefaultsUtil getUser].loginToken ? [UserDefaultsUtil getUser].loginToken:@"" forKey:@"token"];
+    [param setValue:_statuStr forKey:@"status"];
+    
+    //转成json
+    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:param options:0 error:nil];
+    
+    request.HTTPBody = jsonData;
+    [_webView loadRequest:request];
+}
+
+#pragma mark - 响应事件
+
 - (void)clickBackBtn:(id)sender {
     
     //webView至少两层
     if ([self.webView canGoBack]) {
-
+        
         NSArray *webArr = _webView.backForwardList.backList;
         
         if (webArr.count > 2) {
@@ -106,94 +199,6 @@
     
     NSArray *webArr = _webView.backForwardList.backList;
     [_webView goToBackForwardListItem:[webArr firstObject]];
-}
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor = COLOR_BG;
-    [self setNav];
-    [self createTheWebView];
-}
-
-
-- (void)createTheWebView {
-    
-    //进度条初始化
-    self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, IS_IPHONE_X ? 88 :64, [[UIScreen mainScreen] bounds].size.width, 2)];
-    self.progressView.backgroundColor = [UIColor blueColor];
-    //设置进度条的高度，下面这句代码表示进度条的宽度变为原来的1倍，高度变为原来的1.5倍.
-    self.progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
-    
-    self.progressView.tintColor = COLOR_BLUE;
-    self.progressView.trackTintColor = COLOR_COMMON_WHITE;
-    [self.view addSubview:self.progressView];
-    
-//    [self.progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.equalTo(self.navBar);
-//        make.width.equalTo(@(MainScreenWidth));
-//        make.top.equalTo(self.navBar.mas_bottom).offset(0);
-//        make.height.equalTo(@(Line_Height));
-//    }];
-    
-    
-    //创建一个WKWebView的配置对象
-    WKWebViewConfiguration *configur = [[WKWebViewConfiguration alloc] init];
-    
-    //设置configur对象的preferences属性的信息
-    WKPreferences *preferences = [[WKPreferences alloc] init];
-    configur.preferences = preferences;
-    
-    //是否允许与js进行交互，默认是YES的，如果设置为NO，js的代码就不起作用了
-    preferences.javaScriptEnabled = YES;
-    
-    //注册供js调用的方法
-    WKUserContentController *userContentController =[[WKUserContentController alloc]init];
-    configur.userContentController = userContentController;
-    configur.preferences.javaScriptEnabled = YES;
-    configur.allowsInlineMediaPlayback = YES;
-    
-    [userContentController addScriptMessageHandler:self name:@"getMessage"];
-    configur.userContentController = userContentController;
-    
-    if (!_webView) {
-        _webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:configur];
-    }
-    
-    _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    _webView.backgroundColor = COLOR_BG;
-    _webView.UIDelegate = self;
-    //如果只是调用 loadRequest 这个代理不能写
-    _webView.navigationDelegate = self;
-    _webView.allowsBackForwardNavigationGestures = YES;//打开网页间的 滑动返回
-    _webView.scrollView.bounces = NO;
-    _webView.scrollView.scrollEnabled = YES;
-    [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    [self.view addSubview:_webView];
-    
-    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.navBar.mas_bottom);
-        make.left.right.bottom.equalTo(self.view);
-    }];
-    
-    //访问请求
-    NSString *reqestUrl = [RequestURL getZzqg_BaseUrl:baseRequest_Url];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:reqestUrl]];
-    request.HTTPMethod = @"POST";
-    [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:[RequestURL getUserAgent] forHTTPHeaderField:@"User-Agent"];
-    
-    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
-    [param setValue:[UserDefaultsUtil getUser].userId ? [UserDefaultsUtil getUser].userId:@"" forKey:@"userId"];
-    [param setValue:[UserDefaultsUtil getUser].loginToken ? [UserDefaultsUtil getUser].loginToken:@"" forKey:@"token"];
-    [param setValue:_statuStr forKey:@"status"];
-    
-    //转成json
-    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:param options:0 error:nil];
-    
-    request.HTTPBody = jsonData;
-    [_webView loadRequest:request];
 }
 
 /**
@@ -272,11 +277,26 @@
     NSArray *webArr = _webView.backForwardList.backList;
     
     if(webArr.count >= 1) {
+        
         _backBtn.hidden = NO;
+        self.tabBarController.tabBar.hidden = YES;
+        
+        [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.navBar.mas_bottom).offset(2);
+            make.left.right.equalTo(self.view);
+            make.bottom.equalTo(self.view.mas_bottom).offset(49);
+        }];
         
     } else{
+        
         _backBtn.hidden = YES;
         _closeBtn.hidden = YES;
+        
+        self.tabBarController.tabBar.hidden = NO;
+        [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.navBar.mas_bottom).offset(2);
+            make.left.bottom.right.equalTo(self.view);
+        }];
     }
 }
 
@@ -297,6 +317,7 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     
     NSLog(@"%@",navigationResponse.response.URL.absoluteString);
+    
     //允许跳转
     decisionHandler(WKNavigationResponsePolicyAllow);
     
@@ -306,12 +327,14 @@
 
 // 在发送请求之前，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-
+    
     NSLog(@"%@",navigationAction.request.URL.absoluteString);
+    
     //允许跳转
     decisionHandler(WKNavigationActionPolicyAllow);
+    
     //不允许跳转
-//    decisionHandler(WKNavigationActionPolicyCancel);
+    //decisionHandler(WKNavigationActionPolicyCancel);
 }
 
 #pragma mark - WKUIDelegate
@@ -345,25 +368,56 @@
     
     if ([message.name isEqualToString:@"getMessage"]) {
         
-        NSError *error = nil;
-        NSDictionary *param = [NSJSONSerialization JSONObjectWithData:message.body
-                                                              options:NSJSONReadingMutableContainers
+        NSError *error;
+        NSDictionary *param = [NSJSONSerialization JSONObjectWithData:[message.body dataUsingEncoding:NSUTF8StringEncoding]
+                                                              options:NSJSONReadingMutableLeaves
                                                                 error:&error];
         
         if (error){
-            NSLog(@"error:%@",error);
+            NSLog(@"getMessageError:%@",error);
         }
         
-        NSString *tokenStr = [param objectForKey:@"token"];
         NSString *fromStr = [param objectForKey:@"from"];
-        NSString *userIdStr = [param objectForKey:@"userId"];
         
-        User *user = [UserDefaultsUtil getUser];
-        user.userId = userIdStr;
-        user.loginToken = tokenStr;
-        [UserDefaultsUtil setUser:user];
+        //1.登录注册，保存用户userId + token
+        if ([fromStr isEqualToString:@"login"] || [fromStr isEqualToString:@"register"]) {
+            
+            NSString *tokenStr = [param objectForKey:@"token"];
+            NSString *userIdStr = [param objectForKey:@"userId"];
+            
+            User *user = [[User alloc] init];
+            user.userId = userIdStr;
+            user.loginToken = tokenStr;
+            user.from = fromStr;
+            [UserDefaultsUtil setUser:user];
+        }
+        
+        //2.退出登录，删除本地user
+        if ([fromStr isEqualToString:@"exit"]) {
+            [UserDefaultsUtil clearUser];
+        }
+        
+        //3.分享
+        if ([fromStr isEqualToString:@"share"]) {
+            
+            //分享路径
+            NSString *shareUrl = [param objectForKey:@"shareUrl"];
+            
+            //分享标题
+            NSString *shareTitle = [param objectForKey:@"shareTitle"];
+            
+            //分享内容
+            NSString *contentStr = [param objectForKey:@"contentStr"];
+            
+            //分享图片的url
+            NSString *shareImgUrl = [param objectForKey:@"shareImgUrl"];
+            UIImage *shareImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:shareImgUrl]]];
+            
+            //调用分享方法
+            [UMShareUtil shareUrl:shareUrl title:shareTitle content:contentStr image:shareImage controller:self];
+        }
+        
     }
-    
 }
 
 @end
