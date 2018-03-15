@@ -7,7 +7,6 @@
 //
 
 #import "XYWebViewController.h"
-#import <WebKit/WebKit.h>
 #import "RequestURL.h"
 #import "Utility.h"
 
@@ -16,9 +15,7 @@
 @property (nonatomic,strong) UIButton *closeBtn;
 @property (nonatomic,strong) UIButton *backBtn;
 
-@property (nonatomic,strong) WKWebView *webView;
 @property (strong,nonatomic) UIProgressView *progressView;
-
 @property (nonatomic,copy) NSString *statuStr;
 
 @end
@@ -147,7 +144,8 @@
     
     [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.navBar.mas_bottom).offset(2);
-        make.left.right.bottom.equalTo(self.view);
+        make.left.right.equalTo(self.view);
+        make.height.equalTo(@(MainScreenHeight - 49 - 64 - 2));
     }];
     
     //访问请求
@@ -163,7 +161,12 @@
     [param setValue:_statuStr forKey:@"status"];
     
     //转成json
-    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:param options:0 error:nil];
+    NSError *error;
+    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:&error];
+    
+    if (error) {
+        NSLog(@"jsonDataError:%@",error);
+    }
     
     request.HTTPBody = jsonData;
     [_webView loadRequest:request];
@@ -250,10 +253,11 @@
             
             if (hidden) {
                 [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height, view.frame.size.width, view.frame.size.height)];
+                view.hidden = YES;
                 
             }else{
                 [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height - 49, view.frame.size.width, view.frame.size.height)];
-                
+                view.hidden = NO;
             }
         }else{
             if([view isKindOfClass:NSClassFromString(@"UITransitionView")]){
@@ -262,14 +266,14 @@
                     [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height)];
                     
                     [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
-                        make.bottom.equalTo(view.mas_bottom);
+                        make.height.equalTo(@(MainScreenHeight - 64 - 2));
                     }];
                     
                 }else{
                     [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height - 49 )];
                     
                     [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
-                        make.bottom.equalTo(view.mas_bottom).offset(0);
+                        make.height.equalTo(@(MainScreenHeight - 49 - 64 - 2));
                     }];
                 }
             }

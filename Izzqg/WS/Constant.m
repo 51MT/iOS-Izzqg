@@ -38,7 +38,7 @@ static Constant *sharedConstant = nil;
 
         } else if (self.urlType == testUrlType) {
 
-            self.baseUrl = @"http://wx.test.zhuzhuqianguan.com";
+            self.baseUrl = @"https://zzapptest.xybao.com";
 //            self.nodeJs_Url = @"https://apptest2.xyb100.com";
 //            self.d_Url = @"https://xsdtest.xyb100.com";
             self.isEnvDevMode = YES;

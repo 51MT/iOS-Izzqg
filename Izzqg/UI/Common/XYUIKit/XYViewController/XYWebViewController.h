@@ -7,8 +7,11 @@
 //
 
 #import "HiddenNavBarBaseViewController.h"
+#import <WebKit/WebKit.h>
 
 @interface XYWebViewController : HiddenNavBarBaseViewController
+
+@property (nonatomic,strong) WKWebView *webView;
 
 /**
  自定义初始化方法
