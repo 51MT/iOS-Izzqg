@@ -234,6 +234,50 @@
     }
 }
 
+
+/**
+ 显示/隐藏tabbar
+ 
+ @param hidden 是否隐藏
+ */
+- (void)hidesTabBar:(BOOL)hidden {
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0];
+    
+    for (UIView *view in self.tabBarController.view.subviews) {
+        if ([view isKindOfClass:[UITabBar class]]) {
+            
+            if (hidden) {
+                [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height, view.frame.size.width, view.frame.size.height)];
+                
+            }else{
+                [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height - 49, view.frame.size.width, view.frame.size.height)];
+                
+            }
+        }else{
+            if([view isKindOfClass:NSClassFromString(@"UITransitionView")]){
+                
+                if (hidden) {
+                    [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height)];
+                    
+                    [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
+                        make.bottom.equalTo(view.mas_bottom);
+                    }];
+                    
+                }else{
+                    [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height - 49 )];
+                    
+                    [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
+                        make.bottom.equalTo(view.mas_bottom).offset(0);
+                    }];
+                }
+            }
+        }
+    }
+    [UIView commitAnimations];
+}
+
 // 记得取消监听
 - (void)dealloc {
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
@@ -279,24 +323,15 @@
     if(webArr.count >= 1) {
         
         _backBtn.hidden = NO;
+        [self hidesTabBar:YES];
         self.tabBarController.tabBar.hidden = YES;
-        
-        [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.navBar.mas_bottom).offset(2);
-            make.left.right.equalTo(self.view);
-            make.bottom.equalTo(self.view.mas_bottom).offset(49);
-        }];
         
     } else{
         
         _backBtn.hidden = YES;
         _closeBtn.hidden = YES;
-        
+        [self hidesTabBar:NO];
         self.tabBarController.tabBar.hidden = NO;
-        [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.navBar.mas_bottom).offset(2);
-            make.left.bottom.right.equalTo(self.view);
-        }];
     }
 }
 
@@ -419,5 +454,6 @@
         
     }
 }
+
 
 @end
