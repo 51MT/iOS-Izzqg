@@ -34,13 +34,17 @@
 
 
     // 设置导航栏默认的背景颜色
-    [UIColor wr_setDefaultNavBarBarTintColor:COLOR_MAIN];
+    [UIColor wr_setDefaultNavBarBarTintColor:COLOR_GRAY_MAIN];
+    
     // 设置导航栏所有按钮的默认颜色
     [UIColor wr_setDefaultNavBarTintColor:[UIColor whiteColor]];
+    
     // 设置导航栏标题默认颜色
     [UIColor wr_setDefaultNavBarTitleColor:[UIColor whiteColor]];
+    
     // 统一设置状态栏样式
     [UIColor wr_setDefaultStatusBarStyle:UIStatusBarStyleLightContent];
+    
     // 如果需要设置导航栏底部分割线隐藏，可以在这里统一设置
     [UIColor wr_setDefaultNavBarShadowImageHidden:YES];
 }

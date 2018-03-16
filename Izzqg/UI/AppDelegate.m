@@ -17,6 +17,10 @@
 #import <UserNotifications/UserNotifications.h>
 #import <notify.h>
 
+#import "MoneyBoxViewController.h"
+#import "BenefitsViewController.h"
+#import "MyViewController.h"
+
 //键盘管理工具初始化
 #import "IQKeyboardManagerUtil.h"
 
@@ -182,12 +186,20 @@
 #pragma mark-- UITabBarControllerDelegate delegate method
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    
+    XYNavigationController *nav = (XYNavigationController *)viewController;
+    
     if (tabBarController.selectedIndex == 0) {
-        [UMengAnalyticsUtil event:EVENT_FINANCE];
+        MoneyBoxViewController *mbVC = [nav.viewControllers firstObject];
+        [mbVC createWKWebViewAnd_PostTaskWithSession];
+        
     } else if (tabBarController.selectedIndex == 1) {
-        [UMengAnalyticsUtil event:EVENT_SAFE_SAFE];
+        BenefitsViewController *benifitsVC = [[BenefitsViewController alloc] init];
+        [benifitsVC createWKWebViewAnd_PostTaskWithSession];
+        
     } else if (tabBarController.selectedIndex == 2) {
-        [UMengAnalyticsUtil event:EVENT_MY];
+        MyViewController *myVC = [[MyViewController alloc] init];
+        [myVC createWKWebViewAnd_PostTaskWithSession];
     }
 }
 

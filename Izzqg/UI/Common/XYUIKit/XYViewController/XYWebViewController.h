@@ -24,4 +24,9 @@
 - (void)clickBackBtn:(id)sender;
 - (void)clickCloseBtn:(id)sender;
 
+/**
+ 创建WKWebview，并请求数据
+ */
+- (void)createWKWebViewAnd_PostTaskWithSession;
+
 @end

@@ -85,11 +85,15 @@
     
     self.view.backgroundColor = COLOR_BG;
     [self setNav];
-    [self createTheWebView];
+    [self createProgressView];
+    [self createWKWebViewAnd_PostTaskWithSession];
 }
 
 
-- (void)createTheWebView {
+/**
+ WKWebview的进度条
+ */
+- (void)createProgressView {
     
     //进度条初始化
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, IS_IPHONE_X ? 88:64, [[UIScreen mainScreen] bounds].size.width, 2)];
@@ -101,7 +105,18 @@
     self.progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
     [self.view addSubview:self.progressView];
     [self.view bringSubviewToFront:self.progressView];
+}
+
+/**
+ 创建WKWebview，并请求数据
+ */
+- (void)createWKWebViewAnd_PostTaskWithSession {
     
+    if (_webView) {
+        [_webView removeFromSuperview];
+        [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"getMessage"];
+        _webView = nil;
+    }
     
     //创建一个WKWebView的配置对象
     WKWebViewConfiguration *configur = [[WKWebViewConfiguration alloc] init];
@@ -175,9 +190,9 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSError *err;
-        NSDictionary *param = [NSJSONSerialization JSONObjectWithData:data
-                                                              options:NSJSONReadingMutableLeaves
-                                                                error:&err];
+        NSMutableDictionary *param = [NSJSONSerialization JSONObjectWithData:data
+                                                                     options:NSJSONReadingMutableLeaves
+                                                                       error:&err];
         
         if (error){
             NSLog(@"getMessageError:%@",error);
@@ -207,10 +222,17 @@
         if (webArr.count > 2) {
             _backBtn.hidden = NO;
             _closeBtn.hidden = NO;
+            [self hidesTabBar:YES];
+            
+        }else if(webArr.count == 1){
+            _backBtn.hidden = YES;
+            _closeBtn.hidden = YES;
+            [self hidesTabBar:NO];
             
         }else{
             _backBtn.hidden = NO;
             _closeBtn.hidden = YES;
+            [self hidesTabBar:NO];
         }
         
         [self.webView goBack];
@@ -225,15 +247,6 @@
     
     NSArray *webArr = _webView.backForwardList.backList;
     [_webView goToBackForwardListItem:[webArr firstObject]];
-}
-
-/**
- *  重新加载 点击事件
- *
- *  @param sender Button
- */
-- (void)reloadData:(id)sender {
-    [self.webView reload];
 }
 
 // 计算wkWebView进度条
@@ -312,11 +325,69 @@
 }
 
 
+/**
+ WKWebview清理缓存
+ */
+- (void)clearWebCache {
+    
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 9.0) {
+        
+        NSSet *websiteDataTypes = [NSSet setWithArray:@[
+                                                        WKWebsiteDataTypeDiskCache,
+                                                        
+                                                        //WKWebsiteDataTypeOfflineWebApplicationCache,
+                                                        
+                                                        WKWebsiteDataTypeMemoryCache,
+                                                        
+                                                        //WKWebsiteDataTypeLocalStorage,
+                                                        
+                                                        //WKWebsiteDataTypeCookies,
+                                                        
+                                                        //WKWebsiteDataTypeSessionStorage,
+                                                        
+                                                        //WKWebsiteDataTypeIndexedDBDatabases,
+                                                        
+                                                        //WKWebsiteDataTypeWebSQLDatabases
+                                                        ]];
+        
+        // All kinds of data
+        
+        //NSSet *websiteDataTypes = [WKWebsiteDataStore allWebsiteDataTypes];
+        
+        // Date from
+        NSDate *dateFrom = [NSDate dateWithTimeIntervalSince1970:0];
+        
+        // Execute
+        [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:websiteDataTypes modifiedSince:dateFrom completionHandler:^{
+            
+            // Done
+            [self createWKWebViewAnd_PostTaskWithSession];
+            
+        }];
+        
+    } else {
+        NSString *libraryPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        
+        NSString *cookiesFolderPath = [libraryPath stringByAppendingString:@"/Cookies"];
+        
+        NSError *errors;
+        
+        [[NSFileManager defaultManager] removeItemAtPath:cookiesFolderPath error:&errors];
+        
+        if (errors) {
+            NSLog(@"WKWebview清理失败：%@",errors);
+        }
+        
+        [self createWKWebViewAnd_PostTaskWithSession];
+    }
+}
+
 #pragma mark - WKNavigationDelegate
 
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
     
     NSLog(@"开始加载网页");
+    
     //开始加载网页时展示出progressView
     self.progressView.hidden = NO;
     
@@ -336,7 +407,7 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     
     NSLog(@"加载完成");
-    
+    [self.webView stopLoading];
     //加载完成后隐藏progressView
     self.progressView.hidden = YES;
     
@@ -431,9 +502,9 @@
     if ([message.name isEqualToString:@"getMessage"]) {
         
         NSError *error;
-        NSDictionary *param = [NSJSONSerialization JSONObjectWithData:[message.body dataUsingEncoding:NSUTF8StringEncoding]
-                                                              options:NSJSONReadingMutableLeaves
-                                                                error:&error];
+        NSMutableDictionary *param = [NSJSONSerialization JSONObjectWithData:[message.body dataUsingEncoding:NSUTF8StringEncoding]
+                                                                     options:NSJSONReadingMutableLeaves
+                                                                       error:&error];
         
         if (error){
             NSLog(@"getMessageError:%@",error);
@@ -452,11 +523,19 @@
             user.loginToken = tokenStr;
             user.from = fromStr;
             [UserDefaultsUtil setUser:user];
+            
+            [self clearWebCache];
+            _backBtn.hidden = YES;
+            _closeBtn.hidden = YES;
         }
         
         //2.退出登录，删除本地user
         if ([fromStr isEqualToString:@"exit"]) {
             [UserDefaultsUtil clearUser];
+            
+            [self clearWebCache];
+            _backBtn.hidden = YES;
+            _closeBtn.hidden = YES;
         }
         
         //3.分享
