@@ -163,13 +163,36 @@
     //转成json
     NSError *error;
     NSData *jsonData =[NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:&error];
+    request.HTTPBody = jsonData;
     
     if (error) {
         NSLog(@"jsonDataError:%@",error);
     }
     
-    request.HTTPBody = jsonData;
-    [_webView loadRequest:request];
+    // 实例化网络会话
+    NSURLSession *session = [NSURLSession sharedSession];
+    // 创建请求Task
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        NSError *err;
+        NSDictionary *param = [NSJSONSerialization JSONObjectWithData:data
+                                                              options:NSJSONReadingMutableLeaves
+                                                                error:&err];
+        
+        if (error){
+            NSLog(@"getMessageError:%@",error);
+        }
+        
+        NSString *linkUrl = [param objectForKey:@"linkUrl"];
+        
+        //必须放到主线程中处理，不然会线程报错
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:linkUrl]]];
+        });
+    }];
+    
+    //开启任务task
+    [task resume];
 }
 
 #pragma mark - 响应事件
