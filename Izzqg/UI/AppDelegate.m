@@ -191,15 +191,21 @@
     
     if (tabBarController.selectedIndex == 0) {
         MoneyBoxViewController *mbVC = [nav.viewControllers firstObject];
-        [mbVC createWKWebViewAnd_PostTaskWithSession];
+        if (mbVC.webView) {
+            [mbVC createWKWebViewAnd_PostTaskWithSession];
+        }
         
     } else if (tabBarController.selectedIndex == 1) {
         BenefitsViewController *benifitsVC = [[BenefitsViewController alloc] init];
-        [benifitsVC createWKWebViewAnd_PostTaskWithSession];
+        if (benifitsVC.webView) {
+            [benifitsVC createWKWebViewAnd_PostTaskWithSession];
+        }
         
     } else if (tabBarController.selectedIndex == 2) {
         MyViewController *myVC = [[MyViewController alloc] init];
-        [myVC createWKWebViewAnd_PostTaskWithSession];
+        if (myVC.webView) {
+            [myVC createWKWebViewAnd_PostTaskWithSession];
+        }
     }
 }
 
