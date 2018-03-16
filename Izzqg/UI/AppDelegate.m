@@ -196,13 +196,13 @@
         }
         
     } else if (tabBarController.selectedIndex == 1) {
-        BenefitsViewController *benifitsVC = [[BenefitsViewController alloc] init];
+        BenefitsViewController *benifitsVC = [nav.viewControllers firstObject];
         if (benifitsVC.webView) {
             [benifitsVC createWKWebViewAnd_PostTaskWithSession];
         }
         
     } else if (tabBarController.selectedIndex == 2) {
-        MyViewController *myVC = [[MyViewController alloc] init];
+        MyViewController *myVC = [nav.viewControllers firstObject];
         if (myVC.webView) {
             [myVC createWKWebViewAnd_PostTaskWithSession];
         }
