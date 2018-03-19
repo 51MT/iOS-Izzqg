@@ -189,6 +189,10 @@
     // 创建请求Task
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
+        if (!data) {
+            return ;
+        }
+        
         NSError *err;
         NSMutableDictionary *param = [NSJSONSerialization JSONObjectWithData:data
                                                                      options:NSJSONReadingMutableLeaves
