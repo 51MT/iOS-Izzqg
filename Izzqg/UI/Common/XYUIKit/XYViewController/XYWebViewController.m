@@ -223,7 +223,7 @@
         
         NSArray *webArr = _webView.backForwardList.backList;
         
-        if (webArr.count > 2) {
+        if (webArr.count >= 2) {
             _backBtn.hidden = NO;
             _closeBtn.hidden = NO;
             [self hidesTabBar:YES];
