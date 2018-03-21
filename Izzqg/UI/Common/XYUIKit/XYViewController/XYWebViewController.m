@@ -296,6 +296,7 @@
     [UIView setAnimationDuration:0];
     
     for (UIView *view in self.tabBarController.view.subviews) {
+        
         if ([view isKindOfClass:[UITabBar class]]) {
             
             if (hidden) {
@@ -303,9 +304,15 @@
                 view.hidden = YES;
                 
             }else{
-                [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height - 49, view.frame.size.width, view.frame.size.height)];
+                if (IS_IPHONE_X) {
+                    [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height - 83, view.frame.size.width, view.frame.size.height)];
+                }else{
+                    [view setFrame:CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height - 49, view.frame.size.width, view.frame.size.height)];
+                }
+                
                 view.hidden = NO;
             }
+            
         }else{
             if([view isKindOfClass:NSClassFromString(@"UITransitionView")]){
                 
@@ -317,11 +324,20 @@
                     }];
                     
                 }else{
-                    [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height - 49 )];
-                    
-                    [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
-                        make.height.equalTo(@(MainScreenHeight - 49 - 64 - 2));
-                    }];
+                    if (IS_IPHONE_X) {
+                        [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height - 83 )];
+                        
+                        [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
+                            make.height.equalTo(@(MainScreenHeight - 83 - 64 - 2));
+                        }];
+                        
+                    }else{
+                        [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, [UIScreen mainScreen].bounds.size.height - 49 )];
+                        
+                        [self.webView mas_updateConstraints:^(MASConstraintMaker *make) {
+                            make.height.equalTo(@(MainScreenHeight - 49 - 64 - 2));
+                        }];
+                    }
                 }
             }
         }
@@ -418,7 +434,7 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     
     NSLog(@"加载完成");
-
+    
     //加载完成后隐藏progressView
     self.progressView.hidden = YES;
     
