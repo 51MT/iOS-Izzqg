@@ -418,7 +418,7 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     
     NSLog(@"加载完成");
-    [self.webView stopLoading];
+
     //加载完成后隐藏progressView
     self.progressView.hidden = YES;
     
