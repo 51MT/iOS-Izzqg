@@ -255,7 +255,9 @@
 - (void)clickCloseBtn:(id)sender {
     
     NSArray *webArr = _webView.backForwardList.backList;
-    [_webView goToBackForwardListItem:[webArr firstObject]];
+    if (webArr.count > 0) {
+        [_webView goToBackForwardListItem:[webArr firstObject]];
+    }
 }
 
 // 计算wkWebView进度条
@@ -471,6 +473,7 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
     
     NSLog(@"%@",navigationAction.request.URL.absoluteString);
+    
     
     //允许跳转
     decisionHandler(WKNavigationActionPolicyAllow);
