@@ -245,6 +245,11 @@
         _backBtn.hidden = YES;
         _closeBtn.hidden = YES;
     }
+    
+    //刷新标题
+    [_webView evaluateJavaScript:@"document.title" completionHandler:^(id _Nullable value , NSError * _Nullable error) {
+        self.navItem.title = value;
+    }];
 }
 
 - (void)clickCloseBtn:(id)sender {
